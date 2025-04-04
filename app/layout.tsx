@@ -1,0 +1,45 @@
+import type React from "react"
+import type { Metadata } from "next/types"
+import { Inter, EB_Garamond } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
+import { LocationProvider } from "@/components/LocationProvider"
+
+const inter = Inter({ subsets: ["latin"] })
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-eb-garamond",
+  display: "swap",
+})
+
+export const metadata: Metadata = {
+  title: "NotaryCentral - The Super App for Notaries",
+  description: "Everything from e-Journals, accounting, mileage tracking, interactive handbooks and more",
+    generator: 'v0.dev'
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} ${ebGaramond.variable}`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <LocationProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </LocationProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  )
+}
+
+
+
+import './globals.css'
