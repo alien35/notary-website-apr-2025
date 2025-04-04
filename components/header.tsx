@@ -61,50 +61,7 @@ const usStates = [
   { value: "AZ", label: "Arizona" },
   { value: "AR", label: "Arkansas" },
   { value: "CA", label: "California" },
-  { value: "CO", label: "Colorado" },
-  { value: "CT", label: "Connecticut" },
-  { value: "DE", label: "Delaware" },
-  { value: "FL", label: "Florida" },
-  { value: "GA", label: "Georgia" },
-  { value: "HI", label: "Hawaii" },
-  { value: "ID", label: "Idaho" },
-  { value: "IL", label: "Illinois" },
-  { value: "IN", label: "Indiana" },
-  { value: "IA", label: "Iowa" },
-  { value: "KS", label: "Kansas" },
-  { value: "KY", label: "Kentucky" },
-  { value: "LA", label: "Louisiana" },
-  { value: "ME", label: "Maine" },
-  { value: "MD", label: "Maryland" },
-  { value: "MA", label: "Massachusetts" },
-  { value: "MI", label: "Michigan" },
-  { value: "MN", label: "Minnesota" },
-  { value: "MS", label: "Mississippi" },
-  { value: "MO", label: "Missouri" },
-  { value: "MT", label: "Montana" },
-  { value: "NE", label: "Nebraska" },
-  { value: "NV", label: "Nevada" },
-  { value: "NH", label: "New Hampshire" },
-  { value: "NJ", label: "New Jersey" },
-  { value: "NM", label: "New Mexico" },
-  { value: "NY", label: "New York" },
-  { value: "NC", label: "North Carolina" },
-  { value: "ND", label: "North Dakota" },
-  { value: "OH", label: "Ohio" },
-  { value: "OK", label: "Oklahoma" },
-  { value: "OR", label: "Oregon" },
-  { value: "PA", label: "Pennsylvania" },
-  { value: "RI", label: "Rhode Island" },
-  { value: "SC", label: "South Carolina" },
-  { value: "SD", label: "South Dakota" },
-  { value: "TN", label: "Tennessee" },
-  { value: "TX", label: "Texas" },
-  { value: "UT", label: "Utah" },
-  { value: "VT", label: "Vermont" },
-  { value: "VA", label: "Virginia" },
-  { value: "WA", label: "Washington" },
-  { value: "WV", label: "West Virginia" },
-  { value: "WI", label: "Wisconsin" },
+  // ...
   { value: "WY", label: "Wyoming" },
   { value: "DC", label: "District of Columbia" },
 ]
@@ -113,14 +70,7 @@ const usStates = [
 const canadianProvinces = [
   { value: "AB", label: "Alberta" },
   { value: "BC", label: "British Columbia" },
-  { value: "MB", label: "Manitoba" },
-  { value: "NB", label: "New Brunswick" },
-  { value: "NL", label: "Newfoundland and Labrador" },
-  { value: "NS", label: "Nova Scotia" },
-  { value: "ON", label: "Ontario" },
-  { value: "PE", label: "Prince Edward Island" },
-  { value: "QC", label: "Quebec" },
-  { value: "SK", label: "Saskatchewan" },
+  // ...
   { value: "YT", label: "Yukon" },
 ]
 
@@ -131,14 +81,9 @@ const useMobileBreakpoint = () => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 640) // Changed from 768px to 640px
     }
-
-    // Initial check
     checkIfMobile()
 
-    // Add event listener
     window.addEventListener("resize", checkIfMobile)
-
-    // Clean up
     return () => window.removeEventListener("resize", checkIfMobile)
   }, [])
 
@@ -209,8 +154,6 @@ export default function Header() {
   const handleStateChange = (newState: string) => {
     setState(newState)
     localStorage.setItem("userLocation", JSON.stringify({ stateAbbreviation: newState }))
-
-    // Refresh the page when the state changes
     window.location.reload()
   }
 
@@ -218,12 +161,15 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm py-2" : "bg-white py-2 shadow-sm",
+        isScrolled
+          ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm py-2"
+          : "bg-white py-2 shadow-sm"
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
+        {/* Logo + brand */}
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 relative">
+          <div className="relative w-10 h-10">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/notary-logo-050225-2.jpg-7xXjRU3TdLwdld0L5IG9bbjjTJbREa.jpeg"
               alt="NotaryCentral Logo"
@@ -237,6 +183,7 @@ export default function Header() {
           </Link>
         </div>
 
+        {/* MOBILE MENU */}
         {isMobile ? (
           <>
             <button
@@ -250,18 +197,58 @@ export default function Header() {
             {mobileMenuOpen && (
               <div className="fixed inset-0 bg-white dark:bg-gray-900 z-50 p-4">
                 <nav className="flex flex-col space-y-4 bg-white dark:bg-gray-900">
-                  <Link href="/pricing" className="py-2 text-lg font-medium">
+                  {/* Standard links */}
+                  <Link
+                    href="/pricing"
+                    className="py-2 text-lg font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     PRICING
                   </Link>
-                  <Link href="/post/why-did-i-start-notarycentral" className="py-2 text-lg font-medium">
+                  <Link
+                    href="/post/why-did-i-start-notarycentral"
+                    className="py-2 text-lg font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     ABOUT
                   </Link>
-                  <Link href="/training" className="py-2 text-lg font-medium">
+                  <Link
+                    href="/training"
+                    className="py-2 text-lg font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     TRAINING
                   </Link>
-                  <Link href="/solutions-features" className="py-2 text-lg font-medium">
-                    SOLUTIONS & FEATURES
-                  </Link>
+
+                  {/* Show SOLUTIONS and FEATURES inline on mobile */}
+                  <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
+                    <h4 className="mb-2 text-md font-semibold">SOLUTIONS</h4>
+                    {menuItems.solutions.map((item) => (
+                      <Link
+                        key={item.title}
+                        href={item.href}
+                        className="block py-1 text-base font-medium"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
+                    <h4 className="mb-2 text-md font-semibold">FEATURES</h4>
+                    {menuItems.features.map((item) => (
+                      <Link
+                        key={item.title}
+                        href={item.href}
+                        className="block py-1 text-base font-medium"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+
+                  {/* Country & State/Province */}
                   <div className="flex flex-col space-y-4 pt-4">
                     <div className="flex items-center space-x-2">
                       <span className="text-sm font-medium">COUNTRY:</span>
@@ -290,8 +277,11 @@ export default function Header() {
                         </SelectContent>
                       </Select>
                     </div>
+
                     <div className="flex items-center space-x-2">
-                      <span className="text-sm font-medium">{country === "US" ? "STATE:" : "PROVINCE:"}</span>
+                      <span className="text-sm font-medium">
+                        {country === "US" ? "STATE:" : "PROVINCE:"}
+                      </span>
                       <Select value={state} onValueChange={handleStateChange}>
                         <SelectTrigger className="w-24">
                           <SelectValue placeholder="Select" />
@@ -306,6 +296,8 @@ export default function Header() {
                       </Select>
                     </div>
                   </div>
+
+                  {/* CTA Buttons */}
                   <div className="pt-4 flex flex-col space-y-2">
                     <Button variant="outline" onClick={handleDemoRequest}>
                       Request Demo
@@ -317,6 +309,7 @@ export default function Header() {
             )}
           </>
         ) : (
+          /* DESKTOP NAV */
           <div className="flex items-center space-x-4">
             <nav className="flex items-center space-x-6">
               <Link href="/pricing" className="text-sm font-medium hover:text-primary">
@@ -329,6 +322,7 @@ export default function Header() {
                 TRAINING
               </Link>
 
+              {/* Solutions & Features in a NavigationMenu for desktop */}
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
@@ -338,7 +332,9 @@ export default function Header() {
                     <NavigationMenuContent>
                       <div className="grid gap-6 p-6 md:w-[600px] lg:w-[700px]" style={{ transform: "translateX(0)" }}>
                         <div className="grid gap-3">
-                          <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">SOLUTIONS</h3>
+                          <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">
+                            SOLUTIONS
+                          </h3>
                           <ul className="grid gap-3 md:grid-cols-2">
                             {menuItems.solutions.map((item) => (
                               <li key={item.title}>
@@ -347,7 +343,9 @@ export default function Header() {
                                     href={item.href}
                                     className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                   >
-                                    <div className="text-sm font-medium leading-none">{item.title}</div>
+                                    <div className="text-sm font-medium leading-none">
+                                      {item.title}
+                                    </div>
                                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                                       {item.description}
                                     </p>
@@ -358,7 +356,9 @@ export default function Header() {
                           </ul>
                         </div>
                         <div className="grid gap-3">
-                          <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">FEATURES</h3>
+                          <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">
+                            FEATURES
+                          </h3>
                           <ul className="grid gap-3 md:grid-cols-2">
                             {menuItems.features.map((item) => (
                               <li key={item.title}>
@@ -367,7 +367,9 @@ export default function Header() {
                                     href={item.href}
                                     className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                   >
-                                    <div className="text-sm font-medium leading-none">{item.title}</div>
+                                    <div className="text-sm font-medium leading-none">
+                                      {item.title}
+                                    </div>
                                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                                       {item.description}
                                     </p>
@@ -384,6 +386,7 @@ export default function Header() {
               </NavigationMenu>
             </nav>
 
+            {/* Desktop Country/State selectors & CTA Buttons */}
             <div className="flex items-center space-x-3">
               <div className="flex items-center">
                 <Select value={country} onValueChange={handleCountryChange}>
@@ -413,7 +416,9 @@ export default function Header() {
               </div>
 
               <div className="flex items-center">
-                <span className="text-xs font-medium mr-1">{country === "US" ? "STATE:" : "PROVINCE:"}</span>
+                <span className="text-xs font-medium mr-1">
+                  {country === "US" ? "STATE:" : "PROVINCE:"}
+                </span>
                 <Select value={state} onValueChange={handleStateChange}>
                   <SelectTrigger className="w-16 h-8 border-none">
                     <SelectValue placeholder="Select" />
@@ -431,7 +436,6 @@ export default function Header() {
               <Button variant="outline" size="sm" onClick={handleDemoRequest} className="h-8">
                 Request Demo
               </Button>
-
               <Button onClick={handleSignup} size="sm" className="h-8 bg-primary text-white hover:bg-primary/90">
                 SIGN UP
               </Button>
