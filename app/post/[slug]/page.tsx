@@ -11,8 +11,6 @@ import PortableTextComponents from "@/components/PortableTextComponents"
 import MyBreadCrumbs from "@/components/MyBreadCrumbs"
 import AffiliateLinkSetter from "@/components/AffiliateLinkSetter"
 import PortableTextRenderer from "@/components/PortableTextRenderer"
-console.log(PortableTextComponents, 'PortableTextComponents22')
-console.log('PortableTextComponents TYPES:', Object.keys(PortableTextComponents.types || {}))
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = (await getPost(params.slug)) as Post | null
@@ -74,14 +72,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
             />
           </div>
         )}
-        {console.log(PortableTextComponents, 'PortableTextComponents22')}
-        {console.log(
-  post.body.map((block) => ({
-    _type: block._type,
-    keys: Object.keys(PortableTextComponents.types || {})
-  }))
-)
-}
+
         <div className="prose prose-lg dark:prose-invert max-w-none">
           {post.body && (
             <PortableTextRenderer value={post.body} />

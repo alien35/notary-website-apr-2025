@@ -248,8 +248,8 @@ export default function Header() {
             </button>
 
             {mobileMenuOpen && (
-              <div className="fixed inset-0 top-16 bg-white dark:bg-gray-900 z-50 p-4">
-                <nav className="flex flex-col space-y-4">
+              <div className="fixed inset-0 bg-white dark:bg-gray-900 z-50 p-4">
+                <nav className="flex flex-col space-y-4 bg-white dark:bg-gray-900">
                   <Link href="/pricing" className="py-2 text-lg font-medium">
                     PRICING
                   </Link>
