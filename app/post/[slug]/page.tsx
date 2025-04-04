@@ -10,6 +10,9 @@ import { Button } from "@/components/ui/button"
 import PortableTextComponents from "@/components/PortableTextComponents"
 import MyBreadCrumbs from "@/components/MyBreadCrumbs"
 import AffiliateLinkSetter from "@/components/AffiliateLinkSetter"
+import PortableTextRenderer from "@/components/PortableTextRenderer"
+console.log(PortableTextComponents, 'PortableTextComponents22')
+console.log('PortableTextComponents TYPES:', Object.keys(PortableTextComponents.types || {}))
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = (await getPost(params.slug)) as Post | null
@@ -56,7 +59,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
             )}
             <div>
               <div className="font-medium">{post.author?.name}</div>
-              <div className="text-sm">{post.publishedAt && format(new Date(post.publishedAt), "MMMM dd, yyyy")}</div>
+              <div className="text-sm">Last updated {post.publishedAt && format(new Date(post.publishedAt), "MMMM dd, yyyy")}</div>
             </div>
           </div>
         </div>
@@ -71,18 +74,18 @@ export default async function PostPage({ params }: { params: { slug: string } })
             />
           </div>
         )}
-
+        {console.log(PortableTextComponents, 'PortableTextComponents22')}
+        {console.log(
+  post.body.map((block) => ({
+    _type: block._type,
+    keys: Object.keys(PortableTextComponents.types || {})
+  }))
+)
+}
         <div className="prose prose-lg dark:prose-invert max-w-none">
           {post.body && (
-            <PortableText
-              value={post.body}
-              components={PortableTextComponents}
-              // Add this onMissingComponent to handle any unexpected components
-              onMissingComponent={(type) => {
-                console.warn(`Missing component for: ${type}`)
-                return null
-              }}
-            />
+            <PortableTextRenderer value={post.body} />
+
           )}
         </div>
       </div>
