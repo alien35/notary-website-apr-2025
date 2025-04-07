@@ -9,6 +9,8 @@ import { table } from './schemaTypes/table'
 import { worksOnDevices } from './schemaTypes/worksOnDevices'
 import statePicker from './schemaTypes/statePicker'
 import { breadcrumbs } from './schemaTypes/breadcrumbs'
+import { imageBlock } from './schemaTypes/imageBlock'
+
 // Add others here (e.g., youtube, countryAndRegionPicker, etc.)
 
 export const schema = defineSchema({
@@ -22,6 +24,7 @@ export const schema = defineSchema({
     worksOnDevices,
     statePicker,
     breadcrumbs,
+    imageBlock
     // Add missing custom blocks here
   ],
 })
