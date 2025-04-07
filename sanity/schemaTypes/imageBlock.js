@@ -1,0 +1,21 @@
+export const imageBlock = {
+  title: 'Image Block',
+  name: 'imageBlock',
+  type: 'object',
+  fields: [
+    {
+      name: 'placeholder',
+      title: 'Placeholder',
+      type: 'string',
+      description: 'This is a required field. You can leave it empty if not needed.',
+    },
+  ],
+  preview: {
+    select: {},
+    prepare() {
+      return {
+        title: 'Image Block'
+      };
+    }
+  },
+};

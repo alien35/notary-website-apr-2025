@@ -1,4 +1,5 @@
 import conditionalText from "./conditionalText";
+import { imageBlock } from "./imageBlock";
 import statePicker from "./statePicker";
 import { table } from "./table";
 import {worksOnDevices} from "./worksOnDevices";
@@ -128,6 +129,7 @@ export const post = {
             },
           ],
         },
+        imageBlock,
         conditionalText,
         table,
         worksOnDevices,

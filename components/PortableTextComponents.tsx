@@ -148,9 +148,10 @@ const PortableTextComponents = {
     worksOnDevices: () => {
       return <WorksOnDevices />
     },
-    image: ({ value }) => {
+    imageBlock: ({ value }) => {
       return (
         <div className="relative w-full h-96 my-8">
+          {console.log(value, 'value brooo')}
           <Image
             src={urlFor(value).url() || "/placeholder.svg"}
             alt={value.alt || ""}

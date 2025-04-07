@@ -7,7 +7,8 @@ import { table } from './schemaTypes/table'
 import {worksOnDevices} from './schemaTypes/worksOnDevices'
 import statePicker from './schemaTypes/statePicker'
 import {breadcrumbs} from './schemaTypes/breadcrumbs';
+import { imageBlock } from './schemaTypes/imageBlock';
 
 export const schema = {
-  types: [post, author, category, blockContent, conditionalText, table, worksOnDevices, statePicker, breadcrumbs],
+  types: [post, author, category, blockContent, conditionalText, table, worksOnDevices, statePicker, breadcrumbs, imageBlock],
 }
