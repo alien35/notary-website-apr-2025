@@ -6,6 +6,7 @@ import { PortableText } from '@portabletext/react'
 import PortableTextComponents from './PortableTextComponents'
 
 export default function PortableTextRenderer({ value }: { value: any }) {
+
   return (
     <PortableText
       value={value}

@@ -148,18 +148,32 @@ const PortableTextComponents = {
     worksOnDevices: () => {
       return <WorksOnDevices />
     },
-    image: ({ value }) => {
+    imageBlock: ({ value }) => {
+      const imageUrl = value?.image?.asset ? urlFor(value.image).url() : null
+      const alt = value.alt || ""
+    
+      if (!imageUrl) return null
+    
       return (
-        <div className="relative w-full h-96 my-8">
-          <Image
-            src={urlFor(value).url() || "/placeholder.svg"}
-            alt={value.alt || ""}
-            fill
-            className="object-contain"
-          />
-        </div>
+        <figure className="my-8">
+          <div className="relative w-full h-96">
+            <Image
+              src={imageUrl}
+              alt={alt}
+              fill
+              className="object-contain"
+            />
+          </div>
+          {alt && (
+            <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+              {alt}
+            </figcaption>
+          )}
+        </figure>
       )
-    },
+    }
+    
+    
   },
   marks: {
     link: ({ children, value }) => {
