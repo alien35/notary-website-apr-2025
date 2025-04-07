@@ -1,21 +1,34 @@
 export const imageBlock = {
-  title: 'Image Block',
   name: 'imageBlock',
+  title: 'Image Block',
   type: 'object',
   fields: [
     {
-      name: 'placeholder',
-      title: 'Placeholder',
+      name: 'image',
+      type: 'image',
+      title: 'Image',
+      options: {
+        hotspot: true,
+      },
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'alt',
       type: 'string',
-      description: 'This is a required field. You can leave it empty if not needed.',
+      title: 'Alt Text',
+      validation: Rule => Rule.required(),
     },
   ],
   preview: {
-    select: {},
-    prepare() {
+    select: {
+      media: 'image',
+      title: 'alt',
+    },
+    prepare({ media, title }) {
       return {
-        title: 'Image Block'
-      };
-    }
+        title: title || 'Image Block',
+        media,
+      }
+    },
   },
-};
+}

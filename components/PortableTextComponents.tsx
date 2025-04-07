@@ -149,18 +149,22 @@ const PortableTextComponents = {
       return <WorksOnDevices />
     },
     imageBlock: ({ value }) => {
+      const imageUrl = value?.image?.asset ? urlFor(value.image).url() : null;
+      console.log(imageUrl, 'imageUrl22')
+      if (!imageUrl) return null;
+    
       return (
         <div className="relative w-full h-96 my-8">
-          {console.log(value, 'value brooo')}
           <Image
-            src={urlFor(value).url() || "/placeholder.svg"}
+            src={imageUrl}
             alt={value.alt || ""}
             fill
             className="object-contain"
           />
         </div>
-      )
-    },
+      );
+    }
+    
   },
   marks: {
     link: ({ children, value }) => {
