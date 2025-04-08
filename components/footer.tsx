@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Facebook, Instagram, Youtube, Apple, SmartphoneIcon as Android, Rss, Linkedin } from "lucide-react"
+import { useEffect, useState } from "react"
 
 const footerLinks = [
   {
@@ -47,6 +48,17 @@ export default function Footer() {
   const openGooglePlay = () => {
     window.open("https://play.google.com/store/apps/details?id=my.notary.business&pli=1", "_blank")
   }
+
+    const [inApp, setInApp] = useState(false);
+  
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const urlParams = new URLSearchParams(window.location.search);
+            setInApp(urlParams.get('inApp') === 'true');
+        }
+    }, []);
+  
+    if (inApp) return null;
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 pt-16 pb-8">

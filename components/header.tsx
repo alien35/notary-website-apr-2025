@@ -127,6 +127,18 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const [inApp, setInApp] = useState(false);
+
+  useEffect(() => {
+      if (typeof window !== "undefined") {
+          const urlParams = new URLSearchParams(window.location.search);
+          setInApp(urlParams.get('inApp') === 'true');
+      }
+  }, []);
+
+  if (inApp) return null;
+
+
   const handleDemoRequest = () => {
     window.open("https://cal.com/notarycentral/30min", "_blank", "noopener,noreferrer")
   }
