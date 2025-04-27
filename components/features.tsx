@@ -45,6 +45,12 @@ const features = [
     // href: "/features/scheduling",
   },
   {
+    icon: <Clock className="h-10 w-10 text-primary" />,
+    title: "Online Scheduling",
+    description: "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
+    // href: "/features/scheduling",
+  },
+  {
     icon: <Smartphone className="h-10 w-10 text-primary" />,
     title: "Mobile Friendly",
     description: "Work from anywhere with our fully-featured mobile app for iOS and Android.",

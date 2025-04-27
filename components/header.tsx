@@ -39,6 +39,11 @@ const menuItems = {
       description: "Digitally record and store all your notary transactions",
       href: "/post/e-journal",
     },
+    {
+      title: "Scheduling",
+      description: "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
+      href: "/post/online-scheduler",
+    },
   ],
   features: [
     {
