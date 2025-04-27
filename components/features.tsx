@@ -40,14 +40,14 @@ const features = [
   */
   {
     icon: <Clock className="h-10 w-10 text-primary" />,
-    title: "Google Calendar Scheduling",
-    description: "Manage your appointments with calendar integration and automated reminders.",
-    // href: "/features/scheduling",
+    title: "Online Scheduling",
+    description: "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
+    href: "/post/online-scheduler",
   },
   {
     icon: <Clock className="h-10 w-10 text-primary" />,
-    title: "Online Scheduling",
-    description: "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
+    title: "Google Calendar Scheduling",
+    description: "Manage your appointments with calendar integration and automated reminders.",
     // href: "/features/scheduling",
   },
   {
