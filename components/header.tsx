@@ -261,8 +261,8 @@ export default function Header() {
             </button>
 
             {mobileMenuOpen && (
-              <div className="fixed inset-0 bg-white dark:bg-gray-900 z-50 p-4">
-                <nav className="flex flex-col space-y-4 bg-white dark:bg-gray-900">
+              <div className="fixed inset-0 bg-white dark:bg-gray-900 z-50 p-4 overflow-y-auto">
+                <nav className="flex flex-col min-h-full space-y-4 bg-white dark:bg-gray-900">
                   {/* Standard links */}
                   <Link
                     href="/pricing"
