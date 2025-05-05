@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { LocationProvider } from "@/components/LocationProvider"
+import { PostHogProvider } from "@/components/PostHogProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 const ebGaramond = EB_Garamond({
@@ -17,7 +18,7 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   title: "NotaryCentral - The Super App for Notaries",
   description: "Everything from e-Journals, accounting, mileage tracking, interactive handbooks and more",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -28,18 +29,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} ${ebGaramond.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <LocationProvider>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </LocationProvider>
-        </ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+            <LocationProvider>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </LocationProvider>
+          </ThemeProvider>
+        </PostHogProvider>
       </body>
     </html>
   )
 }
-
 
 
 import './globals.css'
