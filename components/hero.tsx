@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0" />
+      <div className="absolute inset-0 pointer-events-none" />
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
