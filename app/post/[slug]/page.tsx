@@ -22,9 +22,28 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
   }
 
+  let fallbackDescription = ""
+  if (Array.isArray(post.body)) {
+    const paragraphBlock = post.body.find(
+      (block) =>
+        block._type === "block" &&
+        block.style === "normal" &&
+        Array.isArray(block.children)
+    )
+
+    if (paragraphBlock) {
+      fallbackDescription = paragraphBlock.children
+        .filter((child: any) => child._type === "span")
+        .map((child: any) => child.text)
+        .join("")
+        .trim()
+        .slice(0, 155)
+    }
+  }
+
   return {
     title: `${post.title} | NotaryCentral Blog`,
-    description: post.excerpt || "Read this article on the NotaryCentral blog",
+    description: fallbackDescription || "Read this article on the NotaryCentral blog",
   }
 }
 
