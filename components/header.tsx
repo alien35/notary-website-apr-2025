@@ -66,6 +66,10 @@ const menuItems = {
       title: "Official notary rules",
       href: "/official-notary-rules",
     },
+    {
+      title: "How to become a notary",
+      href: "/how-to-become-a-notary",
+    },
   ],
 }
 
