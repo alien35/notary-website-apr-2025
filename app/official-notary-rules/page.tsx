@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Official notary rules",
@@ -19,7 +20,14 @@ export default function StateHandbook() {
           <h2 className="font-semibold mb-2">A–I</h2>
           <ul className="space-y-1">
             {["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa"].map(state => (
-              <li key={state} className="hover:underline cursor-pointer">{state}</li>
+              <li key={state}>
+                <Link
+                  href={`/official-notary-rules/${state.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="hover:underline"
+                >
+                  {state}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -28,7 +36,14 @@ export default function StateHandbook() {
           <h2 className="font-semibold mb-2">K–N</h2>
           <ul className="space-y-1">
             {["Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota"].map(state => (
-              <li key={state} className="hover:underline cursor-pointer">{state}</li>
+              <li key={state}>
+                <Link
+                  href={`/official-notary-rules/${state.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="hover:underline"
+                >
+                  {state}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -37,7 +52,14 @@ export default function StateHandbook() {
           <h2 className="font-semibold mb-2">O–W</h2>
           <ul className="space-y-1">
             {["Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"].map(state => (
-              <li key={state} className="hover:underline cursor-pointer">{state}</li>
+              <li key={state}>
+                <Link
+                  href={`/official-notary-rules/${state.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="hover:underline"
+                >
+                  {state}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

@@ -63,8 +63,8 @@ const menuItems = {
       href: "/training",
     },
     {
-      title: "State Handbook",
-      href: "/state-handbook",
+      title: "Official notary rules",
+      href: "/official-notary-rules",
     },
   ],
 }
