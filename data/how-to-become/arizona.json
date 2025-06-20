@@ -1,0 +1,83 @@
+{
+  "state": "arizona",
+  "url": "https://www.nationalnotary.org/arizona/how-to-become-arizona-notary",
+  "sections": [
+    {
+      "title": "Start your Notary career now.",
+      "content_html": [
+        "<p>Get everything you need with a full Arizona Notary Package.</p>"
+      ]
+    },
+    {
+      "title": "About the Arizona Notary Process",
+      "content_html": [
+        "<p>An Arizona Notary Public commission lasts for four years. To continue notarizing documents, Notaries must renew their commission.</p>"
+      ]
+    },
+    {
+      "title": "Cost to Become a Notary in AZ",
+      "content_html": [
+        "<p>The cost to become a Notary in Arizona ranges between $155 - $180, depending on where you purchase your Notary supplies.</p>",
+        "<p style=\"display: none;\">\n<style>\nfigure.zebra-table-container {\n  overflow-x: auto;\n  margin: 40px 0;\n}\nfigure .zebra-table {\n  border-collapse: collapse;\n  min-width: 110%;\n  display: flex;\n  flex-direction: column;\n}\n.zebra-table thead {\n  text-align: left;\n  font-weight: bold;\n  border-bottom: 1px solid #bdbebf;\n  font-size: 16px;\n}\n.zebra-table thead,\n.zebra-table tbody {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.zebra-table thead tr,\n.zebra-table tbody tr {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n}\n.zebra-table thead tr th {\n  flex: 1;\n  padding: 8px;\n}\n.zebra-table tbody tr td {\n  flex: 1;\n  padding: 8px;\n  font-size: 14px;\n}\n.zebra-table tbody tr:last-child td {\n  border-top: 1px solid #bdbebf;\n}\n.zebra-table tbody tr:nth-child(odd) {\n  background-color: #f8faff;\n}\n.zebra-table tbody tr:nth-child(even) {\n  background-color: #ffffff;\n}\n.zebra-table tbody tr:last-child {\n  background-color: #ffffff;\n}\n@media (min-width: 599px) {\n  figure .zebra-table {\n    min-width: 100%;\n  }\n  .zebra-table thead {\n    font-size: 18px;\n  }\n  .zebra-table tbody tr td {\n    font-size: 16px;\n  }\n}\n</style>\n</p>"
+      ]
+    },
+    {
+      "title": "Commission Processing Time",
+      "content_html": [
+        "<p>It can take up to four weeks to get your Notary Public commission in Arizona once you submit your application.</p>",
+        "<p>The Arizona Secretary of State offers an expedited service of one to two business days for an additional $25. Write \"EXPEDITE\" on your envelope to have your application processed promptly.</p>",
+        "<p>Any application requiring further review, including a felony conviction, professional license action or past Notary complaint, cannot be expedited.</p>"
+      ]
+    },
+    {
+      "title": "Eligibility",
+      "content_html": [
+        "<p>A Notary Public applicant in Arizona must meet the following requirements:</p>",
+        "<ul>\n<li>Be at least 18 years old</li>\n<li>Be able to read and write English</li>\n<li>Be a citizen or legal permanent resident of the U.S.</li>\n<li>Be a legal resident of Arizona</li>\n<li>Not be convicted of a felony unless civil rights have been restored</li>\n</ul>"
+      ]
+    },
+    {
+      "title": "Application",
+      "content_html": [
+        "<p>Complete the <a href=\"https://apps.azsos.gov/apps/notary/application/\" target=\"_blank\">application</a> and print it out. Submit the original notarized bond form and filing fee.</p>",
+        "<p><strong>Tip:</strong> When you receive your commission certificate, check your name, county of residence and commission dates to ensure your stamp is made accurately.</p>"
+      ]
+    },
+    {
+      "title": "Notary Supplies",
+      "content_html": [
+        "<p>Notaries in Arizona are required to use a <a href=\"https://www.nationalnotary.org/arizona/supplies/stamps-embossers\">Notary seal stamp</a>, journal and <a href=\"https://www.nationalnotary.org/az-fee-schedule\">fee schedule</a>. You may not possess more than one official Notary seal at a time (ARS 41-321.B).</p>",
+        "<p>The seal can be in any shape no larger than 2.5\" x 1.5\". Round seals must be no larger than 1.5\" in diameter. The following information should be on the seal:</p>",
+        "<ul>\n<li>Your name as it appears on your commission</li>\n<li>The words \"Notary Public\"</li>\n<li>The name of the county in which you're commissioned</li>\n<li>The Great Seal of the State of Arizona</li>\n<li>Your commission ID number</li>\n<li>Your commission expiration date</li>\n</ul>",
+        "<p>In addition to a Notary seal, you must get a <a href=\"https://www.nationalnotary.org/arizona/supplies/journals\">Notary journal</a>. The journal must be in a paper format and list the notarial acts in chronological order.</p>",
+        "<p style=\"display: none;\">\n<style>\n  .callout {\n    border-radius: 8px;\n    padding: 8px 16px;\n    width: 100%;\n    font-size: 18px;\n    margin: 20px 0;\n    box-sizing: border-box;\n    border-style: solid;\n    border-width: 1px;\n    display: flex;\n    align-items: center;\n  }\n  .callout i {\n    padding-right: 12px;\n    font-size: 16px;\n  }\n  .callout p {\n    margin: 0;\n  }\n\n  /* Size & Color Variants */\n  aside.callout--lg {\n    padding: 28px;\n    border: 0;\n    border-left-width: 4px;\n    border-left-style: solid;\n    border-radius: 0;\n    display: block;\n  }\n   aside.callout--lg i {\n    padding-right: 12px;\n    font-size: 16px;\n  }\n   aside.callout--lg label {\n    font-weight: 700;\n    display: block;\n    padding-bottom: 12px;\n  }\n\n  @media (min-width: 499px) {\n   aside.callout--lg {\n    padding: 36px;\n    }\n  }\n\n  .callout--blue {\n    border-color: #b5cef9;\n    background-color: #eef5fc;\n    color: #060a53;\n  }\n  .callout--blue i {\n    color: #353ef9;\n  }\n   aside.callout--blue.callout--lg label {\n    color: #373eef;\n  }\n   aside.callout--blue.callout--lg {\n    border-color: #373eef;\n  }\n\n  /* To make icon hidden, add \"hidden\" class next to icon class. */\n  .hidden {\n    display: hidden;\n  }\n</style>\n</p>"
+      ]
+    },
+    {
+      "title": "Surety Bond",
+      "content_html": [
+        "<p>Arizona Notaries must purchase a <a href=\"https://www.nationalnotary.org/arizona/insurance/bond\">$5,000 surety bond</a> to protect signers against financial damages resulting from the Notary's negligence or misconduct.</p>",
+        "<p style=\"display: none;\">\n<style>\n  .callout {\n    border-radius: 8px;\n    padding: 8px 16px;\n    width: 100%;\n    font-size: 18px;\n    margin: 20px 0;\n    box-sizing: border-box;\n    border-style: solid;\n    border-width: 1px;\n    display: flex;\n    align-items: center;\n  }\n  .callout i {\n    padding-right: 12px;\n    font-size: 16px;\n  }\n  .callout p {\n    margin: 0;\n  }\n  .callout--green {\n    border-color: #98e5d6;\n    background-color: #edf7f8;\n    color: #08342f;\n  }\n  .callout--green i {\n    color: #005a4d;\n  }\n\n  /* To make icon hidden, add \"hidden\" class next to icon class. */\n  .hidden {\n    display: hidden;\n  }\n</style>\n</p>",
+        "<p>\n<style>\n.video-container {\n  overflow: hidden;\n  position: relative;\n  width: 100%;\n  margin: 40px 0;\n}\n.video-container::after {\n  padding-top: 56.25%;\n  display: block;\n  content: \"\";\n}\n.video-container iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n</style>\n</p>"
+      ]
+    },
+    {
+      "title": "Arizona Notary Public FAQs",
+      "content_html": [
+        "<p>Have more questions about being a Notary in Arizona? Read on for your answers.</p>",
+        "<p>\n<style>\n.faqs {\n  margin-bottom: 40px;\n}\n.faqs__question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 16px 0;\n  margin: 2px 0;\n  cursor: pointer;\n  border-bottom: 1px solid #ccc;\n  transition: 0.1s;\n}\n.faqs__answer {\n  display: none;\n  padding: 20px 0 8px 0;\n  border-bottom: 2px solid #0a314c;\n}\n.faqs__chevron {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 4px 6px;\n  width: 22px;\n  height: 22px;\n  transition: 0.15s;\n}\n.faqs__chevron--rotated {\n  transform: rotate(-180deg);\n}\n</style>\n</p>",
+        "<p>\n<script>\n$(\".faqs__question\").click(function () {\n  $(this).next(\".faqs__answer\").animate({ height: \"toggle\" }, 200);\n  $(this).find(\"i\").toggleClass(\"faqs__chevron--rotated\");\n});\n</script>\n<script>// <![CDATA[\n$(\".accordion-group > h3\").click(function() {\n    $(this).next(\".accordion-section\").animate({\n      height: \"toggle\"\n    }, 200);\n    $(this).toggleClass(\"active-accordion\");\n    $(this).find(\"i\").toggleClass(\"icon-rotate\");\n  });\n// ]]></script>\n</p>",
+        "<p><strong><a href=\"#top\">Back to Top</a></strong></p>",
+        "<p style=\"color: #908c95;\"><em>Last updated: Apr 15, 2025</em></p>",
+        "<p>\n<style><!--\n.new-wide-callout {background-color: #f6f7f8; padding: 26px 5% 22px 5%; margin: 40px 0;} .new-wide-callout h2 { font-size: 26px; font-weight: bold; line-height: 32px; text-align: center;} .new-wide-callout p {text-align: center; font-family: arial, verdana, sans-serif; font-size: 18px; line-height: 26px; color: #3e4756; padding: 2px 0 0px 0;} .btn-nwc, .btn-nwc--alt { min-width: 185px; width: auto; padding: 13px 16px !important; border-radius: 4px; transition: 0.2s; box-shadow: 0 10px 30px 0 rgba(128, 114, 83, 0.1); letter-spacing: 0.4px; font-weight: bold; margin: 6px 12px !important; padding: 14px 18px !important; text-align: center; font-size: 16px !important; line-height: 15px; text-transform: none !important; color: #202529 !important;} .btn-nwc {background: #ffc729 !important;border: 2px solid #ffc729 !important;} .btn-nwc:hover {background: #ffad0a !important;border: 2px solid #ffad0a !important;} .btn-nwc--alt {background: #fff !important;border: 2px solid #ffc729 !important;} .btn-nwc--alt:hover {background: #ffad0a !important;border: 2px solid #ffad0a !important;} @media screen and (max-width: 450px) { .new-wide-callout .btn-nwc, .new-wide-callout .btn-nwc--alt { width: 100%; margin: 8px 0 !important; padding: 16px !important; } }\n--></style>\n<style><!--\n.how-to-vid-container {position: relative;padding-bottom: 56.25%;padding-top: 0px;height: 0;overflow: hidden;}\n.how-to-vid-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}\n--></style>\n</p>",
+        "<p>\n<style><!--\n .mobile-sticky-cta { background-color: #fff; position: fixed; bottom: 0; width: 100%; z-index: 99; padding: 12px; box-shadow: 0px -15px 17px -4px rgba(0, 0, 0, 0.1); transition: 0.5s; left: 0; box-sizing: border-box; } .mobile-sticky-cta .btn { padding: 18px; font-size: 16px; display: block; } .show-cta { transform: translateY(0px); } .hide-cta { transform: translateY(100px); } @media screen and (min-width: 500px) { .mobile-sticky-cta { display: none; } } \n--></style>\n<script>// <![CDATA[\n const stickyScrollFunc = function () { const y = window.scrollY; if (y >= 600) { document.getElementById(\"mobileStickyCTA\").className = \"mobile-sticky-cta show-cta\"; } else { document.getElementById(\"mobileStickyCTA\").className = \"mobile-sticky-cta hide-cta\"; } }; window.addEventListener(\"scroll\", stickyScrollFunc); \n// ]]></script>\n</p>"
+      ]
+    },
+    {
+      "title": "Are you ready to get started?",
+      "content_html": [
+        "<p>Get everything you need with a full Arizona Notary Package.</p>"
+      ]
+    }
+  ]
+}

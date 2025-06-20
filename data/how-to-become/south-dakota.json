@@ -1,0 +1,38 @@
+{
+  "state": "south-dakota",
+  "url": "https://www.nationalnotary.org/south-dakota/how-to-become-south-dakota-notary",
+  "sections": [
+    {
+      "title": "Take the next step",
+      "content_html": [
+        "<p>Get everything you need with a full South Dakota Notary Package.</p>"
+      ]
+    },
+    {
+      "title": "More Details About the South Dakota Notary Process",
+      "content_html": [
+        "<p>Find more information about the SD Notary Public application process below.</p>",
+        "<p><a id=\"SDRequirements\" name=\"SDRequirements\"></a></p>"
+      ]
+    },
+    {
+      "title": "Requirements to be a Notary in South Dakota",
+      "content_html": [
+        "<p>Wondering how you can qualify to become a Notary in the Mount Rushmore State? Read on below.</p>",
+        "<p><a id=\"NotaryInfo\" name=\"NotaryInfo\"></a></p>"
+      ]
+    },
+    {
+      "title": "General Notary Public Information",
+      "content_html": [
+        "<p>Here are answers to the most common questions about Notaries in South Dakota.</p>"
+      ]
+    },
+    {
+      "title": "Take the next step",
+      "content_html": [
+        "<p>Get everything you need with a full South Dakota Notary Package.</p>"
+      ]
+    }
+  ]
+}

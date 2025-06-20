@@ -1,100 +1,81 @@
 {
-  "state": "tennessee",
-  "url": "https://www.nationalnotary.org/tennessee/how-to-become-tennessee-notary",
+  "state": "delaware",
+  "url": "https://www.nationalnotary.org/delaware/how-to-become-delaware-notary",
   "sections": [
     {
       "title": "Start your Notary career now.",
       "content_html": [
-        "<p>Get everything you need with a full Tennessee Notary Package.</p>"
+        "<p>Get everything you need with a full Delaware Notary Package.</p>"
       ]
     },
     {
-      "title": "About the Tennessee Notary Process",
+      "title": "About the Delaware Notary Process",
       "content_html": [
-        "<p>The term of office for a Notary Public is four years. Here is some more information on applying for a Notary commission in the Volunteer State.</p>"
+        "<p>A Notary's first term is two years, but renewing Notaries may request a two-year or four-year term renewal.</p>",
+        "<p>Below is more information about the application process for a traditional Notary Public commission.</p>"
       ]
     },
     {
-      "title": "Cost to Become a TN Notary",
+      "title": "Cost to Become a DE Notary",
       "content_html": [
-        "<p>The cost to become a Tennessee Notary ranges between $117 to $142, depending on where you purchase your Notary bond and supplies.</p>",
+        "<p>The cost to become a Delaware Notary ranges between $125 to $150, depending on where you purchase your Notary supplies.</p>",
         "<p style=\"display: none;\">\n<style>\nfigure.zebra-table-container {\n  overflow-x: auto;\n  margin: 40px 0;\n}\nfigure .zebra-table {\n  border-collapse: collapse;\n  min-width: 110%;\n  display: flex;\n  flex-direction: column;\n}\n.zebra-table thead {\n  text-align: left;\n  font-weight: bold;\n  border-bottom: 1px solid #bdbebf;\n  font-size: 16px;\n}\n.zebra-table thead,\n.zebra-table tbody {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.zebra-table thead tr,\n.zebra-table tbody tr {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n}\n.zebra-table thead tr th {\n  flex: 1;\n  padding: 8px;\n}\n.zebra-table tbody tr td {\n  flex: 1;\n  padding: 8px;\n  font-size: 14px;\n}\n.zebra-table tbody tr:last-child td {\n  border-top: 1px solid #bdbebf;\n}\n.zebra-table tbody tr:nth-child(odd) {\n  background-color: #f8faff;\n}\n.zebra-table tbody tr:nth-child(even) {\n  background-color: #ffffff;\n}\n.zebra-table tbody tr:last-child {\n  background-color: #ffffff;\n}\n@media (min-width: 599px) {\n  figure .zebra-table {\n    min-width: 100%;\n  }\n  figure .zebra-table thead {\n    font-size: 18px;\n  }\n  .zebra-table tbody tr td {\n    font-size: 16px;\n  }\n}\n</style>\n</p>"
       ]
     },
     {
       "title": "Commission Processing Time",
       "content_html": [
-        "<p>The process varies county by county, but contact the <a href=\"https://secure.tncountyclerk.com/\" target=\"_blank\">county clerk's office</a> where you reside or maintain your principal place of business for details.</p>"
+        "<p>It can take one to two weeks to become commissioned as a Notary Public in Delaware, depending on your availability and the time the Secretary of State needs to process your application.</p>"
       ]
     },
     {
-      "title": "Tennessee Notary Public Requirements",
+      "title": "Delaware Notary Public Requirements",
       "content_html": [
-        "<p>Learn how you can qualify to become a TN Notary Public.</p>"
+        "<p>Learn how you can qualify to become a Notary in the First State.</p>"
       ]
     },
     {
       "title": "Eligibility",
       "content_html": [
-        "<p>If you want to become a Tennessee Notary Public, you must:</p>",
-        "<ul>\n<li>Be at least 18 years old</li>\n<li>Be a resident of or maintain a principal place of business in Tennessee</li>\n<li>Be a citizen or legal permanent resident of the U.S.</li>\n<li>Not be convicted of bribery, larceny or certain other offenses unless your rights of citizenship have been restored</li>\n</ul>"
-      ]
-    },
-    {
-      "title": "Who cannot become a Notary?",
-      "content_html": [
-        "<p>You cannot become a Notary if you:</p>",
-        "<ul>\n<li>Are a member of the military or Congress</li>\n<li>Hold any office of profit or trust under a foreign power, other state or the U.S.</li>\n<li>Have unpaid judgments to the U.S., state or county or owe money to the state or federal treasury</li>\n</ul>"
+        "<p>A Notary Public applicant in Delaware must meet the following requirements:</p>",
+        "<ul>\n<li>Be at least 18 years old</li>\n<li>Maintain legal residence in the state of Delaware, or be a non-resident who works in Delaware</li>\n<li>Be a citizen or permanent legal resident of the U.S.</li>\n<li>Be able to read and write English</li>\n<li>Not be disqualified to receive a commission under 29 Del. Code 4334</li>\n<li>Not have been convicted of a felony unless your rights have been restored</li>\n<li>Not be convicted of a crime involving dishonesty or moral turpitude</li>\n</ul>"
       ]
     },
     {
       "title": "Application",
       "content_html": [
-        "<p>Complete an application form from your county clerk's office. Submit the application to your county clerk and pay the $12 fee.</p>"
+        "<p>Register on the <a href=\"https://notary.delaware.gov/apply-notary-commission/\" target=\"blank\">Delaware Secretary of State website</a> and complete the <a href=\"https://notaryforms.delaware.gov/Application/Preamble.aspx\" target=\"_blank\">application</a> form. Submit the form along with the $60 fee.</p>"
       ]
     },
     {
-      "title": "Election",
+      "title": "Commission Certificate",
       "content_html": [
-        "<p>Be elected by the county legislative body (county commission). The county clerk will certify your election as a Notary and will forward it to the Secretary of State.</p>"
-      ]
-    },
-    {
-      "title": "Commission",
-      "content_html": [
-        "<p>The Secretary will prepare and sign your commission, and the Governor will sign it too. The Secretary will then forward it to your county clerk who will record it and notify you that your commission was received.</p>"
+        "<p>If approved, you'll receive an email with your commission certificate and further instructions.</p>",
+        "<p>Print and sign the certificate.</p>"
       ]
     },
     {
       "title": "Oath of Office",
       "content_html": [
-        "<p>Go to the county clerk to take your oath of office and get your bond recorded.</p>",
-        "<p>Once the Secretary issues your Notary commission, pick it up at the county clerk's office.</p>"
+        "<p>Go to a Notary Public to take your oath of office. Return a copy to the Notary Public Section of the Secretary of State's office.</p>"
       ]
     },
     {
       "title": "Notary Supplies",
       "content_html": [
-        "<p>Tennessee requires Notaries to use a <a href=\"https://www.nationalnotary.org/tennessee/supplies/stamps-embossers\">Notary seal</a>. If you or your employer charges a fee for your Notary services, you're also required to use a <a href=\"https://www.nationalnotary.org/tennessee/supplies/journals\">Notary journal</a> to record every notarization you perform.</p>",
-        "<p>The Notary seal must be a circular, inked rubber stamp with the following information:</p>",
-        "<ul>\n<li>Your name as it appears on your commission (at the top)</li>\n<li>The words \"State of Tennessee Notary Public\" or \"Tennessee Notary Public\" (in the middle)</li>\n<li>The name of the county in which you were elected as a Notary (at the bottom)</li>\n</ul>",
-        "<p>The stamp cannot use black or yellow ink and cannot include your commission expiration date.</p>"
+        "<p>Delaware Notaries are required to use an <a href=\"https://www.nationalnotary.org/delaware/supplies/stamps-embossers\">official Notary seal</a> and <a href=\"https://www.nationalnotary.org/delaware/supplies/journals\">journal</a>.</p>",
+        "<p>The seal may either be a black-inked rubber stamp or an embosser. The following information must be on the seal:</p>",
+        "<ul>\n<li>Your name as it appears on your commission</li>\n<li>The words \"My commission expires on _______ (date)\"</li>\n<li>The words \"Notary Public\"</li>\n<li>The words \"State of Delaware\"</li>\n</ul>"
       ]
     },
     {
-      "title": "Surety Bond",
+      "title": "Delaware Notary Public FAQs",
       "content_html": [
-        "<p>Tennessee Notaries are required to secure a <a href=\"https://www.nationalnotary.org/tennessee/insurance/bond\">$10,000 surety bond</a>.</p>"
-      ]
-    },
-    {
-      "title": "Tennessee Notary Public FAQs",
-      "content_html": [
-        "<p>Find answers to the most common questions about being a Notary in Tennessee below.</p>",
+        "<p>Have more questions about being a Delaware Notary? We've got you covered.</p>",
         "<p>\n<style>\n.faqs {\n  margin-bottom: 40px;\n}\n.faqs__question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 16px 0;\n  margin: 2px 0;\n  cursor: pointer;\n  border-bottom: 1px solid #ccc;\n  transition: 0.1s;\n}\n.faqs__answer {\n  display: none;\n  padding: 20px 0 8px 0;\n  border-bottom: 2px solid #0a314c;\n}\n.faqs__chevron {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 4px 6px;\n  width: 22px;\n  height: 22px;\n  transition: 0.15s;\n}\n.faqs__chevron--rotated {\n  transform: rotate(-180deg);\n}\n</style>\n</p>",
         "<p>\n<script>\n$(\".faqs__question\").click(function () {\n  $(this).next(\".faqs__answer\").animate({ height: \"toggle\" }, 200);\n  $(this).find(\"i\").toggleClass(\"faqs__chevron--rotated\");\n});\n</script>\n<script>// <![CDATA[\n$(\".accordion-group > h3\").click(function() {\n    $(this).next(\".accordion-section\").animate({\n      height: \"toggle\"\n    }, 200);\n    $(this).toggleClass(\"active-accordion\");\n    $(this).find(\"i\").toggleClass(\"icon-rotate\");\n  });\n// ]]></script>\n</p>",
         "<p><strong><a href=\"#top\">Back to Top</a></strong></p>",
-        "<p style=\"color: #908c95;\"><em>Last updated: Apr 22, 2025</em></p>",
+        "<p style=\"color: #908c95;\"><em>Last updated: Apr 21, 2025</em></p>",
         "<p>\n<style><!--\n.new-wide-callout {background-color: #f6f7f8; padding: 26px 5% 22px 5%; margin: 40px 0;} .new-wide-callout h2 { font-size: 26px; font-weight: bold; line-height: 32px; text-align: center;} .new-wide-callout p {text-align: center; font-family: arial, verdana, sans-serif; font-size: 18px; line-height: 26px; color: #3e4756; padding: 2px 0 0px 0;} .btn-nwc, .btn-nwc--alt { min-width: 185px; width: auto; padding: 13px 16px !important; border-radius: 4px; transition: 0.2s; box-shadow: 0 10px 30px 0 rgba(128, 114, 83, 0.1); letter-spacing: 0.4px; font-weight: bold; margin: 6px 12px !important; padding: 14px 18px !important; text-align: center; font-size: 16px !important; line-height: 15px; text-transform: none !important; color: #202529 !important;} .btn-nwc {background: #ffc729 !important;border: 2px solid #ffc729 !important;} .btn-nwc:hover {background: #ffad0a !important;border: 2px solid #ffad0a !important;} .btn-nwc--alt {background: #fff !important;border: 2px solid #ffc729 !important;} .btn-nwc--alt:hover {background: #ffad0a !important;border: 2px solid #ffad0a !important;} @media screen and (max-width: 450px) { .new-wide-callout .btn-nwc, .new-wide-callout .btn-nwc--alt { width: 100%; margin: 8px 0 !important; padding: 16px !important; } }\n--></style>\n<style><!--\n.how-to-vid-container {position: relative;padding-bottom: 56.25%;padding-top: 0px;height: 0;overflow: hidden;}\n.how-to-vid-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}\n--></style>\n</p>",
         "<p>\n<style><!--\n .mobile-sticky-cta { background-color: #fff; position: fixed; bottom: 0; width: 100%; z-index: 99; padding: 12px; box-shadow: 0px -15px 17px -4px rgba(0, 0, 0, 0.1); transition: 0.5s; left: 0; box-sizing: border-box; } .mobile-sticky-cta .btn { padding: 18px; font-size: 16px; display: block; } .show-cta { transform: translateY(0px); } .hide-cta { transform: translateY(100px); } @media screen and (min-width: 500px) { .mobile-sticky-cta { display: none; } } \n--></style>\n<script>// <![CDATA[\n const stickyScrollFunc = function () { const y = window.scrollY; if (y >= 600) { document.getElementById(\"mobileStickyCTA\").className = \"mobile-sticky-cta show-cta\"; } else { document.getElementById(\"mobileStickyCTA\").className = \"mobile-sticky-cta hide-cta\"; } }; window.addEventListener(\"scroll\", stickyScrollFunc); \n// ]]></script>\n</p>"
       ]
@@ -102,7 +83,7 @@
     {
       "title": "Are you ready to get started?",
       "content_html": [
-        "<p>Get everything you need with a full Tennessee Notary Package.</p>"
+        "<p>Get everything you need with a full Delaware Notary Package.</p>"
       ]
     }
   ]

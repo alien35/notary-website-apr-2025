@@ -1,0 +1,38 @@
+{
+  "state": "south-carolina",
+  "url": "https://www.nationalnotary.org/south-carolina/how-to-become-south-carolina-notary",
+  "sections": [
+    {
+      "title": "Take the next step",
+      "content_html": [
+        "<p>Get everything you need with a full South Carolina Notary Supply Package.</p>"
+      ]
+    },
+    {
+      "title": "More Details About the South Carolina Notary Process",
+      "content_html": [
+        "<p>Learn how much it cost and how long it takes to become an SC Notary Public.</p>",
+        "<p><a id=\"SCRequirements\" name=\"SCRequirements\"></a></p>"
+      ]
+    },
+    {
+      "title": "Requirements to be a Notary in South Carolina",
+      "content_html": [
+        "<p>Wondering if you have what it takes to become a Notary in the Palmetto State? Read on below.</p>",
+        "<p><a id=\"NotaryInfo\" name=\"NotaryInfo\"></a></p>"
+      ]
+    },
+    {
+      "title": "General Notary Public Information",
+      "content_html": [
+        "<p>Below, we answer the most common questions about Notaries.</p>"
+      ]
+    },
+    {
+      "title": "Take the next step",
+      "content_html": [
+        "<p>Get everything you need with a full South Carolina Notary Supply Package.</p>"
+      ]
+    }
+  ]
+}

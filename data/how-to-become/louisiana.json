@@ -1,0 +1,91 @@
+{
+  "state": "louisiana",
+  "url": "https://www.nationalnotary.org/louisiana/how-to-become-louisiana-notary",
+  "sections": [
+    {
+      "title": "Take your next step",
+      "content_html": [
+        "<p>Get everything you need with a full Louisiana Notary Package.</p>"
+      ]
+    },
+    {
+      "title": "About the Louisiana Notary Process",
+      "content_html": [
+        "<p>Louisiana Notaries have lifetime commissions. The only requirement to maintain their commission is to file a surety bond or E&amp;O policy every five years and pay a filing fee.</p>"
+      ]
+    },
+    {
+      "title": "Cost to Become an LA Notary",
+      "content_html": [
+        "<p>The cost to become a Notary in Louisiana ranges between $310 to $337, depending on where you purchase your surety bond or E&amp;O insurance.</p>",
+        "<p style=\"display: none;\">\n<style>\nfigure.zebra-table-container {\n  overflow-x: auto;\n  margin: 40px 0;\n}\nfigure .zebra-table {\n  border-collapse: collapse;\n  min-width: 110%;\n  display: flex;\n  flex-direction: column;\n}\n.zebra-table thead {\n  text-align: left;\n  font-weight: bold;\n  border-bottom: 1px solid #bdbebf;\n  font-size: 16px;\n}\n.zebra-table thead,\n.zebra-table tbody {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.zebra-table thead tr,\n.zebra-table tbody tr {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n}\n.zebra-table thead tr th {\n  flex: 1;\n  padding: 8px;\n}\n.zebra-table tbody tr td {\n  flex: 1;\n  padding: 8px;\n  font-size: 14px;\n}\n.zebra-table tbody tr:last-child td {\n  border-top: 1px solid #bdbebf;\n}\n.zebra-table tbody tr:nth-child(odd) {\n  background-color: #f8faff;\n}\n.zebra-table tbody tr:nth-child(even) {\n  background-color: #ffffff;\n}\n.zebra-table tbody tr:last-child {\n  background-color: #ffffff;\n}\n@media (min-width: 599px) {\n  figure .zebra-table {\n    min-width: 100%;\n  }\n  .zebra-table thead {\n    font-size: 18px;\n  }\n  .zebra-table tbody tr td {\n    font-size: 16px;\n  }\n}\n</style>\n</p>"
+      ]
+    },
+    {
+      "title": "Commission Processing Time",
+      "content_html": [
+        "<p>The processing time can be lengthy due to the various requirements. The Application to Qualify and Notary Exam Pre-Assessment registration and scoring process takes approximately one week, and both must be completed at least 37 days before the exam.</p>",
+        "<p>An applicant must register for the state Notary exam at least 30 days prior to the exam. The Notary exam is given at least twice a year.</p>"
+      ]
+    },
+    {
+      "title": "Eligibility",
+      "content_html": [
+        "<p>There are basic qualifications for a person to become a Notary in Louisiana. Applicants must:</p>",
+        "<ul>\n<li>Be at least 18 years old</li>\n<li>Be a resident citizen or alien of the state</li>\n<li>Be a registered voter in the parish in which you're applying</li>\n<li>Be able to read, write and speak English</li>\n<li>Have received a high school diploma or equivalent</li>\n<li>Have no felony convictions unless they have been pardoned</li>\n<ul></ul>\n</ul>"
+      ]
+    },
+    {
+      "title": "Application",
+      "content_html": [
+        "<p>Complete the <a href=\"https://www.sos.la.gov/NotaryAndCertifications/PublishedDocuments/ApplicationToQualifyForAppointmentAsNotaryPublic.pdf\" target=\"_blank\">Application to Qualify</a> on the <a href=\"https://coraweb.sos.la.gov/notary/applicationtoqualify.aspx?task=notaryapptoqualify\" target=\"_blank\">Secretary of State's website</a> and pay the $35 application fee.</p>"
+      ]
+    },
+    {
+      "title": "Pre-Assessment",
+      "content_html": [
+        "<p>Once your application is approved, you\u2019ll receive a notification to register for the Notary Exam Pre-Assessment. This pre-assessment is an evaluation and does not require a passing score to register for the state Notary exam.</p>"
+      ]
+    },
+    {
+      "title": "Exam",
+      "content_html": [
+        "<p>After receiving your assessment score, register for the state Notary exam online through the <a href=\"http://www.sos.la.gov/NotaryAndCertifications/BecomeALouisianaNotary/Pages/default.aspx\" target=\"_blank\">Secretary of State's website</a> at least 30 days in advance.</p>",
+        "<p style=\"display: none;\">\n<style>\n  .callout {\n    border-radius: 8px;\n    padding: 8px 16px;\n    width: 100%;\n    font-size: 18px;\n    margin: 20px 0;\n    box-sizing: border-box;\n    border-style: solid;\n    border-width: 1px;\n    display: flex;\n    align-items: center;\n  }\n  .callout i {\n    padding-right: 12px;\n    font-size: 16px;\n  }\n  .callout p {\n    margin: 0;\n  }\n  .callout--red {\n    border-color: #f7aeb5;\n    background-color: #fef4f5;\n    color: #71080e;\n  }\n  .callout--red i {\n    color: #d40014;\n  }\n\n  /* To make icon hidden, add \"hidden\" class next to icon class. */\n  .hidden {\n    display: hidden;\n  }\n</style>\n</p>",
+        "<p>Non-attorney applicants are required to pass an exam to become a Notary in Louisiana.</p>"
+      ]
+    },
+    {
+      "title": "Surety Bond and E&O Insurance",
+      "content_html": [
+        "<p>Louisiana Notaries are required to hold either a <a href=\"https://www.nationalnotary.org/louisiana/insurance/bond\">five-year $10,000 surety bond</a> or <a href=\"https://www.nationalnotary.org/louisiana/insurance/errors-omissions\">errors and omissions (E&amp;O) insurance</a>.</p>",
+        "<p>Your bond or <a href=\"https://www.nationalnotary.org/knowledge-center/about-notaries/notary-eo-insurance\">E&amp;O policy</a> must be filed with the state every five years for the duration of your lifetime commission.</p>"
+      ]
+    },
+    {
+      "title": "Oath of Office",
+      "content_html": [
+        "<p>There are two <a href=\"https://www.sos.la.gov/NotaryAndCertifications/PublishedDocuments/NotaryOathOfOffice.pdf\" target=\"_blank\">Oath of Office forms</a> you\u2019ll need to execute.</p>",
+        "<p>File one Oath of Office form and an original or certified copy of your Notary Surety Bond or E&amp;O policy with the Secretary of State.</p>",
+        "<p>File a duplicate Oath of Office form with the parish Clerk of Court within one month after the oath is administered.</p>"
+      ]
+    },
+    {
+      "title": "Louisiana Notary Public FAQs",
+      "content_html": [
+        "<p>Below are answers to the most common questions about being an LA Notary.</p>",
+        "<p>\n<style>\n.faqs {\n  margin-bottom: 40px;\n}\n.faqs__question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 16px 0;\n  margin: 2px 0;\n  cursor: pointer;\n  border-bottom: 1px solid #ccc;\n  transition: 0.1s;\n}\n.faqs__answer {\n  display: none;\n  padding: 20px 0 8px 0;\n  border-bottom: 2px solid #0a314c;\n}\n.faqs__chevron {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 4px 6px;\n  width: 22px;\n  height: 22px;\n  transition: 0.15s;\n}\n.faqs__chevron--rotated {\n  transform: rotate(-180deg);\n}\n</style>\n</p>",
+        "<p>\n<script>\n$(\".faqs__question\").click(function () {\n  $(this).next(\".faqs__answer\").animate({ height: \"toggle\" }, 200);\n  $(this).find(\"i\").toggleClass(\"faqs__chevron--rotated\");\n});\n</script>\n<script>// <![CDATA[\n$(\".accordion-group > h3\").click(function() {\n    $(this).next(\".accordion-section\").animate({\n      height: \"toggle\"\n    }, 200);\n    $(this).toggleClass(\"active-accordion\");\n    $(this).find(\"i\").toggleClass(\"icon-rotate\");\n  });\n// ]]></script>\n</p>",
+        "<p><a href=\"#top\"><strong>Back to Top</strong></a></p>",
+        "<p style=\"color: #908c95;\"><em>Last updated: Nov 21, 2024</em></p>",
+        "<p>\n<style><!--\n.new-wide-callout {background-color: #f6f7f8; padding: 26px 5% 22px 5%; margin: 40px 0;} .new-wide-callout h2 { font-size: 26px; font-weight: bold; line-height: 32px; text-align: center;} .new-wide-callout p {text-align: center; font-family: arial, verdana, sans-serif; font-size: 18px; line-height: 26px; color: #3e4756; padding: 2px 0 0px 0;} .btn-nwc, .btn-nwc--alt { min-width: 185px; width: auto; padding: 13px 16px !important; border-radius: 4px; transition: 0.2s; box-shadow: 0 10px 30px 0 rgba(128, 114, 83, 0.1); letter-spacing: 0.4px; font-weight: bold; margin: 6px 12px !important; padding: 14px 18px !important; text-align: center; font-size: 16px !important; line-height: 15px; text-transform: none !important; color: #202529 !important;} .btn-nwc {background: #ffc729 !important;border: 2px solid #ffc729 !important;} .btn-nwc:hover {background: #ffad0a !important;border: 2px solid #ffad0a !important;} .btn-nwc--alt {background: #fff !important;border: 2px solid #ffc729 !important;} .btn-nwc--alt:hover {background: #ffad0a !important;border: 2px solid #ffad0a !important;} @media screen and (max-width: 450px) { .new-wide-callout .btn-nwc, .new-wide-callout .btn-nwc--alt { width: 100%; margin: 8px 0 !important; padding: 16px !important; } }\n--></style>\n</p>"
+      ]
+    },
+    {
+      "title": "Take the next step",
+      "content_html": [
+        "<p>Get everything you need with a full Louisiana Notary Package.</p>"
+      ]
+    }
+  ]
+}

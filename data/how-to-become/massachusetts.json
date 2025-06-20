@@ -1,0 +1,38 @@
+{
+  "state": "massachusetts",
+  "url": "https://www.nationalnotary.org/massachusetts/how-to-become-massachusetts-notary",
+  "sections": [
+    {
+      "title": "Start your Notary career now.",
+      "content_html": [
+        "<p>Get everything you need with a full Massachusetts Notary Supply Package.</p>"
+      ]
+    },
+    {
+      "title": "More Details About the Massachusetts Notary Process",
+      "content_html": [
+        "<p>Learn how much it cost and how long it takes to become an MA Notary Public.</p>",
+        "<p><a id=\"MARequirements\" name=\"MARequirements\"></a></p>"
+      ]
+    },
+    {
+      "title": "Requirements to be a Notary in Massachusetts",
+      "content_html": [
+        "<p>Find out how you can qualify for a Notary commission in the Bay State.</p>",
+        "<p><a id=\"NotaryInfo\" name=\"NotaryInfo\"></a></p>"
+      ]
+    },
+    {
+      "title": "General Notary Public Information",
+      "content_html": [
+        "<p>Have more questions about being a Massachusetts Notary? We have your answers.</p>"
+      ]
+    },
+    {
+      "title": "Are you ready to get started?",
+      "content_html": [
+        "<p>Get everything you need with a full Massachusetts Notary Supply Package.</p>"
+      ]
+    }
+  ]
+}
