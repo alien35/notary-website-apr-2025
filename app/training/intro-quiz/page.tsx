@@ -2,8 +2,6 @@
 
 import React from "react"
 import QuizForm from "@/components/QuizForm"
-import Footer from "@/components/footer"
-import Header from "@/components/header"
 
 /**
  * TrainingMaterials

@@ -57,6 +57,16 @@ const menuItems = {
       href: "/post/import-orders",
     },
   ],
+  resources: [
+    {
+      title: "Training",
+      href: "/training",
+    },
+    {
+      title: "State Handbook",
+      href: "/state-handbook",
+    },
+  ],
 }
 
 // US States
@@ -278,13 +288,20 @@ export default function Header() {
                   >
                     ABOUT
                   </Link>
-                  <Link
-                    href="/training"
-                    className="py-2 text-lg font-medium"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    TRAINING
-                  </Link>
+
+                  <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
+                    <h4 className="mb-2 text-md font-semibold">RESOURCES</h4>
+                    {menuItems.resources.map((item) => (
+                      <Link
+                        key={item.title}
+                        href={item.href}
+                        className="block py-1 text-base font-medium"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
 
                   {/* Show SOLUTIONS and FEATURES inline on mobile */}
                   <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
@@ -384,9 +401,32 @@ export default function Header() {
               <Link href="/post/why-did-i-start-notarycentral" className="text-sm font-medium hover:text-primary">
                 ABOUT
               </Link>
-              <Link href="/training" className="text-sm font-medium hover:text-primary">
-                TRAINING
-              </Link>
+
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-transparent hover:text-primary">
+                      RESOURCES
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="p-4 space-y-2">
+                        {menuItems.resources.map((item) => (
+                          <li key={item.title}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={item.href}
+                                className="block select-none rounded-md p-2 text-sm no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground"
+                              >
+                                {item.title}
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
 
               {/* Solutions & Features in a NavigationMenu for desktop */}
               <NavigationMenu>

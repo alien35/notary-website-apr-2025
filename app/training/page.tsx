@@ -4,8 +4,6 @@ import Link from "next/link"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Footer from "@/components/footer"
-import Header from "@/components/header"
 
 export const metadata: Metadata = {
   title: "Training Materials - NotaryCentral",
@@ -15,7 +13,6 @@ export const metadata: Metadata = {
 export default function TrainingMaterials() {
   return (
     <>
-      <Header />
       <main className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl mx-auto mb-16 text-center">
           <h1 className="text-4xl font-bold mb-4">Training Materials</h1>
@@ -56,7 +53,6 @@ export default function TrainingMaterials() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   )
 }

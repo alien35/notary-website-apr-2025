@@ -2,8 +2,6 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 
 const essentials = [
   {
@@ -62,7 +60,6 @@ export default function TrainingMaterials() {
 
   return (
     <>
-      <Header />
       <main className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-3xl mx-auto mb-16 text-center">
           <h1 className="text-4xl font-bold mb-4">Notary Journal Training</h1>
