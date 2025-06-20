@@ -1,10 +1,702 @@
 {
-  "new-jersey": {
-    "title": "New Jersey Notary Public Manual",
-    "url": "https://www.nj.gov/treasury/revenue/pdf/NotaryPublicManual.pdf"
-  },
-  "texas": {
-    "title": "Texas Notary Public Handbook",
-    "url": "https://www.sos.state.tx.us/statdoc/bkbnotarypublic.pdf"
-  }
+  "alabama": [
+    {
+      "title": "Notary Handbook for the State of Alabama",
+      "url": "https://www.sos.alabama.gov/sites/default/files/notaries-public/notaryPublicHandbook.pdf"
+    },
+    {
+      "title": "\u201cA Notarie\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "alaska": [
+    {
+      "title": "Notary journal requirements from the Office of the Lt. Governor of Alaska",
+      "url": "https://ltgov.alaska.gov/notaries-public/notary-supplies/"
+    },
+    {
+      "title": "House Bill 124",
+      "url": "http://www.akleg.gov/PDF/31/Bills/HB0124B.PDF"
+    },
+    {
+      "title": "Notary FAQs for Alaska",
+      "url": "https://ltgov.alaska.gov/notaries-public/frequently-asked-questions/"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "arizona": [
+    {
+      "title": "Arizona Notary Handbook",
+      "url": "https://azsos.gov/sites/default/files/Notary_Manual_and_Cover_July.pdf"
+    },
+    {
+      "title": "Arizona Secretary of State Website",
+      "url": "https://azsos.gov/business/notary-public"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "arkansas": [
+    {
+      "title": "Notary Handbook for the State of Arkansas",
+      "url": "https://www.sos.arkansas.gov/uploads/bcs/NotaryHandbook.pdf"
+    },
+    {
+      "title": "\u201cA Notarie\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "california": [
+    {
+      "title": "California Notary Handbook",
+      "url": "https://notary.cdn.sos.ca.gov/forms/notary-handbook-current.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "colorado": [
+    {
+      "title": "Colorado Notary Handbook",
+      "url": "https://www.sos.state.co.us/pubs/notary/files/notary_handbook.pdf"
+    },
+    {
+      "title": "Colorado Secretary of State Website",
+      "url": "https://www.sos.state.co.us/pubs/notary/home.html"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "connecticut": [
+    {
+      "title": "Connecticut Notary Handbook",
+      "url": "https://portal.ct.gov/-/media/SOTS/Business-Services/Notary/eLicense-Forms/Notary-Manual-June-2020.pdf"
+    },
+    {
+      "title": "\u201cA Notarie\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "delaware": [
+    {
+      "title": "Delaware Notary Website",
+      "url": "https://notary.delaware.gov/delaware-laws/"
+    },
+    {
+      "title": "\u201cA Notarie\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "florida": [
+    {
+      "title": "Florida Notary Laws",
+      "url": "https://www.floridanotaryservice.com/laws/"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "georgia": [
+    {
+      "title": "Georgia Notary Law",
+      "url": "https://www.gsccca.org/notary-and-apostilles/notaries/georgia-notary-law"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "hawaii": [
+    {
+      "title": "Hawaii Revised Statutes",
+      "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/hawaii.pdf"
+    },
+    {
+      "title": "Department of the Attorney General, Hawaii",
+      "url": "https://ag.hawaii.gov/notaries-public/"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "idaho": [
+    {
+      "title": "Idaho Notary Handbook",
+      "url": "https://sos.idaho.gov/notary/idaho_notary_handbook.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "illinois": [
+    {
+      "title": "Public Act 102-0160 (SB2664)",
+      "url": "https://www.ilga.gov/legislation/publicacts/102/PDF/102-0160.pdf"
+    },
+    {
+      "title": "New Guidance as of 6/5/2023",
+      "url": "https://www.ilsos.gov/departments/index/register/volume47/register_volume47_24.pdf"
+    },
+    {
+      "title": "NNA Guidance on SB 2664",
+      "url": "https://www.nationalnotary.org/knowledge-center/news/law-updates/il-senate-bill-2664"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "indiana": [
+    {
+      "title": "Indiana Notary Public Guide",
+      "url": "https://inbiz.in.gov/Assets/NotaryGuide.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "iowa": [
+    {
+      "title": "Iowa State Code 2022 Chapter 9B pertaining to notaries",
+      "url": "https://www.legis.iowa.gov/docs/ico/chapter/9B.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "kansas": [
+    {
+      "title": "Kansas Notary Handbook",
+      "url": "https://sos.ks.gov/forms/administration/NotaryHandbook.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "kentucky": [
+    {
+      "title": "Kentucky Notary Handbook",
+      "url": "https://eforms.com/images/2017/11/Kentucky-Notary-Handbook.pdf"
+    },
+    {
+      "title": "State law summary from the NNA",
+      "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/kentucky.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "louisiana": [
+    {
+      "title": "Title 35, Section 199",
+      "url": "https://law.justia.com/codes/louisiana/2012/rs/title35/rs35-199"
+    },
+    {
+      "title": "Louisiana State Law Summary from the NNA",
+      "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/louisiana.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "maine": [
+    {
+      "title": "H.P. 1033 - L.D. 1399",
+      "url": "https://www.maine.gov/sos/cec/notary/notarycontinue.pdf"
+    },
+    {
+      "title": "\u00a7654. Record of marriages",
+      "url": "https://legislature.maine.gov/statutes/19-A/title19-Asec654.html"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "maryland": [
+    {
+      "title": "Maryland Notary FAQs from the Secretary of State",
+      "url": "https://sos.maryland.gov/Notary/Pages/FAQ.aspx"
+    },
+    {
+      "title": "Title 18, Annotated Code of Maryland",
+      "url": "https://sos.maryland.gov/Documents/NotaryLaw2021.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "massachusetts": [
+    {
+      "title": "https://www.mass.gov/info-details/massachusetts-law-about-notaries-public#notary-journal-",
+      "url": "https://www.mass.gov/info-details/massachusetts-law-about-notaries-public#notary-journal-"
+    },
+    {
+      "title": "Secretary of State Website for Massachusetts",
+      "url": "https://www.mass.gov/info-details/massachusetts-law-about-notaries-public#notary-journal-"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "michigan": [
+    {
+      "title": "House Bill 6297",
+      "url": "https://www.legislature.mi.gov/documents/2019-2020/publicact/pdf/2020-PA-0249.pdf"
+    },
+    {
+      "title": "Statute pertaining to record requirements for remote online notarizations",
+      "url": "https://www.legislature.mi.gov/(S(pt3eerihdc5trtoeyy3k1fb1))/mileg.aspx?objectName=mcl-55-286b&page=getObject"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "minnesota": [
+    {
+      "title": "358.645 REMOTE ONLINE NOTARY PUBLIC.",
+      "url": "https://www.revisor.mn.gov/statutes/cite/358.645"
+    },
+    {
+      "title": "Minnesota Secretary of State Website",
+      "url": "https://www.sos.state.mn.us/notary-apostille/notary-help/notary-faq/"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "mississippi": [
+    {
+      "title": "Mississippi Notary Law",
+      "url": "https://www.sos.ms.gov/content/documents/Business/Revised%20Mississippi%20Law%20on%20Notarial%20Acts%20Notary%20Rules.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "missouri": [
+    {
+      "title": "https://revisor.mo.gov/main/OneSection.aspx?section=486.1185&bid=48563",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=486.1185&bid=48563"
+    },
+    {
+      "title": "Revisor of Missouri Statutes",
+      "url": "https://revisor.mo.gov/main/OneChapter.aspx?chapter=486"
+    },
+    {
+      "title": "Missouri Secretary of State",
+      "url": "https://s1.sos.mo.gov/Business/Notary/general"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "montana": [
+    {
+      "title": "Montana Notary Handbook",
+      "url": "https://sosmt.gov/wp-content/uploads/notary-handbook-2021.pdf"
+    },
+    {
+      "title": "Montana Secretary of State",
+      "url": "Montana Secretary of State"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "nebraska": [
+    {
+      "title": "Nebraska Secretary of State",
+      "url": "https://sos.nebraska.gov/business-services/notary-public"
+    },
+    {
+      "title": "NNA Guidelines for Nebraska Notary Law",
+      "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/nebraska.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "nevada": [
+    {
+      "title": "Nevada Secretary of State FAQ",
+      "url": "https://www.nvsos.gov/sos/licensing/notary/faqs"
+    },
+    {
+      "title": "Nevada Notary FAQs from the Secretary of State",
+      "url": "https://www.nvsos.gov/sos/licensing/notary/faqs"
+    },
+    {
+      "title": "Statutes and Regulations from the Secretary of State",
+      "url": "https://www.nvsos.gov/sos/licensing/notary/statutes-regulations"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "new-hampshire": [
+    {
+      "title": "New Hampshire Secretary of State FAQs",
+      "url": "https://sos.nh.gov/administration/administration/electronic-and-remote-notarization/frequently-asked-questions/"
+    },
+    {
+      "title": "New Hampshire Secretary of State Website",
+      "url": "https://sos.nh.gov/administration/administration/notary-public/"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "new-jersey": [
+    {
+      "title": "New Jersey Notary Handbook",
+      "url": "https://www.state.nj.us/treasury/revenue/pdf/NotaryPublicManual.pdf"
+    },
+    {
+      "title": "State of New Jersey Notary Website",
+      "url": "https://www.njportal.com/DOR/Notary"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "new-mexico": [
+    {
+      "title": "New Jersey Notary Handbook",
+      "url": "https://www.state.nj.us/treasury/revenue/pdf/NotaryPublicManual.pdf"
+    },
+    {
+      "title": "State of New Jersey Notary Website",
+      "url": "https://www.njportal.com/DOR/Notary"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "new-york": [
+    {
+      "title": "New York Remote Online Notarization FAQs",
+      "url": "https://dos.ny.gov/notary-public#remote-notarization-faqs"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    },
+    {
+      "title": "Updated Guidance from New York Department of State 1/25/2023",
+      "url": "https://dos.ny.gov/notary-public#remote-notarization-faqs"
+    }
+  ],
+  "north-carolina": [
+    {
+      "title": "Notary FAQ from the Secretary of State of North Carolina",
+      "url": "https://www.sosnc.gov/frequently_asked_questions/by_title/_notary_notary"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "north-dakota": [
+    {
+      "title": "Uniform Law of Notarial Acts for North Dakota",
+      "url": "https://www.ndlegis.gov/cencode/t44c06-1.pdf?20130206110616"
+    },
+    {
+      "title": "North Dakota Notary Public Website",
+      "url": "https://sos.nd.gov/notaries-public.html"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "ohio": [
+    {
+      "title": "Ohio Revised Code for Online Notarizations",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-147.65"
+    },
+    {
+      "title": "Ohio Notary Law",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-147"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "oklahoma": [
+    {
+      "title": "Oklahoma Notary FAQ",
+      "url": "https://www.sos.ok.gov/notary/info/faqs.aspx"
+    },
+    {
+      "title": "Oklahoma State Statutes",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os49.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "oregon": [
+    {
+      "title": "Oregon Notary Law",
+      "url": "https://secure.sos.state.or.us/oard/displayDivisionRules.action?selectedDivision=497"
+    },
+    {
+      "title": "Oregon Notary Public Handbook",
+      "url": "https://sos.oregon.gov/business/documents/notary-guide/notary-guide.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "pennsylvania": [
+    {
+      "title": "Pennsylvania Department of State Notary Website",
+      "url": "https://www.dos.pa.gov/OtherServices/Notaries/Pages/default.aspx"
+    },
+    {
+      "title": "Pennsylvania Electronic/Remote Notarizations Website",
+      "url": "https://www.dos.pa.gov/OtherServices/Notaries/E-Notary/Pages/Electronic%20Notarization.aspx"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "rhode-island": [
+    {
+      "title": "https://www.sos.ri.gov/assets/downloads/documents/RI-RON-guidance-document.pdf",
+      "url": "https://www.sos.ri.gov/assets/downloads/documents/RI-RON-guidance-document.pdf"
+    },
+    {
+      "title": "Section 8, as seen here",
+      "url": "https://www.sos.ri.gov/assets/downloads/documents/2020-Updated-Notary-Public-Standards.pdf"
+    },
+    {
+      "title": "Section 8, as seen here",
+      "url": "https://www.sos.ri.gov/assets/downloads/documents/2020-Updated-Notary-Public-Standards.pdf"
+    },
+    {
+      "title": "Standards of Conduct, Rhode Island Notaries Public",
+      "url": "https://www.sos.ri.gov/assets/downloads/documents/2020-Updated-Notary-Public-Standards.pdf"
+    },
+    {
+      "title": "RON Guidance, Rhode Island",
+      "url": "https://www.sos.ri.gov/assets/downloads/documents/RI-RON-guidance-document.pdf"
+    },
+    {
+      "title": "Notary Public Handbook",
+      "url": "https://www.sos.ri.gov/assets/downloads/documents/Notary-Public-Manual.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "south-carolina": [
+    {
+      "title": "Secretary of State Website for Notaries",
+      "url": "https://sos.sc.gov/services-and-filings/notaries"
+    },
+    {
+      "title": "Secretary of State FAQs for South Carolina Notaries",
+      "url": "https://sos.sc.gov/faqs-about-notaries-public"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "south-dakota": [
+    {
+      "title": "South Dakota Notary Law",
+      "url": "https://sdlegislature.gov/Statutes/Codified_Laws/2045128"
+    },
+    {
+      "title": "South Dakota Notary Handbook",
+      "url": "https://sdsos.gov/general-services/assets/SDNotaryPublicHandbook.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "tennessee": [
+    {
+      "title": "Tennessee Secretary of State Website",
+      "url": "https://sos.tn.gov/businesses/guides/how-to-become-a-notary"
+    },
+    {
+      "title": "Notary Public Handbook",
+      "url": "https://www.ctas.tennessee.edu/sites/default/files/Notary%20Public%20-%202016%20Update_0.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "texas": [
+    {
+      "title": "Texas Secretary of State Notary FAQ",
+      "url": "https://www.sos.state.tx.us/statdoc/faqs2300.shtml#np6"
+    },
+    {
+      "title": "Title 4 of the Texas Government Code pertaining to notaries",
+      "url": "https://statutes.capitol.texas.gov/SOTWDocs/GV/htm/GV.406.htm"
+    },
+    {
+      "title": "\"Getting started as an Online Notary\" in Texas",
+      "url": "https://www.sos.state.tx.us/statdoc/gettingstarted.shtml"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "utah": [
+    {
+      "title": "46-1-3.6 Remote notarization procedures.",
+      "url": "https://notary.utah.gov/wp-content/uploads/sites/31/2019/11/UtahNotaryPublicStudyGuideandHandbook-11-6-2019.pdf"
+    },
+    {
+      "title": "\"Do's and Don'ts of Utah Notaries Public\"",
+      "url": "https://notary.utah.gov/the-dos-and-donts-of-a-utah-notary-public/"
+    },
+    {
+      "title": "Notary Public Handbook",
+      "url": "https://notary.utah.gov/wp-content/uploads/sites/31/2019/11/UtahNotaryPublicStudyGuideandHandbook-11-6-2019.pdf"
+    },
+    {
+      "title": "Office of the Utah Lieutenant Governor",
+      "url": "https://notary.utah.gov"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "vermont": [
+    {
+      "title": "website, \u201cNotary FAQs\u201d",
+      "url": "https://sos.vermont.gov/notaries-public/notary-faqs/"
+    },
+    {
+      "title": "Vermont Notary FAQs",
+      "url": "https://sos.vermont.gov/notaries-public/notary-faqs/"
+    },
+    {
+      "title": "Vermont Notary Statutes",
+      "url": "https://legislature.vermont.gov/statutes/fullchapter/26/103"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "virginia": [
+    {
+      "title": "The Virginia Electronic Notarization Assurance Standard",
+      "url": "https://www.commonwealth.virginia.gov/media/governorvirginiagov/secretary-of-the-commonwealth/pdf/VAe-NotarizationStandard2013Version10.pdf"
+    },
+    {
+      "title": "Title 47.1 Code of Virginia",
+      "url": "https://law.lis.virginia.gov/library/cov/Title47.1.pdf"
+    },
+    {
+      "title": "Secretary of the Commonwealth Notary Website",
+      "url": "https://www.commonwealth.virginia.gov/official-documents/notary-commissions/"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "washington": [
+    {
+      "title": "Washington State Notary Public Guide",
+      "url": "https://www.dol.wa.gov/business/notary/docs/notary-handbook.pdf"
+    },
+    {
+      "title": "Washington State Notary Statutes",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=42.45&full=true"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "west-virginia": [
+    {
+      "title": "West Virginia Code",
+      "url": "https://www.wvlegislature.gov/wvcode/code.cfm?chap=39&art=4"
+    },
+    {
+      "title": "West Virginia Notary Handbook",
+      "url": "https://sos.wv.gov/FormSearch/Business/Documents/Notary-Handbook.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "wisconsin": [
+    {
+      "title": "Wisconsin Notary Public Information",
+      "url": "https://www.wdfi.org/apostilles_notary_public_and_trademarks/pdf/dfi-not-102p.pdf"
+    },
+    {
+      "title": "Chapter 140 of Wisconsin Statutes pertaining to notaries",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/140"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ],
+  "wyoming": [
+    {
+      "title": "Wyoming Senate File 29",
+      "url": "https://wyoleg.gov/Legislation/2021/SF0029"
+    },
+    {
+      "title": "Wyoming Notary Handbook",
+      "url": "https://sos.wyo.gov/Forms/Publications/NotaryHandbook.pdf"
+    },
+    {
+      "title": "\u201cA Notary\u2019s Guide to Completing Journal Entries\u201d",
+      "url": "https://www.nationalnotary.org/notary-bulletin/blog/2017/04/notary-guide-completing-journal-entries"
+    }
+  ]
 }

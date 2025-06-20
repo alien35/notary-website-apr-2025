@@ -16,26 +16,30 @@ export default function OfficialNotaryRulesByState({ params }: Props) {
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
   const stateName = words.join(" ")
 
-  const manual: NotaryManual | undefined = (manuals as any)[params.state]
+  const stateManuals: NotaryManual[] | undefined = (manuals as any)[params.state]
 
   return (
     <div className="container mx-auto px-4 py-24 md:py-32">
       <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-6">
         Official rules for {stateName}
       </h1>
-      {manual ? (
-        <p className="text-center">
-          <a
-            href={manual.url}
-            className="text-blue-600 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {manual.title}
-          </a>
-        </p>
+      {stateManuals && stateManuals.length > 0 ? (
+        <ul className="text-center space-y-2">
+          {stateManuals.map((manual, idx) => (
+            <li key={idx}>
+              <a
+                href={manual.url}
+                className="text-blue-600 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {manual.title}
+              </a>
+            </li>
+          ))}
+        </ul>
       ) : (
-        <p className="text-center">Manual not available.</p>
+        <p className="text-center">Manuals not available.</p>
       )}
     </div>
   )

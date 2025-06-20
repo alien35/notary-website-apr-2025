@@ -1,0 +1,10 @@
+{
+  "new-jersey": {
+    "title": "New Jersey Notary Public Manual",
+    "url": "https://www.nj.gov/treasury/revenue/pdf/NotaryPublicManual.pdf"
+  },
+  "texas": {
+    "title": "Texas Notary Public Handbook",
+    "url": "https://www.sos.state.tx.us/statdoc/bkbnotarypublic.pdf"
+  }
+}
