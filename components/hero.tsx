@@ -67,12 +67,13 @@ export default function Hero() {
             className="relative"
           >
             <div className="relative w-full h-[500px] shadow-2xl rounded-xl overflow-hidden">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nc-splash-zoom.jpg-o72ERwYUs3Heq1ZpTUOnj5WKBZ0kTW.jpeg"
-                alt="NotaryCentral Dashboard"
-                fill
-                className="object-cover"
-                priority
+              <iframe
+                src="https://www.youtube.com/embed/cicM_eRt9TQ"
+                title="NotaryCentral Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
               />
             </div>
 
