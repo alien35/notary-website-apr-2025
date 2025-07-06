@@ -66,7 +66,17 @@
         "url": "https://notary.delaware.gov/delaware-laws/"
       }
     ],
+    "district-of-columbia": [
+      {
+        "title": "District of Columbia Notary Handbook",
+        "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/district_of_columbia.pdf"
+      }
+    ],
     "florida": [
+      {
+        "title": "Governor’s Reference Manual for Notaries Public",
+        "url": "https://www.flgov.com/eog/sites/default/files/notary/Governors_Notary_Reference_Manual_12-17-19.pdf"
+      },
       {
         "title": "Florida Notary Laws",
         "url": "https://www.floridanotaryservice.com/laws/"
@@ -76,6 +86,14 @@
       {
         "title": "Georgia Notary Law",
         "url": "https://www.gsccca.org/notary-and-apostilles/notaries/georgia-notary-law"
+      },
+      {
+        "title": "General Notary Forms and Information",
+        "url": "https://www.gsccca.org/notary-and-apostilles/notaries/general-notary-information"
+      },
+      {
+        "title": "OFFICIAL CODE OF GEORGIA ANNOTATED",
+        "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/georgia.pdf"
       }
     ],
     "hawaii": [
@@ -95,6 +113,10 @@
       }
     ],
     "illinois": [
+      {
+        "title": "ILLINOIS NOTARY PUBLIC HANDBOOK",
+        "url": "https://www.ilsos.gov/publications/pdf_publications/ipub16.pdf"
+      },
       {
         "title": "Public Act 102-0160 (SB2664)",
         "url": "https://www.ilga.gov/legislation/publicacts/102/PDF/102-0160.pdf"
@@ -116,6 +138,10 @@
     ],
     "iowa": [
       {
+        "title": "Handbook for Iowa Notaries Public",
+        "url": "https://sos.iowa.gov/updatedhandbookforiowanotariespublic"
+      },
+      {
         "title": "Iowa State Code 2022 Chapter 9B pertaining to notaries",
         "url": "https://www.legis.iowa.gov/docs/ico/chapter/9B.pdf"
       }
@@ -123,7 +149,7 @@
     "kansas": [
       {
         "title": "Kansas Notary Handbook",
-        "url": "https://sos.ks.gov/forms/administration/NotaryHandbook.pdf"
+        "url": "https://sos.ks.gov/general-services/notary_public/NotaryHandbook.pdf"
       }
     ],
     "kentucky": [
@@ -148,12 +174,12 @@
     ],
     "maine": [
       {
-        "title": "H.P. 1033 - L.D. 1399",
-        "url": "https://www.maine.gov/sos/cec/notary/notarycontinue.pdf"
+        "title": "Maine Secretary of State Notary Public Course of Study",
+        "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/courseofstudy.pdf"
       },
       {
-        "title": "§654. Record of marriages",
-        "url": "https://legislature.maine.gov/statutes/19-A/title19-Asec654.html"
+        "title": "Notary Rules",
+        "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/Notary-20Rules.pdf"
       }
     ],
     "maryland": [
@@ -162,8 +188,8 @@
         "url": "https://sos.maryland.gov/Notary/Pages/FAQ.aspx"
       },
       {
-        "title": "Title 18, Annotated Code of Maryland",
-        "url": "https://sos.maryland.gov/Documents/NotaryLaw2021.pdf"
+        "title": "HANDBOOK FOR MARYLAND NOTARIES PUBLIC",
+        "url": "https://msa.maryland.gov/megafile/msa/speccol/sc5300/sc5339/000113/018000/018112/unrestricted/20132131e.pdf"
       }
     ],
     "massachusetts": [
@@ -172,8 +198,8 @@
         "url": "https://www.mass.gov/info-details/massachusetts-law-about-notaries-public#notary-journal-"
       },
       {
-        "title": "Secretary of State Website for Massachusetts",
-        "url": "https://www.mass.gov/info-details/massachusetts-law-about-notaries-public#notary-journal-"
+        "title": "GENERAL LAWS OF MASSACHUSETTS",
+        "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/massachusetts.pdf"
       }
     ],
     "michigan": [
@@ -182,8 +208,8 @@
         "url": "https://www.legislature.mi.gov/documents/2019-2020/publicact/pdf/2020-PA-0249.pdf"
       },
       {
-        "title": "Statute pertaining to record requirements for remote online notarizations",
-        "url": "https://www.legislature.mi.gov/(S(pt3eerihdc5trtoeyy3k1fb1))/mileg.aspx?objectName=mcl-55-286b&page=getObject"
+        "title": "MICHIGAN LAW ON NOTARIAL ACTS",
+        "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-Act-238-of-2003.pdf"
       }
     ],
     "minnesota": [
@@ -194,6 +220,14 @@
       {
         "title": "Minnesota Secretary of State Website",
         "url": "https://www.sos.state.mn.us/notary-apostille/notary-help/notary-faq/"
+      },
+      {
+        "title": "Notary Commission Guide",
+        "url": "https://www.sos.mn.gov/media/0u2jgmth/notary-commission-guide.pdf"
+      },
+      {
+        "title": "MINNESOTA STATUTES",
+        "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/minnesota.pdf"
       }
     ],
     "mississippi": [
@@ -212,18 +246,14 @@
         "url": "https://revisor.mo.gov/main/OneChapter.aspx?chapter=486"
       },
       {
-        "title": "Missouri Secretary of State",
-        "url": "https://s1.sos.mo.gov/Business/Notary/general"
+        "title": "Missouri Notary Handbook",
+        "url": "https://www.notaries.com/downloads/notary-documents/MONotaryHandbook.pdf"
       }
     ],
     "montana": [
       {
         "title": "Montana Notary Handbook",
         "url": "https://sosmt.gov/wp-content/uploads/notary-handbook-2021.pdf"
-      },
-      {
-        "title": "Montana Secretary of State",
-        "url": "Montana Secretary of State"
       }
     ],
     "nebraska": [
@@ -248,6 +278,10 @@
       {
         "title": "Statutes and Regulations from the Secretary of State",
         "url": "https://www.nvsos.gov/sos/licensing/notary/statutes-regulations"
+      },
+      {
+        "title": "STATE OF NEVADA NOTARY PUBLIC HANDBOOK",
+        "url": "https://www.nvsos.gov/sos/home/showpublisheddocument/11493/638144074331570000"
       }
     ],
     "new-hampshire": [
@@ -258,12 +292,16 @@
       {
         "title": "New Hampshire Secretary of State Website",
         "url": "https://sos.nh.gov/administration/administration/notary-public/"
+      },
+      {
+        "title": "New Hampshire Notary Manual",
+        "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/np-jp-manual-february-28-2022.pdf"
       }
     ],
     "new-jersey": [
       {
         "title": "New Jersey Notary Handbook",
-        "url": "https://www.state.nj.us/treasury/revenue/pdf/NotaryPublicManual.pdf"
+        "url": "https://www.nj.gov/treasury/revenue/pdf/NotaryPublicManual.pdf"
       },
       {
         "title": "State of New Jersey Notary Website",
@@ -272,12 +310,8 @@
     ],
     "new-mexico": [
       {
-        "title": "New Jersey Notary Handbook",
-        "url": "https://www.state.nj.us/treasury/revenue/pdf/NotaryPublicManual.pdf"
-      },
-      {
-        "title": "State of New Jersey Notary Website",
-        "url": "https://www.njportal.com/DOR/Notary"
+        "title": "New Mexico Notary Handbook",
+        "url": "https://www.sos.nm.gov/wp-content/uploads/2023/10/Notary-Handbook-100223.pdf"
       }
     ],
     "new-york": [
@@ -288,6 +322,10 @@
       {
         "title": "Updated Guidance from New York Department of State 1/25/2023",
         "url": "https://dos.ny.gov/notary-public#remote-notarization-faqs"
+      },
+      {
+        "title": "Notary Public License Law",
+        "url": "https://dos.ny.gov/system/files/documents/2024/05/notary.pdf"
       }
     ],
     "north-carolina": [
