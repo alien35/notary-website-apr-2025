@@ -332,12 +332,16 @@
       {
         "title": "Notary FAQ from the Secretary of State of North Carolina",
         "url": "https://www.sosnc.gov/frequently_asked_questions/by_title/_notary_notary"
+      },
+      {
+        "title": "Notary Manual",
+        "url": "https://www.sosnc.gov/manual/assets/sos/pdf/notary.pdf"
       }
     ],
     "north-dakota": [
       {
         "title": "Uniform Law of Notarial Acts for North Dakota",
-        "url": "https://www.ndlegis.gov/cencode/t44c06-1.pdf?20130206110616"
+        "url": "https://ndlegis.gov/cencode/t44c06-1.pdf?20130206110616"
       },
       {
         "title": "North Dakota Notary Public Website",
@@ -352,6 +356,10 @@
       {
         "title": "Ohio Notary Law",
         "url": "https://codes.ohio.gov/ohio-revised-code/chapter-147"
+      },
+      {
+        "title": "NOTARY PUBLIC HANDBOOK",
+        "url": "https://ohionotaryclass.com/wp-content/uploads/2020/03/Notary-Public-Handbook.pdf"
       }
     ],
     "oklahoma": [
@@ -386,28 +394,8 @@
     ],
     "rhode-island": [
       {
-        "title": "https://www.sos.ri.gov/assets/downloads/documents/RI-RON-guidance-document.pdf",
-        "url": "https://www.sos.ri.gov/assets/downloads/documents/RI-RON-guidance-document.pdf"
-      },
-      {
-        "title": "Section 8, as seen here",
-        "url": "https://www.sos.ri.gov/assets/downloads/documents/2020-Updated-Notary-Public-Standards.pdf"
-      },
-      {
-        "title": "Section 8, as seen here",
-        "url": "https://www.sos.ri.gov/assets/downloads/documents/2020-Updated-Notary-Public-Standards.pdf"
-      },
-      {
-        "title": "Standards of Conduct, Rhode Island Notaries Public",
-        "url": "https://www.sos.ri.gov/assets/downloads/documents/2020-Updated-Notary-Public-Standards.pdf"
-      },
-      {
-        "title": "RON Guidance, Rhode Island",
-        "url": "https://www.sos.ri.gov/assets/downloads/documents/RI-RON-guidance-document.pdf"
-      },
-      {
         "title": "Notary Public Handbook",
-        "url": "https://www.sos.ri.gov/assets/downloads/documents/Notary-Public-Manual.pdf"
+        "url": "https://docs.sos.ri.gov/documents/BusinessServices/Notary-Public-Manual.pdf"
       }
     ],
     "south-carolina": [
@@ -418,6 +406,14 @@
       {
         "title": "Secretary of State FAQs for South Carolina Notaries",
         "url": "https://sos.sc.gov/faqs-about-notaries-public"
+      },
+      {
+          "title": "South Carolina Code of Laws",
+          "url": "https://www.scstatehouse.gov/code/t26c001.php"
+      },
+      {
+        "title": "SOUTH CAROLINA CODE",
+        "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/south_carolina.pdf"
       }
     ],
     "south-dakota": [
@@ -436,8 +432,8 @@
         "url": "https://sos.tn.gov/businesses/guides/how-to-become-a-notary"
       },
       {
-        "title": "Notary Public Handbook",
-        "url": "https://www.ctas.tennessee.edu/sites/default/files/Notary%20Public%20-%202016%20Update_0.pdf"
+        "title": "TENNESSEE CODE ANNOTATED",
+        "url": "https://www.nationalnotary.org/file%20library/nna/reference-library/state-law-summaries/tennessee.pdf"
       }
     ],
     "texas": [
@@ -452,20 +448,20 @@
       {
         "title": "\"Getting started as an Online Notary\" in Texas",
         "url": "https://www.sos.state.tx.us/statdoc/gettingstarted.shtml"
+      },
+      {
+        "title": "Texas Guide",
+        "url": "https://notarypublics.com/wp-content/uploads/Notary-Booklet.pdf"
       }
     ],
     "utah": [
-      {
-        "title": "46-1-3.6 Remote notarization procedures.",
-        "url": "https://notary.utah.gov/wp-content/uploads/sites/31/2019/11/UtahNotaryPublicStudyGuideandHandbook-11-6-2019.pdf"
-      },
       {
         "title": "\"Do's and Don'ts of Utah Notaries Public\"",
         "url": "https://notary.utah.gov/the-dos-and-donts-of-a-utah-notary-public/"
       },
       {
         "title": "Notary Public Handbook",
-        "url": "https://notary.utah.gov/wp-content/uploads/sites/31/2019/11/UtahNotaryPublicStudyGuideandHandbook-11-6-2019.pdf"
+        "url": "https://www.notaries.com/downloads/notary-documents/utah-notary-handbook.pdf"
       },
       {
         "title": "Office of the Utah Lieutenant Governor",
@@ -478,8 +474,8 @@
         "url": "https://sos.vermont.gov/notaries-public/notary-faqs/"
       },
       {
-        "title": "Vermont Notary FAQs",
-        "url": "https://sos.vermont.gov/notaries-public/notary-faqs/"
+        "title": "Vermont Notaries Public",
+        "url": "https://eforms.com/images/2017/11/VT-Notary-Handbook.pdf"
       },
       {
         "title": "Vermont Notary Statutes",
