@@ -499,7 +499,7 @@
     "washington": [
       {
         "title": "Washington State Notary Public Guide",
-        "url": "https://www.dol.wa.gov/business/notary/docs/notary-handbook.pdf"
+        "url": "https://dol.wa.gov/media/pdf/2188/notary-handbookpdf/download?inline"
       },
       {
         "title": "Washington State Notary Statutes",
@@ -518,8 +518,8 @@
     ],
     "wisconsin": [
       {
-        "title": "Wisconsin Notary Public Information",
-        "url": "https://www.wdfi.org/apostilles_notary_public_and_trademarks/pdf/dfi-not-102p.pdf"
+        "title": "Wisconsin Notary Public Handbook",
+        "url": "https://dfi.wi.gov/Documents/ConsumerServices/NotaryPublic/NotaryHandbook.pdf"
       },
       {
         "title": "Chapter 140 of Wisconsin Statutes pertaining to notaries",
@@ -533,7 +533,7 @@
       },
       {
         "title": "Wyoming Notary Handbook",
-        "url": "https://sos.wyo.gov/Forms/Publications/NotaryHandbook.pdf"
+        "url": "https://www.notaryrotary.com/101/resources/WY-hb-20070829.pdf"
       }
     ]
   }
