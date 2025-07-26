@@ -83,7 +83,7 @@ export default function Hero() {
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Number.POSITIVE_INFINITY, duration: 4 }}
             >
-              <p className="font-medium">Save 10+ hours weekly</p>
+              <p className="font-medium">Stay compliant</p>
             </motion.div>
 
             <motion.div
