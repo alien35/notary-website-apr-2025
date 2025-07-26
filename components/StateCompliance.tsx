@@ -41,10 +41,10 @@ export default function StateCompliance({ stateName }: Props) {
   const answerClass = compliant ? "text-green-600" : "text-red-600"
 
   return (
-    <section className="py-6 bg-secondary dark:bg-gray-900 border-t">
+    <section className="py-6 border-t border-b border-gray-200 dark:border-gray-800 bg-secondary dark:bg-gray-900 mb-4">
       <div className="container mx-auto px-4 text-center space-y-3">
         <h2 className="text-2xl md:text-3xl font-bold">
-          Is NotaryCentral compliant in {displayName}?
+        🔒 Is NotaryCentral compliant in {displayName}?
         </h2>
         <div className="space-y-2 text-lg">
           <p>
