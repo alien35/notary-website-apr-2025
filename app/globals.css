@@ -90,3 +90,8 @@
   left: 0;
   animation: none !important;
 }
+
+main a {
+  text-decoration: underline;
+  color: #a86200;
+}
