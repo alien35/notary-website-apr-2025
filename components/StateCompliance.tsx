@@ -4,76 +4,25 @@ import Link from "next/link"
 import { CheckCircle, XCircle } from "lucide-react"
 import { useLocation } from "./LocationProvider"
 
-const EJ_COMPLIANT_STATES = [
-  "Colorado",
-  "Georgia",
-  "Illinois",
-  "Maryland",
-  "New Jersey",
-  "Texas",
-  "Virginia",
+const NON_COMPLIANT_STATES = [
   "Washington",
-]
-
-const EJ_NON_COMPLIANT_STATES = [
-  "Alabama",
+  "Nevada",
   "Arizona",
-  "California",
-  "Massachusetts",
-  "New York",
+  "Missouri",
+  "Hawaii",
 ]
 
 const STATE_MAP: Record<string, string> = {
-  AL: "Alabama",
-  AK: "Alaska",
-  AZ: "Arizona",
-  AR: "Arkansas",
-  CA: "California",
-  CO: "Colorado",
-  CT: "Connecticut",
-  DE: "Delaware",
-  FL: "Florida",
-  GA: "Georgia",
-  HI: "Hawaii",
-  ID: "Idaho",
-  IL: "Illinois",
-  IN: "Indiana",
-  IA: "Iowa",
-  KS: "Kansas",
-  KY: "Kentucky",
-  LA: "Louisiana",
-  ME: "Maine",
-  MD: "Maryland",
-  MA: "Massachusetts",
-  MI: "Michigan",
-  MN: "Minnesota",
-  MS: "Mississippi",
-  MO: "Missouri",
-  MT: "Montana",
-  NE: "Nebraska",
-  NV: "Nevada",
-  NH: "New Hampshire",
-  NJ: "New Jersey",
-  NM: "New Mexico",
-  NY: "New York",
-  NC: "North Carolina",
-  ND: "North Dakota",
-  OH: "Ohio",
-  OK: "Oklahoma",
-  OR: "Oregon",
-  PA: "Pennsylvania",
-  RI: "Rhode Island",
-  SC: "South Carolina",
-  SD: "South Dakota",
-  TN: "Tennessee",
-  TX: "Texas",
-  UT: "Utah",
-  VT: "Vermont",
-  VA: "Virginia",
-  WA: "Washington",
-  WV: "West Virginia",
-  WI: "Wisconsin",
-  WY: "Wyoming",
+  AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
+  CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
+  HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
+  KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
+  MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
+  MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
+  NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
+  OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+  SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
+  VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
 }
 
 interface Props {
@@ -84,7 +33,8 @@ export default function StateCompliance({ stateName }: Props) {
   const { region } = useLocation()
   const displayName = stateName || STATE_MAP[region] || "your state"
 
-  const compliant = EJ_COMPLIANT_STATES.includes(displayName)
+  const nonCompliant = NON_COMPLIANT_STATES.includes(displayName)
+  const compliant = !nonCompliant
 
   const AnswerIcon = compliant ? CheckCircle : XCircle
   const answerText = compliant ? "Yes" : "No"
@@ -98,19 +48,24 @@ export default function StateCompliance({ stateName }: Props) {
         </h2>
         <div className="space-y-2 text-lg">
           <p>
-            <strong>Electronic journal:</strong>{' '}
+            <strong>Electronic journal:</strong>{" "}
             <span className={answerClass}>
               <AnswerIcon className="inline-block mr-1 h-5 w-5" />
               {answerText}
             </span>
           </p>
+          {!compliant && (
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              An e-journal is allowed, but cannot replace the required paper journal.
+            </p>
+          )}
           <p>
             <Link href="/post/e-journal" className="underline">
               Learn more
             </Link>
           </p>
           <p>
-            <strong>Business management:</strong>{' '}
+            <strong>Business management:</strong>{" "}
             <span className="text-green-600">
               <CheckCircle className="inline-block mr-1 h-5 w-5" />Yes
             </span>
@@ -120,4 +75,3 @@ export default function StateCompliance({ stateName }: Props) {
     </section>
   )
 }
-
