@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Facebook, Instagram, Youtube, Apple, SmartphoneIcon as Android, Rss, Linkedin } from "lucide-react"
+import StateCompliance from "@/components/StateCompliance"
 import { useEffect, useState } from "react"
 
 const footerLinks = [
@@ -62,6 +63,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 pt-16 pb-8">
+      <StateCompliance />
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           <div className="lg:col-span-2">
