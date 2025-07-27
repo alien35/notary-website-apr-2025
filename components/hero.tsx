@@ -43,10 +43,10 @@ export default function Hero() {
             className="max-w-xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              The super app for notaries
+              The all-in-one app for notaries
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              The all-in-one app to keep notaries compliant and organized
+              Stay Compliant. Work Smarter. Grow with Confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button onClick={onTry} size="lg" className="text-lg px-8 bg-primary hover:bg-primary/90">
