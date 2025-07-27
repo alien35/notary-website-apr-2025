@@ -46,7 +46,7 @@ export default function Hero() {
               The super app for notaries
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Everything from e-Journals, accounting, mileage tracking, interactive handbooks and more
+              The all-in-one app to keep notaries compliant and organized
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button onClick={onTry} size="lg" className="text-lg px-8 bg-primary hover:bg-primary/90">

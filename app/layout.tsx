@@ -17,7 +17,7 @@ const ebGaramond = EB_Garamond({
 
 export const metadata: Metadata = {
   title: "NotaryCentral - The Super App for Notaries",
-  description: "Everything from e-Journals, accounting, mileage tracking, interactive handbooks and more",
+  description: "The all-in-one app to keep you compliant and organized",
   generator: 'v0.dev'
 }
 
