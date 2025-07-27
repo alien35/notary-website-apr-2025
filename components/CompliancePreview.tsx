@@ -16,7 +16,7 @@ export default function CompliancePreview() {
             className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
           />
         </div>
-        <p className="text-lg">NotaryCentral helps you stay compliant with state laws.</p>
+        <p className="text-lg">NotaryCentral helps you stay compliant.</p>
         <p>
           <Link href="/compliance" className="underline">
             Learn more
