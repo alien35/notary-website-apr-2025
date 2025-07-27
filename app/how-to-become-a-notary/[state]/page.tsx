@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getStateData } from '@/lib/howToBecome'
+import CompliancePreview from '@/components/CompliancePreview'
 
 export const metadata: Metadata = {
   title: 'How to become a notary',
@@ -64,6 +65,7 @@ export default function HowToBecomeState({ params }: Props) {
         <p className="text-center">Information not available.</p>
       )}
     </div>
+    <CompliancePreview />
     </>
   )
 }
