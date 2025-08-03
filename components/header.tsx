@@ -25,14 +25,14 @@ const menuItems = {
       href: "/accounting",
     },
     {
-      title: "Interactive Notary Handbook",
-      description: "Access state-specific notary laws and guidelines",
-      href: "/post/ask-anything",
+      title: "Ask AI",
+      description: "Get instant answers to state-specific notary law questions",
+      href: "/ask-ai",
     },
     {
       title: "Business Health Insights",
       description: "Get actionable insights to grow your notary business",
-      href: "/post/business-insights",
+      href: "/business-health-insights",
     },
     {
       title: "e-Journal",
