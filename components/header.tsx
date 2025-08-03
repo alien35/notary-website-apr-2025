@@ -54,7 +54,7 @@ const menuItems = {
     {
       title: "Import Orders",
       description: "Easily import signing orders from other platforms",
-      href: "/post/import-orders",
+      href: "/import-orders",
     },
   ],
   resources: [
