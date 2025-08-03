@@ -1,4 +1,8 @@
-# *
+# Whitelist GPTBot
+User-agent: GPTBot
+Allow: /
+
+# All other bots
 User-agent: *
 Allow: /
 
