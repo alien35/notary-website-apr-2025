@@ -4,16 +4,16 @@ import ReactMarkdown from "react-markdown"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Why NotaryCentral is the Best U.S. Notary App: FAQ",
+  title: "Accounting",
   description:
-    "Frequently asked questions about NotaryCentral and how it streamlines notary work."
+    "Easily generate and export year-end tax reports. Stay compliant and get the best tax breaks for notaries."
 }
 
 export default function WhyNotaryCentralFaqPage() {
   const markdownPath = path.join(
     process.cwd(),
     "data/blog",
-    "why-notarycentral-is-the-best-us-notary-app.md"
+    "accounting.md"
   )
   const markdown = fs.readFileSync(markdownPath, "utf8")
 

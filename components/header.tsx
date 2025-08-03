@@ -22,7 +22,7 @@ const menuItems = {
     {
       title: "Accounting",
       description: "Track income, expenses, and generate tax reports automatically to maximize deductions.",
-      href: "/post/accounting",
+      href: "/accounting",
     },
     {
       title: "Interactive Notary Handbook",

@@ -17,7 +17,7 @@ const features = [
     icon: <Calculator className="h-10 w-10 text-primary" />,
     title: "Accounting",
     description: "Track income, expenses, and generate tax reports automatically to maximize deductions.",
-    href: "/post/accounting",
+    href: "/accounting",
   },
   {
     icon: <Car className="h-10 w-10 text-primary" />,
