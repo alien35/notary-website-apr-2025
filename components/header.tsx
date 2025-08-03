@@ -290,7 +290,7 @@ export default function Header() {
                     PRICING
                   </Link>
                   <Link
-                    href="/post/why-did-i-start-notarycentral"
+                    href="/about"
                     className="py-2 text-lg font-medium"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -406,7 +406,7 @@ export default function Header() {
               <Link href="/pricing" className="text-sm font-medium hover:text-primary">
                 PRICING
               </Link>
-              <Link href="/post/why-did-i-start-notarycentral" className="text-sm font-medium hover:text-primary">
+              <Link href="/about" className="text-sm font-medium hover:text-primary">
                 ABOUT
               </Link>
 

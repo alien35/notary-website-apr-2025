@@ -24,7 +24,7 @@ const footerLinks = [
   },
   {
     title: "Company",
-    links: [{ name: "About", href: "/post/why-did-i-start-notarycentral" }],
+    links: [{ name: "About", href: "/about" }],
   },
   {
     title: "Legal",
