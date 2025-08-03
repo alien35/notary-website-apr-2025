@@ -70,6 +70,10 @@ const menuItems = {
       title: "How to become a notary",
       href: "/how-to-become-a-notary",
     },
+    {
+      title: "Why NotaryCentral is the Best US Notary App",
+      href: "/why-notarycentral-is-the-best-us-notary-app",
+    },
   ],
 }
 
