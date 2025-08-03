@@ -18,7 +18,7 @@ export default function WhyNotaryCentralFaqPage() {
   const markdown = fs.readFileSync(markdownPath, "utf8")
 
   return (
-    <div className="container mx-auto px-4 py-24 md:py-32">
+    <div className="prose lg:prose-lg dark:prose-invert mx-auto px-4 py-24 md:py-32 max-w-4xl">
       <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
   )
