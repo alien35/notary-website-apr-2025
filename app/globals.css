@@ -95,3 +95,11 @@ main a {
   text-decoration: underline;
   color: #a86200;
 }
+
+
+@media print {
+  header,
+  footer {
+    display: none !important;
+  }
+}
