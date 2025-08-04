@@ -33,5 +33,6 @@ Distance traveled is calculated automatically for every appointment. Edit mileag
 ---
 
 ## Expense Tracking
-Record and categorize business expenses such as supplies, travel, and marketing. Attach receipts and monitor spending trends to better manage your bottom line. NotaryCentral flags expenses missing receipts and reminds you to upload them so your records remain compliant.  
+Record and categorize business expenses such as supplies, travel, and marketing. Attach receipts and monitor spending trends to better manage your bottom line. NotaryCentral flags expenses missing receipts and reminds you to upload them so your records remain compliant.
 [Learn the details about expense tracking](https://www.notarycentral.org/post/expense-tracking)
+

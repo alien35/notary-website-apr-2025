@@ -15,3 +15,4 @@ Manually entering signing details from emails or portals drains hours from a not
 - **Centralized workflow:** Imported orders immediately show up alongside your existing schedule and records.
 
 By offloading data entry, NotaryCentral lets you focus on confirming signer details and preparing for the appointment, not transcribing orders.
+

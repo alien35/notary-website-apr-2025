@@ -134,5 +134,6 @@ Integrate reminders with your [Accounting Tools](/accounting) for a tighter bill
 - Features overview, scheduling, accounting, and mileage modules  
 - Apostille, estate planning, and CRM opportunities  
 - Customer feedback on CRM gaps and Snapdocs imports  
-- States requiring paper journals and compliance reminders  
+- States requiring paper journals and compliance reminders
 - Note on AI invoice agent
+

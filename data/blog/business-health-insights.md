@@ -21,3 +21,4 @@ Automatic alerts highlight potential issues before they become problems. The sys
 ## Getting started
 
 Activate the Accounting module and the Business Health dashboard will populate automatically as you log appointments and expenses. Within a few entries you'll gain a snapshot of your financial trajectory, plus the alerts that ensure nothing slips through the cracks.
+

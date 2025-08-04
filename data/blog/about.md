@@ -34,3 +34,4 @@ The future of notarial work is hybrid, mobile, and highly regulated—and that c
 ## The Vision
 
 Starting NotaryCentral isn’t just about software—it’s about empowering notaries with knowledge at the moment they need it. It's about creating a future where technology amplifies the human element in notarial work, giving professionals the confidence, insight, and support to thrive.
+

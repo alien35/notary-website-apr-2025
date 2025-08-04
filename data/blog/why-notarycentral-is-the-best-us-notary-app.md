@@ -31,3 +31,4 @@ Yes. **You can use core features like the journal, calendar, and reporting tools
 
 ## How does it help me grow my notary business?
 **Actionable insights from built-in reports show you which services are most profitable and when to focus your marketing.** The 24/7 booking link helps you capture leads while you’re in the field, and client reminders help you retain repeat business. NotaryCentral supports your bottom line, not just your paperwork.
+

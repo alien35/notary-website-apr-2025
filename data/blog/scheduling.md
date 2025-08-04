@@ -44,5 +44,6 @@ Today’s clients book on-the-go. You’re ready for them.
 - Instant email confirmations + optional SMS reminders
 - Fewer no-shows, more completed appointments
 
-> Take control of your schedule — and make it effortless for clients to say yes.  
+> Take control of your schedule — and make it effortless for clients to say yes.
 > Activate Online Scheduling on NotaryCentral today.
+

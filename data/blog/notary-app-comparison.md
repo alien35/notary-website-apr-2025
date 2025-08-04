@@ -95,3 +95,4 @@ Each platform caters to a specific notarial audience:
 - **NotaryCentral** is ideal for notaries needing continuous education and robust all-in-one capabilities.
 
 By evaluating features, automation, pricing, and support, you can find the platform best aligned with your notary business goals.
+
