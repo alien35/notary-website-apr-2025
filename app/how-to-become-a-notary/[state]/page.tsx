@@ -65,7 +65,6 @@ export default function HowToBecomeState({ params }: Props) {
         <p className="text-center">Information not available.</p>
       )}
     </div>
-    <CompliancePreview />
     </>
   )
 }
