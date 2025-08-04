@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Facebook, Instagram, Youtube, Apple, SmartphoneIcon as Android, Rss, Linkedin } from "lucide-react"
+import { Facebook, Instagram, Youtube, Apple, SmartphoneIcon as Android, Rss, Linkedin, Github } from "lucide-react"
 import CompliancePreview from "@/components/CompliancePreview"
 import { useEffect, useState } from "react"
 
@@ -42,6 +42,7 @@ const socialLinks = [
   { icon: <Youtube size={20} />, href: "https://www.youtube.com/@notarycentral" },
   { icon: <Rss size={20} />, href: "https://www.youtube.com/playlist?list=PL0CPfCjyonNdD4zfsnR8VNpgLUnti0B8-" },
   { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/company/notarycentral" },
+  { icon: <Github size={20} />, href: "https://github.com/NotaryCentral/notary-resources" },
 ]
 
 export default function Footer() {
