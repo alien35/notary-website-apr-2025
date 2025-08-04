@@ -5,10 +5,11 @@ Running a mobile notary practice means juggling appointments, accounting, compli
 This guide highlights the core modules every notary platform should provide and links out to detailed supporting posts for deeper dives.
 
 ## Supporting Posts
-- [Top Scheduling Apps for Notaries](/scheduling)
-- [Notary Client Management Tips](/notary-app-comparison)
+- Top Scheduling Apps for Notaries
+- [Comparison of Notary Business Apps](/notary-app-comparison)
+- Notary Client Management Tips
 - [Accounting Tools for Notaries](/accounting)
-- [Apostille Software Essentials for Notaries](/post/understanding-hague-and-non-hague-countries-in-the-apostille-process)
+- Apostille Software Essentials for Notaries
 - Estate Planning Workflow Tools for Notaries
 - [Mileage and Expense Tracking Apps for Notaries](/post/expense-tracking)
 - [State Compliance Checklist for Notary Software](/compliance)
@@ -25,7 +26,7 @@ A dedicated scheduler lets clients book online 24/7, syncs with Google Calendar,
 2. **Service-based pricing** so different notarization types carry the right fee  
 3. **Payment capture** via Square or similar gateways  
 
-Keep your calendar in lockstep with your CRM—see [Notary Client Management Tips](/notary-app-comparison) for ideas.
+Keep your calendar in lockstep with your CRM—see Notary Client Management Tips for ideas.
 
 ---
 
@@ -122,7 +123,7 @@ Late payments drain small business cash flow. An upcoming improvement involves u
 
 - Set reminder triggers based on due dates  
 - Offer online payment links in invoices  
-- Track overdue accounts in your CRM—see [Notary Client Management Tips](/notary-app-comparison)
+- Track overdue accounts in your CRM—see Notary Client Management Tips
 
 Integrate reminders with your [Accounting Tools](/accounting) for a tighter billing loop.
 
