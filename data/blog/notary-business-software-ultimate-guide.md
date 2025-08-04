@@ -5,15 +5,16 @@ Running a mobile notary practice means juggling appointments, accounting, compli
 This guide highlights the core modules every notary platform should provide and links out to detailed supporting posts for deeper dives.
 
 ## Supporting Posts
-- [Top Scheduling Apps for Notaries](#top-scheduling-apps-for-notaries)
-- [Notary Client Management Tips](#notary-client-management-tips)
-- [Accounting Tools for Notaries](#accounting-tools-for-notaries)
-- [Apostille Software Essentials for Notaries](#apostille-software-essentials-for-notaries)
-- [Estate Planning Workflow Tools for Notaries](#estate-planning-workflow-tools-for-notaries)
-- [Mileage and Expense Tracking Apps for Notaries](#mileage-and-expense-tracking-apps-for-notaries)
-- [State Compliance Checklist for Notary Software](#state-compliance-checklist-for-notary-software)
-- [Data Import Tools & Snapdocs Integration for Notaries](#data-import-tools--snapdocs-integration-for-notaries)
-- [Automated Invoice & Payment Reminders for Notaries](#automated-invoice--payment-reminders-for-notaries)
+- Top Scheduling Apps for Notaries
+- [Comparison of Notary Business Apps](/notary-app-comparison)
+- Notary Client Management Tips
+- [Accounting Tools for Notaries](/accounting)
+- Apostille Software Essentials for Notaries
+- Estate Planning Workflow Tools for Notaries
+- [Mileage and Expense Tracking Apps for Notaries](/post/expense-tracking)
+- [State Compliance Checklist for Notary Software](/compliance)
+- [Data Import Tools & Snapdocs Integration for Notaries](/import-orders)
+- [Automated Invoice & Payment Reminders for Notaries](/post/how-does-invoicing-work)
 
 ---
 
@@ -25,7 +26,7 @@ A dedicated scheduler lets clients book online 24/7, syncs with Google Calendar,
 2. **Service-based pricing** so different notarization types carry the right fee  
 3. **Payment capture** via Square or similar gateways  
 
-Keep your calendar in lockstep with your CRM—see [Notary Client Management Tips](#notary-client-management-tips) for ideas.
+Keep your calendar in lockstep with your CRM—see Notary Client Management Tips for ideas.
 
 ---
 
@@ -37,8 +38,8 @@ Many notaries still rely on spreadsheets for leads, but a light CRM streamlines 
 
 - Record outreach to title companies and law firms  
 - Automate reminders for repeat clients  
-- Sync calendar bookings from the [Top Scheduling Apps](#top-scheduling-apps-for-notaries) list  
-- Import signing requests directly—see [Data Import Tools & Snapdocs Integration](#data-import-tools--snapdocs-integration-for-notaries)
+- Sync calendar bookings from the [Top Scheduling Apps](/scheduling) list
+- Import signing requests directly—see [Data Import Tools & Snapdocs Integration](/import-orders)
 
 ---
 
@@ -46,8 +47,8 @@ Many notaries still rely on spreadsheets for leads, but a light CRM streamlines 
 
 Look for systems that auto-categorize income and expenses, generate tax-ready reports, and surface real-time business-health metrics. Essentials include:
 
-- Mileage and expense syncing (explore [Mileage and Expense Tracking Apps](#mileage-and-expense-tracking-apps-for-notaries))  
-- Invoicing with automated payment reminders (see [Automated Invoice & Payment Reminders](#automated-invoice--payment-reminders-for-notaries))  
+- Mileage and expense syncing (explore [Mileage and Expense Tracking Apps](/post/expense-tracking))
+- Invoicing with automated payment reminders (see [Automated Invoice & Payment Reminders](/post/how-does-invoicing-work))
 - Exportable summaries for accountants  
 
 
@@ -83,7 +84,7 @@ An integrated mileage log maximizes IRS deductions by capturing every trip, whil
 - Receipt capture that flows into accounting reports  
 - Exportable CSV or PDF summaries for accountants  
 
-Tie this data into your [Accounting Tools](#accounting-tools-for-notaries) for a full financial picture.
+Tie this data into your [Accounting Tools](/accounting) for a full financial picture.
 
 
 ---
@@ -111,7 +112,7 @@ Notaries handling high volumes from platforms like Snapdocs want to avoid manual
 - CSV or API imports from signing platforms  
 - Mapping fields directly into your CRM and calendar  
 
-Cross-link imports to your [Scheduling](#top-scheduling-apps-for-notaries) and [Client Management](#notary-client-management-tips) workflows.
+Cross-link imports to your [Scheduling](/scheduling) and [Client Management](/notary-app-comparison) workflows.
 
 
 ---
@@ -122,9 +123,9 @@ Late payments drain small business cash flow. An upcoming improvement involves u
 
 - Set reminder triggers based on due dates  
 - Offer online payment links in invoices  
-- Track overdue accounts in your CRM—see [Notary Client Management Tips](#notary-client-management-tips)
+- Track overdue accounts in your CRM—see Notary Client Management Tips
 
-Integrate reminders with your [Accounting Tools](#accounting-tools-for-notaries) for a tighter billing loop.
+Integrate reminders with your [Accounting Tools](/accounting) for a tighter billing loop.
 
 
 ---
