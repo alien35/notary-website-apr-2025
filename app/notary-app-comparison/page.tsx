@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function WhyNotaryCentralFaqPage() {
 
   return (
     <div className="prose lg:prose-lg dark:prose-invert mx-auto px-4 py-24 md:py-32 max-w-4xl">
-      <ReactMarkdown>{markdown}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
     </div>
   )
 }
