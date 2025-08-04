@@ -20,6 +20,7 @@ const footerLinks = [
     links: [
       { name: "Blog", href: "/blog" },
       { name: "Support", href: "/support" },
+      { name: "Comparison with NotaryGadget", href: "/notary-app-comparison" },
     ],
   },
   {
