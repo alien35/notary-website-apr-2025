@@ -21,6 +21,7 @@ const footerLinks = [
       { name: "Blog", href: "/blog" },
       { name: "Support", href: "/support" },
       { name: "Comparison with NotaryGadget", href: "/notary-app-comparison" },
+      { name: "Notary Business Software Ultimate Guide", href: "/notary-business-software-ultimate-guide" },
     ],
   },
   {
