@@ -18,7 +18,39 @@ import { Menu, X } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
 const menuItems = {
-  solutions: [
+  useCases: [
+    {
+      title: "E-Journal",
+      description: "Digitally record and store all your notary transactions",
+      href: "/post/e-journal",
+    },
+    {
+      title: "Loan Signings",
+      description: "Streamline loan document notarizations",
+      href: "/loan-signings",
+    },
+    {
+      title: "General Notary Work",
+      description: "Manage everyday notarizations efficiently",
+      href: "/general-notary-work",
+    },
+    {
+      title: "Other appointments",
+      description: "Track miscellaneous appointments",
+      href: "/other-appointments",
+    },
+  ],
+  features: [
+    {
+      title: "Expense tracking",
+      description: "Track and categorize all your business expenses",
+      href: "/post/expense-tracking",
+    },
+    {
+      title: "Import Orders",
+      description: "Easily import signing orders from other platforms",
+      href: "/import-orders",
+    },
     {
       title: "Accounting",
       description: "Track income, expenses, and generate tax reports automatically to maximize deductions.",
@@ -35,26 +67,9 @@ const menuItems = {
       href: "/business-health-insights",
     },
     {
-      title: "e-Journal",
-      description: "Digitally record and store all your notary transactions",
-      href: "/post/e-journal",
-    },
-    {
       title: "Scheduling",
       description: "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
       href: "/post/online-scheduler",
-    },
-  ],
-  features: [
-    {
-      title: "Expense tracking",
-      description: "Track and categorize all your business expenses",
-      href: "/post/expense-tracking",
-    },
-    {
-      title: "Import Orders",
-      description: "Easily import signing orders from other platforms",
-      href: "/import-orders",
     },
   ],
   resources: [
@@ -311,10 +326,10 @@ export default function Header() {
                     ))}
                   </div>
 
-                  {/* Show SOLUTIONS and FEATURES inline on mobile */}
+                  {/* Show USE CASES and FEATURES inline on mobile */}
                   <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
-                    <h4 className="mb-2 text-md font-semibold">SOLUTIONS</h4>
-                    {menuItems.solutions.map((item) => (
+                    <h4 className="mb-2 text-md font-semibold">USE CASES</h4>
+                    {menuItems.useCases.map((item) => (
                       <Link
                         key={item.title}
                         href={item.href}
@@ -436,21 +451,21 @@ export default function Header() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              {/* Solutions & Features in a NavigationMenu for desktop */}
+              {/* Use Cases & Features in a NavigationMenu for desktop */}
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-transparent hover:text-primary">
-                      SOLUTIONS & FEATURES
+                      USE CASES & FEATURES
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="grid gap-6 p-6 md:w-[600px] lg:w-[700px]" style={{ transform: "translateX(0)" }}>
                         <div className="grid gap-3">
                           <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">
-                            SOLUTIONS
+                            USE CASES
                           </h3>
                           <ul className="grid gap-3 md:grid-cols-2">
-                            {menuItems.solutions.map((item) => (
+                            {menuItems.useCases.map((item) => (
                               <li key={item.title}>
                                 <NavigationMenuLink asChild>
                                   <Link
