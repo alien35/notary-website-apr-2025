@@ -35,7 +35,7 @@ const menuItems = {
       href: "/general-notary-work",
     },
     {
-      title: "Other appointments",
+      title: "Other Appointment Types",
       description: "Track miscellaneous appointments",
       href: "/other-appointments",
     },
