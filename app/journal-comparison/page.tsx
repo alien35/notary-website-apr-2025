@@ -1,0 +1,46 @@
+import fs from "fs"
+import path from "path"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Notary Journal Comparison",
+  description:
+    "Compare NotaryCentral's Electronic Journal with Jurat Inc.'s e-journal and traditional paper journals.",
+}
+
+export default function JournalComparisonPage() {
+  const markdownPath = path.join(
+    process.cwd(),
+    "data/blog",
+    "journal-comparison.md"
+  )
+  const markdown = fs.readFileSync(markdownPath, "utf8")
+  const lastUpdatedMatch = markdown.match(
+    /Last updated\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})/
+  )
+  const isoDate = lastUpdatedMatch
+    ? new Date(lastUpdatedMatch[1]).toISOString()
+    : undefined
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: metadata.title,
+    description: metadata.description,
+    author: { "@type": "Person", name: "Alexander Leon" },
+    datePublished: isoDate,
+    dateModified: isoDate,
+  }
+
+  return (
+    <div className="prose lg:prose-lg dark:prose-invert mx-auto px-4 py-24 md:py-32 max-w-4xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+    </div>
+  )
+}
+
