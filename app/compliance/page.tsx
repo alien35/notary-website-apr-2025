@@ -3,7 +3,8 @@ import StateCompliance from "@/components/StateCompliance"
 
 export const metadata: Metadata = {
   title: "Compliance | NotaryCentral",
-  description: "Learn how NotaryCentral helps you stay compliant with state laws.",
+  description:
+    "See how NotaryCentral keeps you compliant with laws through recordkeeping, ID capture, and reminders, giving notaries secure workflows that stand up to audits.",
 }
 
 export default function CompliancePage() {

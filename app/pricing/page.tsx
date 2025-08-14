@@ -1,8 +1,11 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import type { Metadata } from "next"
 import PricingView from "@/components/pricing"
+
+export const metadata: Metadata = {
+  title: "Pricing | NotaryCentral",
+  description:
+    "See how NotaryCentral pricing fits your budget with plans that include journals, scheduling, and compliance tools that scale as your notary business grows.",
+}
 
 export default function Pricing() {
 
