@@ -37,13 +37,20 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         .map((child: any) => child.text)
         .join("")
         .trim()
-        .slice(0, 155)
     }
   }
 
+  const baseDescription =
+    "Explore this NotaryCentral article for guidance, tips, and compliance insights that help notaries stay organized, secure, and ready for every appointment."
+
+  const description =
+    fallbackDescription && fallbackDescription.length >= 150
+      ? fallbackDescription.slice(0, 160)
+      : baseDescription
+
   return {
     title: `${post.title} | NotaryCentral Blog`,
-    description: fallbackDescription || "Read this article on the NotaryCentral blog",
+    description,
   }
 }
 

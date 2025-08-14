@@ -3,6 +3,8 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Official notary rules",
+  description:
+    "Browse notary rules for every state with links to journal requirements and legal guidance, helping you understand regulations that govern your commission.",
 }
 
 export default function StateHandbook() {

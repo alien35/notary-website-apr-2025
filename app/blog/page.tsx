@@ -9,7 +9,8 @@ import { ChevronRight } from "lucide-react"
 
 export const metadata = {
   title: "Blog | NotaryCentral",
-  description: "Latest news, tips, and updates for notaries",
+  description:
+    "Explore the NotaryCentral blog for practical tips, industry news, compliance updates, and guides that help notaries run secure, profitable practices with ease.",
 }
 
 export default async function BlogPage() {
