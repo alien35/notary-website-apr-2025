@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Notary Business Software – Ultimate Guide",
   description:
-    "Modern notary business software bundles scheduling, expense tracking, compliance, and CRM into one workspace.",
+    "See how modern notary software unites scheduling, expense tracking, compliance tools, and CRM features into one platform that streamlines every appointment.",
 }
 
 export default function WhyNotaryCentralFaqPage() {

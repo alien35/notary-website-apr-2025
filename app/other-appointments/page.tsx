@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Other Appointment Types",
   description:
-    "Handle apostilles, fingerprinting, and custom services with unified intake and billing.",
+    "Manage apostilles, fingerprinting, and custom signings from one dashboard that unifies intake, scheduling, and billing so every specialty job stays organized.",
 }
 
 export default function OtherAppointmentsPage() {

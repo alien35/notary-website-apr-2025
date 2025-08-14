@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Notary Journal Comparison",
   description:
-    "Compare NotaryCentral's Electronic Journal with Jurat Inc.'s e-journal and traditional paper journals.",
+    "Compare NotaryCentral's electronic journal with Jurat Inc.'s e-journal and paper logs to see which option keeps records accurate, secure, and ready for audits.",
 }
 
 export default function JournalComparisonPage() {

@@ -1,6 +1,6 @@
 export const metadata = {
     title: "Account Deletion Information | NotaryCentral",
-    description: "Learn how to delete your NotaryCentral account and understand our data retention policies.",
+    description: "Learn how to delete your NotaryCentral account, what personal data is removed, and how our retention policy works so you can manage information with confidence.",
   }
   
   export default function AccountDeletion() {

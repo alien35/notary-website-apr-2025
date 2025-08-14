@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Why NotaryCentral is the Best U.S. Notary App: FAQ",
   description:
-    "Frequently asked questions about NotaryCentral and how it streamlines notary work."
+    "Find answers to common questions about NotaryCentral and how it streamlines scheduling, journaling, compliance, and payments into one app for U.S. notaries."
 }
 
 export default function WhyNotaryCentralFaqPage() {

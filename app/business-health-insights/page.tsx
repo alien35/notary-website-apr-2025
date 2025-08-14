@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Business Health Insights",
   description:
-    "Running a notary business means juggling appointments, mileage, and stacks of receipts. NotaryCentral's Business Health dashboard turns that chaos into clear insights so you always know where you stand."
+    "Track appointments, mileage, revenue, and expenses in NotaryCentral's Business Health dashboard so you always know how your notary business is performing."
 }
 
 export default function WhyNotaryCentralFaqPage() {

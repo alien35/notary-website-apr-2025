@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Ask AI",
   description:
-    "Get instant answers to state-specific notary law questions"
+    "Ask AI gives instant, state-specific answers to notary law questions using handbooks so you can work confidently without wading through dense legal text."
 }
 
 export default function WhyNotaryCentralFaqPage() {

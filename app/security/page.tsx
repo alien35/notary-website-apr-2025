@@ -5,7 +5,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Bank Level Security & Privacy | NotaryCentral",
   description:
-    "We take the security of your data and personal information very seriously. That's why we use advanced digital and physical security measures to ensure your information remains safe and secure.",
+    "NotaryCentral protects your data with digital and physical safeguards so your information and notarization records stay private and accessible only to you.",
 }
 
 export default function SecurityPage() {

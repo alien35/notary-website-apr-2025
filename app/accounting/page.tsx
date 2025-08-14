@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Accounting",
   description:
-    "Easily generate and export year-end tax reports. Stay compliant and get the best tax breaks for notaries."
+    "Manage notary finances with auto-categorized expenses, mileage logs, and reports that simplify tax prep, support audits, and keep books accurate year-round."
 }
 
 export default function WhyNotaryCentralFaqPage() {

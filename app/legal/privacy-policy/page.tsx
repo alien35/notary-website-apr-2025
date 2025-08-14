@@ -4,7 +4,7 @@ import PrivacyPolicyClient from "./PrivacyPolicyClient"
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "General. We will not share or sell your personal information or information that can be used to identify you without your permission.",
+    "Learn how NotaryCentral collects, uses, and protects personal information, what data we store, who has access, and your options for managing or deleting it.",
 }
 
 export default function PrivacyPolicy() {

@@ -4,7 +4,7 @@ import { signingServices } from '@/data/signing-services'
 
 export const metadata: Metadata = {
   title: 'Signing Services & More',
-  description: 'Compilation of signing services, title companies, attorneys and other organizations that work with notaries.'
+  description: 'Browse a curated list of signing services, title companies, and other organizations that hire notaries, with links to research partners and grow business.'
 }
 
 export default function SigningServicesPage() {

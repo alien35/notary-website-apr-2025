@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "General Notary Work",
   description:
-    "Automate routine notarizations with unified scheduling, mileage tracking, and business metrics.",
+    "Automate routine notarizations with scheduling, mileage tracking, and business metrics in one workspace so general notary work stays efficient and compliant.",
 }
 
 export default function GeneralNotaryWorkPage() {
