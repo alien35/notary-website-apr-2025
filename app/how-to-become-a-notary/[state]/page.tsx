@@ -4,6 +4,8 @@ import CompliancePreview from '@/components/CompliancePreview'
 
 export const metadata: Metadata = {
   title: 'How to become a notary',
+  description:
+    'Learn the steps, eligibility, forms, and resources for becoming a notary in your state so you can start serving clients confidently and stay compliant.',
 }
 
 interface Props {

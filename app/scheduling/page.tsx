@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Effortless Scheduling for Modern Notaries",
   description:
-    "No more missed calls. No more endless phone tag. And no more lost leads from clients who just want to book fast."
+    "Cut missed calls with online scheduling that lets clients book instantly while NotaryCentral syncs calendars, tracks mileage, and keeps appointments organized."
 }
 
 export default function WhyNotaryCentralFaqPage() {

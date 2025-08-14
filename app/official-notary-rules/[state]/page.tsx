@@ -3,6 +3,8 @@ import manuals, { NotaryManual } from "@/lib/notaryManuals"
 
 export const metadata: Metadata = {
   title: "Official notary rules by state",
+  description:
+    "Browse official state notary handbooks and rules in downloadable formats so you can follow the exact laws and procedures for your commission with confidence.",
 }
 
 interface Props {

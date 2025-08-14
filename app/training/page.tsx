@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Training Materials - NotaryCentral",
-  description: "Explore available training materials to help you get started with NotaryCentral features.",
+  description:
+    "NotaryCentral training guides you through journals, scheduling, and key tools with tutorials so notaries of any experience work efficiently and stay compliant.",
 }
 
 export default function TrainingMaterials() {

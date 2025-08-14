@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Import orders",
   description:
-    "NotaryCentral eliminates that busywork by letting you forward an order email directly into your workspace."
+    "Forward order emails into NotaryCentral to create appointments, attach documents, and populate client details, saving time and reducing manual data entry."
 }
 
 export default function WhyNotaryCentralFaqPage() {

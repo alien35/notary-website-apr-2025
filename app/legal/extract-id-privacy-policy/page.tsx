@@ -3,7 +3,7 @@ import "./PrivacyPolicy.css"
 export const metadata = {
   title: "Privacy Policy - Extract from ID Feature | NotaryCentral",
   description:
-    "Learn how your data is handled when using the Extract from ID feature. We prioritize privacy and security in processing your information.",
+    "Learn how your data is handled when using the Extract from ID feature, what information is secured, and the safeguards that protect your privacy at every step of use.",
 }
 
 export default function PrivacyPolicy() {

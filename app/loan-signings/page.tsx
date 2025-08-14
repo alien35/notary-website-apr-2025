@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Loan Signings",
   description:
-    "Automate loan signing management from email intake to digital journaling and scheduling.",
+    "Automate loan signings from email intake to journaling, mileage logs, and scheduling so every transaction stays organized and compliant from start to finish.",
 }
 
 export default function LoanSigningsPage() {

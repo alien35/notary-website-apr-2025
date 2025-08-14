@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The future of notarial work is hybrid, mobile, and highly regulated—and that combination demands better tools."
+    "Learn why the future of notarial work is hybrid, mobile, and tightly regulated, and how NotaryCentral delivers secure tools and training so notaries can thrive."
 }
 
 export default function WhyNotaryCentralFaqPage() {

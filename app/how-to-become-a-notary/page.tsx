@@ -4,6 +4,8 @@ import { getAvailableStates } from '@/lib/howToBecome'
 
 export const metadata: Metadata = {
   title: 'How to become a notary',
+  description:
+    'Select your state to learn the requirements for becoming a notary, including application details, training, and resources to get commissioned quickly.',
 }
 
 function formatStateName(slug: string) {
