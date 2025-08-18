@@ -1,10 +1,5 @@
 export const useCases = [
   {
-    title: "E-Journal",
-    description: "Digitally record and store all your notary transactions",
-    href: "/post/e-journal",
-  },
-  {
     title: "Loan Signings",
     description: "Streamline loan document notarizations",
     href: "/loan-signings",
