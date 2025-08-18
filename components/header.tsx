@@ -18,58 +18,16 @@ import { Menu, X } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
 const menuItems = {
-  useCases: [
+  products: [
     {
       title: "E-Journal",
       description: "Digitally record and store all your notary transactions",
       href: "/post/e-journal",
     },
     {
-      title: "Loan Signings",
-      description: "Streamline loan document notarizations",
-      href: "/loan-signings",
-    },
-    {
-      title: "General Notary Work",
-      description: "Manage everyday notarizations efficiently",
-      href: "/general-notary-work",
-    },
-    {
-      title: "Other Appointment Types",
-      description: "Track miscellaneous appointments",
-      href: "/other-appointments",
-    },
-  ],
-  features: [
-    {
-      title: "Expense tracking",
-      description: "Track and categorize all your business expenses",
-      href: "/post/expense-tracking",
-    },
-    {
-      title: "Import Orders",
-      description: "Easily import signing orders from other platforms",
-      href: "/import-orders",
-    },
-    {
-      title: "Accounting",
-      description: "Track income, expenses, and generate tax reports automatically to maximize deductions.",
-      href: "/accounting",
-    },
-    {
-      title: "Ask AI",
-      description: "Get instant answers to state-specific notary law questions",
-      href: "/ask-ai",
-    },
-    {
-      title: "Business Health Insights",
-      description: "Get actionable insights to grow your notary business",
-      href: "/business-health-insights",
-    },
-    {
-      title: "Scheduling",
-      description: "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
-      href: "/post/online-scheduler",
+      title: "Business Management Suite",
+      description: "Manage scheduling, expenses, and more from one place",
+      href: "/business-management-suite",
     },
   ],
   resources: [
@@ -326,23 +284,10 @@ export default function Header() {
                     ))}
                   </div>
 
-                  {/* Show USE CASES and FEATURES inline on mobile */}
+                  {/* Show PRODUCTS inline on mobile */}
                   <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
-                    <h4 className="mb-2 text-md font-semibold">USE CASES</h4>
-                    {menuItems.useCases.map((item) => (
-                      <Link
-                        key={item.title}
-                        href={item.href}
-                        className="block py-1 text-base font-medium"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                  <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
-                    <h4 className="mb-2 text-md font-semibold">FEATURES</h4>
-                    {menuItems.features.map((item) => (
+                    <h4 className="mb-2 text-md font-semibold">PRODUCTS</h4>
+                    {menuItems.products.map((item) => (
                       <Link
                         key={item.title}
                         href={item.href}
@@ -451,64 +396,33 @@ export default function Header() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              {/* Use Cases & Features in a NavigationMenu for desktop */}
+              {/* Products in a NavigationMenu for desktop */}
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-transparent hover:text-primary">
-                      USE CASES & FEATURES
+                      PRODUCTS
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="grid gap-6 p-6 md:w-[600px] lg:w-[700px]" style={{ transform: "translateX(0)" }}>
-                        <div className="grid gap-3">
-                          <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">
-                            USE CASES
-                          </h3>
-                          <ul className="grid gap-3 md:grid-cols-2">
-                            {menuItems.useCases.map((item) => (
-                              <li key={item.title}>
-                                <NavigationMenuLink asChild>
-                                  <Link
-                                    href={item.href}
-                                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                  >
-                                    <div className="text-sm font-medium leading-none">
-                                      {item.title}
-                                    </div>
-                                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                      {item.description}
-                                    </p>
-                                  </Link>
-                                </NavigationMenuLink>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        <div className="grid gap-3">
-                          <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">
-                            FEATURES
-                          </h3>
-                          <ul className="grid gap-3 md:grid-cols-2">
-                            {menuItems.features.map((item) => (
-                              <li key={item.title}>
-                                <NavigationMenuLink asChild>
-                                  <Link
-                                    href={item.href}
-                                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                  >
-                                    <div className="text-sm font-medium leading-none">
-                                      {item.title}
-                                    </div>
-                                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                      {item.description}
-                                    </p>
-                                  </Link>
-                                </NavigationMenuLink>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
+                      <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px]">
+                        {menuItems.products.map((item) => (
+                          <li key={item.title}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={item.href}
+                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              >
+                                <div className="text-sm font-medium leading-none">
+                                  {item.title}
+                                </div>
+                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                 </NavigationMenuList>
