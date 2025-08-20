@@ -18,7 +18,7 @@ import { Menu, X } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
 const menuItems = {
-  products: [
+  supplies: [
     {
       title: "E-Journal",
       description: "Digitally record and store all your notary transactions",
@@ -46,6 +46,10 @@ const menuItems = {
     {
       title: "Why NotaryCentral is the Best US Notary App",
       href: "/why-notarycentral-is-the-best-us-notary-app",
+    },
+    {
+      title: "E&O Insurance",
+      href: "/e-o-insurance",
     },
   ],
 }
@@ -284,10 +288,10 @@ export default function Header() {
                     ))}
                   </div>
 
-                  {/* Show PRODUCTS inline on mobile */}
+                  {/* Show SUPPLIES inline on mobile */}
                   <div className="pt-2 border-t border-gray-700/20 dark:border-gray-500/20">
-                    <h4 className="mb-2 text-md font-semibold">PRODUCTS</h4>
-                    {menuItems.products.map((item) => (
+                    <h4 className="mb-2 text-md font-semibold">SUPPLIES</h4>
+                    {menuItems.supplies.map((item) => (
                       <Link
                         key={item.title}
                         href={item.href}
@@ -396,16 +400,16 @@ export default function Header() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              {/* Products in a NavigationMenu for desktop */}
+              {/* Supplies in a NavigationMenu for desktop */}
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-transparent hover:text-primary">
-                      PRODUCTS
+                      SUPPLIES
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px]">
-                        {menuItems.products.map((item) => (
+                        {menuItems.supplies.map((item) => (
                           <li key={item.title}>
                             <NavigationMenuLink asChild>
                               <Link
