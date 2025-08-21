@@ -8,7 +8,8 @@ import {worksOnDevices} from './schemaTypes/worksOnDevices'
 import statePicker from './schemaTypes/statePicker'
 import {breadcrumbs} from './schemaTypes/breadcrumbs';
 import { imageBlock } from './schemaTypes/imageBlock';
+import { journalBillingWidget } from './schemaTypes/journalBillingWidget';
 
 export const schema = {
-  types: [post, author, category, blockContent, conditionalText, table, worksOnDevices, statePicker, breadcrumbs, imageBlock],
+  types: [post, author, category, blockContent, conditionalText, table, worksOnDevices, statePicker, breadcrumbs, imageBlock, journalBillingWidget],
 }
