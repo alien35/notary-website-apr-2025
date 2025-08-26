@@ -1,12 +1,5 @@
 import type { Metadata } from 'next'
 import { getStateData } from '@/lib/howToBecome'
-import CompliancePreview from '@/components/CompliancePreview'
-
-export const metadata: Metadata = {
-  title: 'How to become a notary',
-  description:
-    'Learn the steps, eligibility, forms, and resources for becoming a notary in your state so you can start serving clients confidently and stay compliant.',
-}
 
 interface Props {
   params: { state: string }
@@ -17,6 +10,14 @@ function formatStateName(slug: string) {
     .split('-')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ')
+}
+
+export async function generateMetadata({ params }: { params: { state: string } }): Promise<Metadata> {
+  const stateName = formatStateName(params.state)
+  return {
+    title: `How to become a notary in ${stateName}`,
+    description: `Learn the steps, eligibility, forms, and resources for becoming a notary in ${stateName} so you can start serving clients confidently and stay compliant.`,
+  }
 }
 
 // Clean script and style tags out of raw HTML
