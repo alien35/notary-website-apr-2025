@@ -1,22 +1,27 @@
 import type { Metadata } from "next"
 import manuals, { NotaryManual } from "@/lib/notaryManuals"
 
-export const metadata: Metadata = {
-  title: "Official notary rules by state",
-  description:
-    "Browse official state notary handbooks and rules in downloadable formats so you can follow the exact laws and procedures for your commission with confidence.",
-}
-
 interface Props {
   params: { state: string }
 }
 
-export default function OfficialNotaryRulesByState({ params }: Props) {
-  const name = params.state.replace(/-/g, " ")
-  const words = name
-    .split(" ")
+function formatStateName(slug: string) {
+  return slug
+    .split("-")
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-  const stateName = words.join(" ")
+    .join(" ")
+}
+
+export async function generateMetadata({ params }: { params: { state: string } }): Promise<Metadata> {
+  const stateName = formatStateName(params.state)
+  return {
+    title: `Official notary rules for ${stateName}`,
+    description: `Browse official ${stateName} notary handbooks and rules in downloadable formats so you can follow the exact laws and procedures for your commission with confidence.`,
+  }
+}
+
+export default function OfficialNotaryRulesByState({ params }: Props) {
+  const stateName = formatStateName(params.state)
 
   const stateManuals: NotaryManual[] | undefined = (manuals as any)[params.state]
 
