@@ -13,6 +13,7 @@ const footerLinks = [
     links: [
       { name: "Pricing", href: "/pricing" },
       { name: "Compliance", href: "/compliance" },
+      { name: "App Status", href: "https://stats.uptimerobot.com/j42SjkkUqx" },
     ],
   },
   {
@@ -134,16 +135,6 @@ export default function Footer() {
                 © {new Date().getFullYear()} NotaryCentral. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground">1272 SW Evergreen Ln, Florida, 37990</p>
-              <p className="text-sm text-muted-foreground">
-                <a
-                  href="https://stats.uptimerobot.com/j42SjkkUqx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  Check app status
-                </a>
-              </p>
             </div>
             <div className="flex space-x-4">
               {socialLinks.map((link, i) => (
