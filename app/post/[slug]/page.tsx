@@ -22,8 +22,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
   }
 
-  let fallbackDescription = ""
-  if (Array.isArray(post.body)) {
+  let description = post.excerpt?.trim() || ""
+
+  if (!description && Array.isArray(post.body)) {
     const blocks = post.body.filter(
       (block) =>
         block._type === "block" &&
@@ -38,20 +39,22 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         .join("")
         .trim()
       if (text) {
-        fallbackDescription += (fallbackDescription ? " " : "") + text
+        description += (description ? " " : "") + text
       }
-      if (fallbackDescription.length >= 150) {
+      if (description.length >= 160) {
         break
       }
     }
   }
 
-  const baseDescription =
-    "Explore this NotaryCentral article for guidance, tips, and compliance insights that help notaries stay organized, secure, and ready for every appointment."
+  if (!description) {
+    description =
+      "Explore this NotaryCentral article for guidance, tips, and compliance insights that help notaries stay organized, secure, and ready for every appointment."
+  }
 
-  const description = fallbackDescription
-    ? fallbackDescription.slice(0, 160)
-    : baseDescription
+  if (description.length > 160) {
+    description = description.slice(0, 160)
+  }
 
   return {
     title: `${post.title} | NotaryCentral Blog`,

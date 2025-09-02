@@ -35,6 +35,7 @@ export async function getPost(slug: string) {
       _id,
       title,
       slug,
+      excerpt,
       body,
       breadcrumbs,
       mainImage{
