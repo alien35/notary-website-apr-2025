@@ -13,6 +13,7 @@ const footerLinks = [
     links: [
       { name: "Pricing", href: "/pricing" },
       { name: "Compliance", href: "/compliance" },
+      { name: "App Status", href: "https://stats.uptimerobot.com/j42SjkkUqx" },
     ],
   },
   {

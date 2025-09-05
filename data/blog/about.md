@@ -27,6 +27,8 @@ NotaryCentral is the next step in this journey—a platform that fuses business 
 
 Imagine entering the details of an appointment and instantly receiving context-specific guidance—state requirements, best practices, or even tips based on the type of document. NotaryCentral is built to make that vision real.
 
+By first offering an education module on recordkeeping that uses NotaryCentral as an example, state notary education programs can seamlessly expose notaries to the journal and other core features.
+
 ## Why Now?
 
 The future of notarial work is hybrid, mobile, and highly regulated—and that combination demands better tools. NotaryCentral is designed to serve both solo notaries and teams, making it easier to stay compliant, streamline operations, and elevate the profession.
