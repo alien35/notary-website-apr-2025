@@ -215,10 +215,6 @@ export default function CountryAndRegionPicker({
 
     locationEventBus.publish({ country, region: defaultRegion })
     onChange?.({ country, region: defaultRegion })
-
-    if (!maybeRedirectToStatePage(defaultRegion)) {
-      window.location.reload()
-    }
   }
 
   const handleRegionChange = (region: string) => {
