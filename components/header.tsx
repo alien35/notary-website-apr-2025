@@ -16,6 +16,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
 import { useLocation } from "@/components/LocationProvider"
+import { maybeRedirectToStatePage } from "@/lib/state-url"
 
 const menuItems = {
   supplies: [
@@ -180,12 +181,16 @@ export default function Header() {
   const handleCountryChange = (newCountry: string) => {
     const defaultRegion = newCountry === "US" ? "CA" : "BC"
     setLocation(newCountry, defaultRegion)
-    window.location.reload()
+    if (!maybeRedirectToStatePage(defaultRegion)) {
+      window.location.reload()
+    }
   }
 
   const handleStateChange = (newState: string) => {
     setLocation(country, newState)
-    window.location.reload()
+    if (!maybeRedirectToStatePage(newState)) {
+      window.location.reload()
+    }
   }
 
   return (

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
+import { maybeRedirectToStatePage } from "@/lib/state-url"
 
 // State name to abbreviation mapping
 const stateNameToAbbreviation = {
@@ -216,7 +217,9 @@ export default function CountryAndRegionPicker({
     locationEventBus.publish({ country, region: defaultRegion })
     onChange?.({ country, region: defaultRegion })
 
-    window.location.reload()
+    if (!maybeRedirectToStatePage(defaultRegion)) {
+      window.location.reload()
+    }
   }
 
   const handleRegionChange = (region: string) => {
@@ -226,7 +229,9 @@ export default function CountryAndRegionPicker({
     locationEventBus.publish({ country: selectedCountry, region })
     onChange?.({ country: selectedCountry, region })
 
-    window.location.reload()
+    if (!maybeRedirectToStatePage(region)) {
+      window.location.reload()
+    }
   }
 
   if (loading) {
