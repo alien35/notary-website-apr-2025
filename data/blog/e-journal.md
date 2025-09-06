@@ -43,11 +43,25 @@ You can get an e-Journal right here on NotaryCentral! Our e-Journal provides a s
 
 ## FAQ
 
-- Can I use this e-Journal for my Remote Online Notarization appointments?
-- Are e-Journal entries tamper-evident?
-- How does NotaryCentral make sure my journal data doesn't get lost?
-- How long does NotaryCentral host my journal?
-- What happens if I don't have internet connection?
+- **Can I use this e-Journal for my Remote Online Notarization appointments?**
+
+  ✅ Yes. The app lets you indicate the platform used and a unique identifier to the signing session.
+
+- **Are e-Journal entries tamper-evident?**
+
+  Yes, entries in NotaryCentral's e-Journal are tamper-evident. Once an entry is saved, a secure tamper-evident hash is created, locking the record. If any part of the entry is altered later, the hash will no longer match, clearly indicating tampering.
+
+- **How does NotaryCentral make sure my journal data doesn't get lost?**
+
+  NotaryCentral offers several lines of defense. First, all data is automatically backed up in a second cloud provider in case an (unlikely) disaster happens to the first one. Second, we offer a "Backup" button that exports all the journal data in its original form to your device. We highly encourage you to use it for added protection.
+
+- **How long does NotaryCentral host my journal?**
+
+  Indefinitely. We will only remove journals upon written request.
+
+- **What happens if I don't have internet connection?**
+
+  You can create journal entries without an internet connection and even when you are signed out. Once you regain access to the internet you can sync your entries.
 
 ## Disclaimer
 
