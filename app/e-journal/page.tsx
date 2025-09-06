@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import type { Metadata } from "next"
 import EJournalStateInfo from "@/components/EJournalStateInfo"
+import WorksOnDevices from "@/components/WorksOnDevices"
 
 export const metadata: Metadata = {
   title: "Electronic Journal (e-Journal)",
@@ -15,6 +16,7 @@ export default function EJournalPage() {
   const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
   const markdown = fs.readFileSync(markdownPath, "utf8")
   const [intro, rest] = markdown.split("<!--STATE_PICKER-->")
+  const [beforeDevices, afterDevices = ""] = rest.split("<!--WORKS_ON_DEVICES-->")
   const lastUpdatedMatch = markdown.match(
     /Last updated\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})/
   )
@@ -52,9 +54,11 @@ export default function EJournalPage() {
             className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
           />
         </div>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforeDevices}</ReactMarkdown>
+        <WorksOnDevices />
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterDevices}</ReactMarkdown>
       </div>
-     
+
     </div>
   )
 }
