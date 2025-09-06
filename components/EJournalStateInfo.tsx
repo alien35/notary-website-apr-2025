@@ -29,6 +29,7 @@ export default function EJournalStateInfo() {
   }
 
   const Icon = info.value ? CheckCircle : XCircle
+  const color = info.value ? "text-green-600" : "text-red-600"
 
   return (
     <section className="py-4 border-t border-border bg-background">
@@ -37,8 +38,8 @@ export default function EJournalStateInfo() {
           <h2 className="text-xl md:text-2xl font-semibold">
             Electronic journal rules in {stateName}
           </h2>
-          <p className="text-sm flex items-center justify-center gap-1 text-foreground">
-            <Icon className="h-4 w-4 text-primary" />
+          <p className={`text-sm flex items-center justify-center gap-1 ${color}`}>
+            <Icon className="h-4 w-4" />
             {info.value
               ? "An electronic journal may be used exclusively."
               : "An electronic journal may not be used exclusively for an in-person notarization."}
