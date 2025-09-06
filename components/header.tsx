@@ -181,9 +181,6 @@ export default function Header() {
   const handleCountryChange = (newCountry: string) => {
     const defaultRegion = newCountry === "US" ? "CA" : "BC"
     setLocation(newCountry, defaultRegion)
-    if (!maybeRedirectToStatePage(defaultRegion)) {
-      window.location.reload()
-    }
   }
 
   const handleStateChange = (newState: string) => {
