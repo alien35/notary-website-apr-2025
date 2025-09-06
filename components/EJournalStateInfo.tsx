@@ -42,11 +42,22 @@ export default function EJournalStateInfo() {
             <Icon className="inline-block mr-1 h-5 w-5" />
             {info.value ? "An electronic journal may be used exclusively." : "An electronic journal may not be used exclusively for an in-person notarization."}
           </p>
-          <p className="text-sm">
-            <a href={info.link} className="underline" target="_blank" rel="noopener noreferrer">
+          
+
+          <p className="text-s text-muted-foreground italic">
+            Source:{" "}
+            <a
+              href={info.link}
+              className="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {info.citation}
             </a>
           </p>
+
+
+
         </div>
         <CountryAndRegionPicker />
       </div>
