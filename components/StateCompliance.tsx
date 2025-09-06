@@ -3,27 +3,8 @@
 import Link from "next/link"
 import { CheckCircle, XCircle } from "lucide-react"
 import { useLocation } from "./LocationProvider"
-
-const NON_COMPLIANT_STATES = [
-  "Washington",
-  "Nevada",
-  "Arizona",
-  "Missouri",
-  "Hawaii",
-]
-
-const STATE_MAP: Record<string, string> = {
-  AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
-  CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
-  HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
-  KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
-  MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
-  MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
-  NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
-  OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
-  SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
-  VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
-}
+import { eJournalStateData } from "@/data/e-journal-state-data"
+import { STATE_MAP } from "@/lib/states"
 
 interface Props {
   stateName?: string
@@ -31,10 +12,14 @@ interface Props {
 
 export default function StateCompliance({ stateName }: Props) {
   const { region } = useLocation()
-  const displayName = stateName || STATE_MAP[region] || "your state"
+  const regionCode = stateName
+    ? (Object.entries(STATE_MAP).find(([abbr, name]) => name === stateName)?.[0] || region)
+    : region
+  const displayName = STATE_MAP[regionCode] || "your state"
 
-  const nonCompliant = NON_COMPLIANT_STATES.includes(displayName)
-  const compliant = !nonCompliant
+  const info = eJournalStateData[regionCode as keyof typeof eJournalStateData]
+  const compliant = info ? info.value : true
+  const nonCompliant = !compliant
 
   const AnswerIcon = compliant ? CheckCircle : XCircle
   const answerText = compliant ? "Yes" : "No"

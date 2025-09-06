@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
+import { maybeRedirectToStatePage } from "@/lib/state-url"
 
 // State name to abbreviation mapping
 const stateNameToAbbreviation = {
@@ -126,7 +127,6 @@ export const canadianProvinces = [
   { value: "PE", label: "Prince Edward Island" },
   { value: "QC", label: "Quebec" },
   { value: "SK", label: "Saskatchewan" },
-  { value: "YT", label: "Yukon" },
 ]
 
 // Event bus for syncing location changes across components
@@ -191,9 +191,6 @@ export default function CountryAndRegionPicker({
 
         // Notify other components about the location change
         locationEventBus.publish({ country: detectedCountry, region: detectedRegion })
-
-        // Force reload to apply changes
-        window.location.reload()
       } catch (err) {
         console.error("Error fetching location:", err)
         setError("Failed to retrieve location data")
@@ -205,48 +202,32 @@ export default function CountryAndRegionPicker({
     fetchLocation()
   }, [])
 
-  const handleCountryChange = (country: string) => {
-    const defaultRegion = country === "US" ? "CA" : "BC" // Default: California for US, British Columbia for Canada
+  // Keep picker in sync with global location changes (e.g., header changes)
+  useEffect(() => {
+    const unsubscribe = locationEventBus.subscribe(({ country, region }) => {
+      if (country) setSelectedCountry(country)
+      if (region) setSelectedRegion(region)
+    })
+    return unsubscribe
+  }, [])
+
+  // Country change is local-only (UI), no persistence or global publish
+  const handleCountryChange = (country: "US" | "CA") => {
+    const defaultRegion = country === "US" ? "CA" : "BC"
     setSelectedCountry(country)
     setSelectedRegion(defaultRegion)
-
-    localStorage.setItem("userCountry", country)
-    localStorage.setItem("userLocation", JSON.stringify({ stateAbbreviation: defaultRegion }))
-
-    // Debug log
-    console.log("CountryPicker - Setting location:", {
-      country,
-      region: defaultRegion,
-      stored: JSON.stringify({ stateAbbreviation: defaultRegion }),
-    })
-
-    // Notify other components about the location change
-    locationEventBus.publish({ country, region: defaultRegion })
-
-    onChange?.({ country, region: defaultRegion })
-
-    // Refresh the page when the country changes
-    window.location.reload()
+    // Intentionally do NOT update localStorage, publish, call onChange, or redirect
   }
 
   const handleRegionChange = (region: string) => {
-    console.log(region, "region selected")
     setSelectedRegion(region)
     localStorage.setItem("userLocation", JSON.stringify({ stateAbbreviation: region }))
 
-    // Debug log
-    console.log("CountryPicker - Setting region:", {
-      region,
-      stored: JSON.stringify({ stateAbbreviation: region }),
-    })
-
-    // Notify other components about the location change
     locationEventBus.publish({ country: selectedCountry, region })
-
     onChange?.({ country: selectedCountry, region })
 
-    // Refresh the page when the region changes
-    window.location.reload()
+    // Perform route-based redirect only when pattern matches; otherwise rely on reactive updates
+    maybeRedirectToStatePage(region)
   }
 
   if (loading) {
@@ -288,7 +269,9 @@ export default function CountryAndRegionPicker({
         </Select>
 
         <div className="flex items-center">
-          <span className="text-xs font-medium mr-1">{selectedCountry === "US" ? "STATE:" : "PROVINCE:"}</span>
+          <span className="text-xs font-medium mr-1">
+            {selectedCountry === "US" ? "STATE:" : "PROVINCE:"}
+          </span>
           <Select value={selectedRegion} onValueChange={handleRegionChange}>
             <SelectTrigger className="w-16 h-8 border-none">
               <SelectValue placeholder="Select" />
@@ -307,15 +290,23 @@ export default function CountryAndRegionPicker({
   }
 
   return (
-    <Card className="my-6">
-      <CardContent className="pt-6">
-        <h3 className="text-xl font-medium mb-6">Looking for info on a different state/province?</h3>
+    <Card className="my-6 bg-transparent shadow-none border-none">
+      <CardContent>
+        <h3 className="text-xl font-medium mb-6">
+          Looking for info on a different state/province?
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            {showLabels && <label className="block text-sm font-medium mb-2">Country</label>}
+            {showLabels && (
+              <label className="block text-sm font-medium mb-2 text-left">
+                Country
+              </label>
+            )}
             <Select value={selectedCountry} onValueChange={handleCountryChange}>
               <SelectTrigger className="w-full">
-                <SelectValue>{selectedCountry === "US" ? "United States" : "Canada"}</SelectValue>
+                <SelectValue>
+                  {selectedCountry === "US" ? "United States" : "Canada"}
+                </SelectValue>
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="US">United States</SelectItem>
@@ -323,10 +314,10 @@ export default function CountryAndRegionPicker({
               </SelectContent>
             </Select>
           </div>
-
+  
           <div>
             {showLabels && (
-              <label className="block text-sm font-medium mb-2">
+              <label className="block text-sm font-medium mb-2 text-left">
                 {selectedCountry === "US" ? "State" : "Province"}/Region
               </label>
             )}
@@ -347,4 +338,5 @@ export default function CountryAndRegionPicker({
       </CardContent>
     </Card>
   )
+  
 }

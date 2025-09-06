@@ -1,32 +1,57 @@
-import fs from "fs"
-import path from "path"
+// app/(marketing)/e-journal/page.tsx (example path)
+import type { Metadata } from "next"
+import fs from "node:fs"
+import path from "node:path"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
-import type { Metadata } from "next"
-import CountryAndRegionPicker from "@/components/CountryAndRegionPicker"
-import StateCompliance from "@/components/StateCompliance"
+
+import EJournalStateInfo from "@/components/EJournalStateInfo"
+import WorksOnDevices from "@/components/WorksOnDevices"
+
+const title = "Electronic Journal (e-Journal)"
+const description =
+  "Learn how NotaryCentral's electronic journal keeps your records organized, secure, and compliant across states and provinces."
 
 export const metadata: Metadata = {
-  title: "Electronic Journal (e-Journal)",
-  description:
-    "Learn how NotaryCentral's electronic journal keeps your records organized, secure, and compliant across states and provinces.",
+  title,
+  description,
 }
 
 export default function EJournalPage() {
-  const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
-  const markdown = fs.readFileSync(markdownPath, "utf8")
-  const [intro, rest] = markdown.split("<!--STATE_PICKER-->")
-  const lastUpdatedMatch = markdown.match(
-    /Last updated\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})/
-  )
-  const isoDate = lastUpdatedMatch
-    ? new Date(lastUpdatedMatch[1]).toISOString()
-    : undefined
+  // Load & slice the markdown into sections using markers
+  let intro = ""
+  let beforeDevices = ""
+  let afterDevices = ""
+  let isoDate: string | undefined
+
+  try {
+    const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
+    const markdown = fs.readFileSync(markdownPath, "utf8")
+
+    const [introPart, rest = ""] = markdown.split("<!--STATE_PICKER-->")
+    intro = introPart || ""
+
+    const [beforeDevicesPart, afterDevicesPart = ""] = rest.split(
+      "<!--WORKS_ON_DEVICES-->"
+    )
+    beforeDevices = beforeDevicesPart || ""
+    afterDevices = afterDevicesPart || ""
+
+    const lastUpdatedMatch = markdown.match(
+      /Last updated\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})/
+    )
+    isoDate = lastUpdatedMatch
+      ? new Date(lastUpdatedMatch[1]).toISOString()
+      : undefined
+  } catch {
+    // If the markdown file is missing in some environments, keep rendering the page gracefully.
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: metadata.title,
-    description: metadata.description,
+    headline: title,
+    description,
     author: { "@type": "Person", name: "Alexander Leon" },
     datePublished: isoDate,
     dateModified: isoDate,
@@ -37,24 +62,35 @@ export default function EJournalPage() {
       <div className="prose lg:prose-lg dark:prose-invert mx-auto max-w-4xl">
         <script
           type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>
-        <CountryAndRegionPicker />
+        {intro && <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>}
+
+        <div className="mt-12 space-y-12">
+          <EJournalStateInfo />
+        </div>
+
         <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
           <iframe
             src="https://www.youtube.com/embed/yUQsJw9C_g4"
             title="Electronic journal overview"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
+            className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
           />
         </div>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
-      </div>
-      <div className="mt-12">
-        <StateCompliance />
+
+        {beforeDevices && (
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforeDevices}</ReactMarkdown>
+        )}
+
+        <WorksOnDevices />
+
+        {afterDevices && (
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterDevices}</ReactMarkdown>
+        )}
       </div>
     </div>
   )

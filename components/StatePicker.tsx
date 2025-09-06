@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { canadianProvinces, locationEventBus } from "./CountryAndRegionPicker"
+import { maybeRedirectToStatePage } from "@/lib/state-url"
 
 export default function StatePicker() {
   const [state, setState] = useState("CA")
@@ -97,8 +98,8 @@ export default function StatePicker() {
     // Notify other components about the location change
     locationEventBus.publish({ country, region: newState })
 
-    // Refresh the page when the state changes
-    window.location.reload()
+    // Only redirect when the route pattern matches (e.g., on e-journal pages)
+    maybeRedirectToStatePage(newState)
   }
 
   return (
