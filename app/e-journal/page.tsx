@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm"
 import type { Metadata } from "next"
 import CountryAndRegionPicker from "@/components/CountryAndRegionPicker"
 import StateCompliance from "@/components/StateCompliance"
+import EJournalStateTable from "@/components/EJournalStateTable"
 
 export const metadata: Metadata = {
   title: "Electronic Journal (e-Journal)",
@@ -53,8 +54,9 @@ export default function EJournalPage() {
         </div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
       </div>
-      <div className="mt-12">
+      <div className="mt-12 space-y-12">
         <StateCompliance />
+        <EJournalStateTable />
       </div>
     </div>
   )
