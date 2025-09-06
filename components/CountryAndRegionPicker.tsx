@@ -191,9 +191,6 @@ export default function CountryAndRegionPicker({
 
         // Notify other components about the location change
         locationEventBus.publish({ country: detectedCountry, region: detectedRegion })
-
-        // Force reload to apply changes
-        window.location.reload()
       } catch (err) {
         console.error("Error fetching location:", err)
         setError("Failed to retrieve location data")
@@ -205,16 +202,21 @@ export default function CountryAndRegionPicker({
     fetchLocation()
   }, [])
 
-  const handleCountryChange = (country: string) => {
+  // Keep picker in sync with global location changes (e.g., header changes)
+  useEffect(() => {
+    const unsubscribe = locationEventBus.subscribe(({ country, region }) => {
+      if (country) setSelectedCountry(country)
+      if (region) setSelectedRegion(region)
+    })
+    return unsubscribe
+  }, [])
+
+  // Country change is local-only (UI), no persistence or global publish
+  const handleCountryChange = (country: "US" | "CA") => {
     const defaultRegion = country === "US" ? "CA" : "BC"
     setSelectedCountry(country)
     setSelectedRegion(defaultRegion)
-
-    localStorage.setItem("userCountry", country)
-    localStorage.setItem("userLocation", JSON.stringify({ stateAbbreviation: defaultRegion }))
-
-    locationEventBus.publish({ country, region: defaultRegion })
-    onChange?.({ country, region: defaultRegion })
+    // Intentionally do NOT update localStorage, publish, call onChange, or redirect
   }
 
   const handleRegionChange = (region: string) => {
@@ -224,9 +226,8 @@ export default function CountryAndRegionPicker({
     locationEventBus.publish({ country: selectedCountry, region })
     onChange?.({ country: selectedCountry, region })
 
-    if (!maybeRedirectToStatePage(region)) {
-      window.location.reload()
-    }
+    // Perform route-based redirect only when pattern matches; otherwise rely on reactive updates
+    maybeRedirectToStatePage(region)
   }
 
   if (loading) {

@@ -121,7 +121,6 @@ const canadianProvinces = [
   { value: "PE", label: "Prince Edward Island" },
   { value: "QC", label: "Quebec" },
   { value: "SK", label: "Saskatchewan" },
-  { value: "YT", label: "Yukon" },
 ]
 
 const useMobileBreakpoint = () => {
@@ -145,6 +144,19 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { country, region: state, setLocation } = useLocation()
   const isMobile = useMobileBreakpoint()
+  // Local-only country selection that stays in sync with global context.
+  const [selectedCountry, setSelectedCountry] = useState<"US" | "CA">((country as "US" | "CA") ?? "US")
+  // Ensure the local selector reflects context updates (e.g., URL-driven region like /alberta)
+  useEffect(() => {
+    if (country === "US" || country === "CA") {
+      setSelectedCountry(country)
+    }
+    console.log("Header: country changed", { country, state, selectedCountry })
+  }, [country])
+
+  useEffect(() => {
+    console.log("Header: mount", { country, state, selectedCountry })
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -178,16 +190,18 @@ export default function Header() {
     window.open(path, "_blank", "noopener,noreferrer")
   }
 
-  const handleCountryChange = (newCountry: string) => {
-    const defaultRegion = newCountry === "US" ? "CA" : "BC"
-    setLocation(newCountry, defaultRegion)
+  // Country picker is now pure UI: update local state only; no redirects, no context updates.
+  const handleCountryChange = (newCountry: "US" | "CA") => {
+    setSelectedCountry(newCountry)
+    console.log("Header: handleCountryChange", { newCountry })
   }
 
   const handleStateChange = (newState: string) => {
-    setLocation(country, newState)
-    if (!maybeRedirectToStatePage(newState)) {
-      window.location.reload()
-    }
+    // still update the real app location for state/province changes
+    setLocation(selectedCountry, newState)
+    // Only redirect when there's a matching state route; otherwise let UI update reactively
+    console.log("Header: handleStateChange", { selectedCountry, newState })
+    maybeRedirectToStatePage(newState)
   }
 
   return (
@@ -279,23 +293,23 @@ export default function Header() {
                   <div className="flex flex-col space-y-4 pt-4">
                     <div className="flex items-center space-x-2">
                       <span className="text-sm font-medium">COUNTRY:</span>
-                      <Select value={country} onValueChange={handleCountryChange}>
+                      <Select value={selectedCountry} onValueChange={handleCountryChange as any}>
                         <SelectTrigger className="w-24">
                           <SelectValue>
                             <div className="flex items-center">
-                              <span className="mr-2">{country === "US" ? "🇺🇸" : "🇨🇦"}</span>
-                              <span>{country}</span>
+                              <span className="mr-2">{selectedCountry === "US" ? "🇺🇸" : "🇨🇦"}</span>
+                              <span>{selectedCountry}</span>
                             </div>
                           </SelectValue>
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="US">
+                          <SelectItem value="US" onClick={() => handleCountryChange("US") }>
                             <div className="flex items-center">
                               <span className="mr-2">🇺🇸</span>
                               <span>US</span>
                             </div>
                           </SelectItem>
-                          <SelectItem value="CA">
+                          <SelectItem value="CA" onClick={() => handleCountryChange("CA") }>
                             <div className="flex items-center">
                               <span className="mr-2">🇨🇦</span>
                               <span>CA</span>
@@ -307,14 +321,14 @@ export default function Header() {
 
                     <div className="flex items-center space-x-2">
                       <span className="text-sm font-medium">
-                        {country === "US" ? "STATE:" : "PROVINCE:"}
+                        {selectedCountry === "US" ? "STATE:" : "PROVINCE:"}
                       </span>
                       <Select value={state} onValueChange={handleStateChange}>
                         <SelectTrigger className="w-24">
                           <SelectValue placeholder="Select" />
                         </SelectTrigger>
                         <SelectContent>
-                          {(country === "US" ? usStates : canadianProvinces).map((region) => (
+                          {(selectedCountry === "US" ? usStates : canadianProvinces).map((region) => (
                             <SelectItem key={region.value} value={region.value}>
                               {region.value}
                             </SelectItem>
@@ -408,23 +422,23 @@ export default function Header() {
             {/* Desktop Country/State selectors & CTA Buttons */}
             <div className="flex items-center space-x-3">
               <div className="flex items-center">
-                <Select value={country} onValueChange={handleCountryChange}>
+                <Select value={selectedCountry} onValueChange={handleCountryChange as any}>
                   <SelectTrigger className="w-20 h-8 border-none">
                     <SelectValue>
                       <div className="flex items-center">
-                        <span className="mr-1">{country === "US" ? "🇺🇸" : "🇨🇦"}</span>
-                        <span>{country}</span>
+                        <span className="mr-1">{selectedCountry === "US" ? "🇺🇸" : "🇨🇦"}</span>
+                        <span>{selectedCountry}</span>
                       </div>
                     </SelectValue>
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="US">
+                    <SelectItem value="US" onClick={() => handleCountryChange("US") }>
                       <div className="flex items-center">
                         <span className="mr-2">🇺🇸</span>
                         <span>US</span>
                       </div>
                     </SelectItem>
-                    <SelectItem value="CA">
+                    <SelectItem value="CA" onClick={() => handleCountryChange("CA") }>
                       <div className="flex items-center">
                         <span className="mr-2">🇨🇦</span>
                         <span>CA</span>
@@ -436,14 +450,14 @@ export default function Header() {
 
               <div className="flex items-center">
                 <span className="text-xs font-medium mr-1">
-                  {country === "US" ? "STATE:" : "PROVINCE:"}
+                  {selectedCountry === "US" ? "STATE:" : "PROVINCE:"}
                 </span>
                 <Select value={state} onValueChange={handleStateChange}>
                   <SelectTrigger className="w-16 h-8 border-none">
                     <SelectValue placeholder="Select" />
                   </SelectTrigger>
                   <SelectContent>
-                    {(country === "US" ? usStates : canadianProvinces).map((region) => (
+                    {(selectedCountry === "US" ? usStates : canadianProvinces).map((region) => (
                       <SelectItem key={region.value} value={region.value}>
                         {region.value}
                       </SelectItem>

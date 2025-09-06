@@ -13,10 +13,10 @@ interface Props {
 export default function EJournalPageContent({ title, description, stateAbbreviation }: Props) {
   const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
   const markdownFile = fs.readFileSync(markdownPath, "utf8")
-  const pdfSuffix = stateAbbreviation ? `-${stateAbbreviation.toLowerCase()}` : ""
+  const pdfSuffix = stateAbbreviation ? `${stateAbbreviation.toLowerCase()}` : ""
   const markdown = markdownFile.replace(
     /\/blog-pdf\/ejournal\.pdf/g,
-    `/blog-pdf/ejournal${pdfSuffix}.pdf`,
+    `/blog-pdf/ejournal/${pdfSuffix}.pdf`,
   )
   const [intro, rest] = markdown.split("<!--STATE_PICKER-->")
   const introWithoutHeading = intro.replace(/^# .+\n/, "")

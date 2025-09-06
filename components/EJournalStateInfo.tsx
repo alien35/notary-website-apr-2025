@@ -4,7 +4,7 @@ import { CheckCircle, XCircle } from "lucide-react"
 import { useLocation } from "./LocationProvider"
 import { eJournalStateData, type EJournalStateInfo } from "@/data/e-journal-state-data"
 import CountryAndRegionPicker from "@/components/CountryAndRegionPicker"
-import { STATE_MAP } from "@/lib/states"
+import { STATE_MAP, isCanadianAbbr } from "@/lib/states"
 import { useEffect } from "react"
 
 interface Props {
@@ -17,7 +17,12 @@ export default function EJournalStateInfo({ stateAbbreviation }: Props) {
 
   useEffect(() => {
     if (stateAbbreviation) {
-      setLocation("US", stateAbbreviation)
+      const inferredCountry = isCanadianAbbr(stateAbbreviation) ? "CA" : "US"
+      console.log("EJournalStateInfo: setting location from prop", {
+        stateAbbreviation,
+        inferredCountry,
+      })
+      setLocation(inferredCountry, stateAbbreviation)
     }
   }, [stateAbbreviation, setLocation])
 
@@ -64,4 +69,3 @@ export default function EJournalStateInfo({ stateAbbreviation }: Props) {
     </section>
   )
 }
-

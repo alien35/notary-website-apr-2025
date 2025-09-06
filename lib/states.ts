@@ -18,3 +18,11 @@ export const STATE_MAP: Record<string, string> = {
 export const STATE_ABBR_BY_SLUG: Record<string, string> = Object.fromEntries(
   Object.entries(STATE_MAP).map(([abbr, name]) => [name.toLowerCase().replace(/\s+/g, "-"), abbr])
 )
+
+// Canadian provinces/territories supported in the UI
+export const CANADIAN_ABBRS = new Set<string>([
+  "AB", "BC", "MB", "NB", "NL", "NS", "ON", "PE", "QC", "SK",
+])
+
+// Convenience helper
+export const isCanadianAbbr = (abbr: string) => CANADIAN_ABBRS.has(abbr)

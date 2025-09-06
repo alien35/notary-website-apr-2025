@@ -98,10 +98,8 @@ export default function StatePicker() {
     // Notify other components about the location change
     locationEventBus.publish({ country, region: newState })
 
-    if (!maybeRedirectToStatePage(newState)) {
-      // Refresh the page when no route-based redirect occurs
-      window.location.reload()
-    }
+    // Only redirect when the route pattern matches (e.g., on e-journal pages)
+    maybeRedirectToStatePage(newState)
   }
 
   return (
