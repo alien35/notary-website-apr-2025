@@ -3,6 +3,7 @@
 import { CheckCircle, XCircle } from "lucide-react"
 import { useLocation } from "./LocationProvider"
 import { eJournalStateData, type EJournalStateInfo } from "@/data/e-journal-state-data"
+import CountryAndRegionPicker from "@/components/CountryAndRegionPicker"
 
 const STATE_MAP: Record<string, string> = {
   AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
@@ -32,19 +33,22 @@ export default function EJournalStateInfo() {
 
   return (
     <section className="py-6 border-t border-gray-200 dark:border-gray-800 bg-secondary dark:bg-gray-900">
-      <div className="container mx-auto px-4 text-center space-y-3">
-        <h2 className="text-2xl md:text-3xl font-bold">
-          Electronic journal rules in {stateName}
-        </h2>
-        <p className={`text-lg ${color}`}>
-          <Icon className="inline-block mr-1 h-5 w-5" />
-          {info.value ? "An electronic journal may be used exclusively." : "A paper journal is required."}
-        </p>
-        <p className="text-sm">
-          <a href={info.link} className="underline" target="_blank" rel="noopener noreferrer">
-            {info.citation}
-          </a>
-        </p>
+      <div className="container mx-auto px-4 text-center space-y-6">
+        <div className="space-y-3">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Electronic journal rules in {stateName}
+          </h2>
+          <p className={`text-lg ${color}`}>
+            <Icon className="inline-block mr-1 h-5 w-5" />
+            {info.value ? "An electronic journal may be used exclusively." : "A paper journal is required."}
+          </p>
+          <p className="text-sm">
+            <a href={info.link} className="underline" target="_blank" rel="noopener noreferrer">
+              {info.citation}
+            </a>
+          </p>
+        </div>
+        <CountryAndRegionPicker />
       </div>
     </section>
   )
