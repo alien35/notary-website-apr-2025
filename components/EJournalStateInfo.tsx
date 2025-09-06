@@ -4,25 +4,25 @@ import { CheckCircle, XCircle } from "lucide-react"
 import { useLocation } from "./LocationProvider"
 import { eJournalStateData, type EJournalStateInfo } from "@/data/e-journal-state-data"
 import CountryAndRegionPicker from "@/components/CountryAndRegionPicker"
+import { STATE_MAP } from "@/lib/states"
+import { useEffect } from "react"
 
-const STATE_MAP: Record<string, string> = {
-  AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
-  CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
-  HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
-  KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
-  MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
-  MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
-  NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
-  OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
-  SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
-  VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
-  DC: "District of Columbia",
+interface Props {
+  stateAbbreviation?: string
 }
 
-export default function EJournalStateInfo() {
-  const { region } = useLocation()
-  const info = eJournalStateData[region as keyof typeof eJournalStateData] as EJournalStateInfo | undefined
-  const stateName = STATE_MAP[region]
+export default function EJournalStateInfo({ stateAbbreviation }: Props) {
+  const { region, setLocation } = useLocation()
+  const effectiveRegion = stateAbbreviation ?? region
+
+  useEffect(() => {
+    if (stateAbbreviation) {
+      setLocation("US", stateAbbreviation)
+    }
+  }, [stateAbbreviation, setLocation])
+
+  const info = eJournalStateData[effectiveRegion as keyof typeof eJournalStateData] as EJournalStateInfo | undefined
+  const stateName = STATE_MAP[effectiveRegion]
 
   if (!info || !stateName) {
     return null
