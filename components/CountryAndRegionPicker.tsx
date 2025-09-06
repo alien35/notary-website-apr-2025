@@ -307,12 +307,12 @@ export default function CountryAndRegionPicker({
   }
 
   return (
-    <Card className="my-6">
-      <CardContent className="pt-6">
-        <h3 className="text-xl font-medium mb-6">Looking for info on a different state/province?</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <Card className="my-4">
+      <CardContent className="pt-4">
+        <h3 className="text-lg font-medium mb-4">Looking for info on a different state/province?</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            {showLabels && <label className="block text-sm font-medium mb-2">Country</label>}
+            {showLabels && <label className="block text-xs font-medium mb-1">Country</label>}
             <Select value={selectedCountry} onValueChange={handleCountryChange}>
               <SelectTrigger className="w-full">
                 <SelectValue>{selectedCountry === "US" ? "United States" : "Canada"}</SelectValue>
@@ -326,7 +326,7 @@ export default function CountryAndRegionPicker({
 
           <div>
             {showLabels && (
-              <label className="block text-sm font-medium mb-2">
+              <label className="block text-xs font-medium mb-1">
                 {selectedCountry === "US" ? "State" : "Province"}/Region
               </label>
             )}
