@@ -38,6 +38,12 @@ export const eJournalStateData: Record<string, EJournalStateInfo> = {
     citation: "Notaries are required to maintain a journal of ALL notarial acts.",
     link: "https://www.sos.state.co.us/pubs/notary/files/notaryHandbook.pdf",
   },
+  CT: {
+    value: true,
+    citation:
+      "Connecticut state law does not require that notaries maintain a journal of their notarial acts. However, it is the very strong recommendation of the Office of the Secretary of the State that they do so.",
+    link: "https://portal.ct.gov/-/media/sots/business-services/notary/state_of_connecticut_notary_public_manual_rev2023",
+  },
   DC: {
     value: true,
     citation:
