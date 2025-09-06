@@ -284,6 +284,60 @@ export const eJournalStateData: Record<string, EJournalStateInfo> = {
       "Wyoming statutes do not require keeping a journal but it is wise and highly recommended by the Secretary of State.",
     link: "https://www.notaryrotary.com/101/resources/WY-hb-20070829.pdf",
   },
+  AB: {
+    value: true,
+    citation:
+      "A notary public may be called into court to establish that an oath, affirmation or solemn declaration was administered properly... Notaries should establish a consistent procedure from which they do not deviate.",
+    link: "https://open.alberta.ca/dataset/1e33c3cf-3cee-4444-92d3-c28d379c5fb9/resource/1fa79699-02a9-46a2-a20b-7d93f232b2ea/download/jus-information-and-instructions-for-notaries-public-2024.pdf",
+  },
+  BC: {
+    value: true,
+    citation:
+      "5.04 Records may be stored in a form at the discretion of a Member but must be produced, in their entirety at the request of the Society.",
+    link: "https://snpbc.ca/wp-content/uploads/2024/02/Society-Rules_Revised-rev_December_2022_F.pdf",
+  },
+  MB: {
+    value: true,
+    citation: "The Manitoba Evidence Act does not make any statements about record-keeping",
+    link: "https://www.canlii.org/en/mb/laws/stat/ccsm-c-e150/latest/ccsm-c-e150.html",
+  },
+  NB: {
+    value: true,
+    citation: "N-9 - Notaries Public Act does not make any statements about record-keeping",
+    link: "https://laws.gnb.ca/en/document/cs/N-9",
+  },
+  NL: {
+    value: true,
+    citation:
+      "The financial records described in rule 15.03(1) and (2) may be entered and posted by hand or by mechanical or electronic means, but if the records are entered and posted by hand, they shall be entered and posted in ink.",
+    link: "https://lsnl.ca/lawyers-students/lawyer-regulation/law-society-rules/part-xv/",
+  },
+  NS: {
+    value: true,
+    citation: "Instructions for Commissioner of Oaths does not make any statements about record-keeping",
+    link: "https://novascotia.ca/just/legal_services/_docs/Instruction-Booklet-Commissioners.pdf",
+  },
+  ON: {
+    value: true,
+    citation:
+      "You must maintain a record of every act of remote commissioning that you perform. Examples of record keeping could include:",
+    link: "https://www.ontario.ca/page/guide-newly-appointed-commissioners-taking-affidavits-ontario",
+  },
+  PE: {
+    value: true,
+    citation: "The Notaries Public Act does not make any statements about record-keeping",
+    link: "https://www.princeedwardisland.ca/en/legislation/n06-1-notaries-public-act",
+  },
+  QC: {
+    value: true,
+    citation: "The Notaries Act does not make any statements about record-keeping",
+    link: "https://www.legisquebec.gouv.qc.ca/en/document/cs/N-3",
+  },
+  SK: {
+    value: true,
+    citation: "The Notaries Public Act, 1989 does not make any statements about record-keeping",
+    link: "https://www.qp.gov.sk.ca/documents/english/Statutes/Statutes/N14-1.pdf",
+  },
 }
 
 export default eJournalStateData

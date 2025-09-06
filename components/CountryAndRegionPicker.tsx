@@ -127,7 +127,6 @@ export const canadianProvinces = [
   { value: "PE", label: "Prince Edward Island" },
   { value: "QC", label: "Quebec" },
   { value: "SK", label: "Saskatchewan" },
-  { value: "YT", label: "Yukon" },
 ]
 
 // Event bus for syncing location changes across components

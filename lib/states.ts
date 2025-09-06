@@ -10,6 +10,9 @@ export const STATE_MAP: Record<string, string> = {
   SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
   VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
   DC: "District of Columbia",
+  AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick",
+  NL: "Newfoundland and Labrador", NS: "Nova Scotia", ON: "Ontario",
+  PE: "Prince Edward Island", QC: "Quebec", SK: "Saskatchewan",
 }
 
 export const STATE_ABBR_BY_SLUG: Record<string, string> = Object.fromEntries(
