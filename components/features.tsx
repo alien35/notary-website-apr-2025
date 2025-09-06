@@ -11,7 +11,7 @@ const features = [
     icon: <FileText className="h-10 w-10 text-primary" />,
     title: "Digital e-Journals",
     description: "Securely record and store all your notary transactions digitally, with easy search and retrieval.",
-    href: "/post/e-journal",
+    href: "/e-journal",
   },
   {
     icon: <Calculator className="h-10 w-10 text-primary" />,

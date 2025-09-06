@@ -45,7 +45,7 @@ export default function StateCompliance({ stateName }: Props) {
             </p>
           )}
           <p>
-            <Link href="/post/e-journal" className="underline">
+            <Link href="/e-journal" className="underline">
               Learn more
             </Link>
           </p>

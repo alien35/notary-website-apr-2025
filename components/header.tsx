@@ -23,7 +23,7 @@ const menuItems = {
     {
       title: "E-Journal",
       description: "Digitally record and store all your notary transactions",
-      href: "/post/e-journal",
+      href: "/e-journal",
     },
     {
       title: "Business Management Suite",
