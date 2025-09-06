@@ -58,9 +58,6 @@ export default function CompliancePage() {
           <strong>You’ve got this.</strong>
         </p>
       </div>
-      <div className="mt-12">
-        <StateCompliance />
-      </div>
     </div>
   )
 }

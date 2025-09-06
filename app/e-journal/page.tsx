@@ -41,6 +41,9 @@ export default function EJournalPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>
+        <div className="mt-12 space-y-12">
+          <EJournalStateInfo />
+        </div>
         <CountryAndRegionPicker />
         <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
           <iframe
@@ -54,10 +57,7 @@ export default function EJournalPage() {
         </div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
       </div>
-      <div className="mt-12 space-y-12">
-        <StateCompliance />
-        <EJournalStateInfo />
-      </div>
+     
     </div>
   )
 }
