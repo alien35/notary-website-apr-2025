@@ -36,7 +36,7 @@ export default function EJournalStateInfo() {
       <div className="container mx-auto px-4 text-center space-y-6">
         <div className="space-y-3">
           <h2 className="text-2xl md:text-3xl font-bold">
-            Electronic journal rules in {stateName}
+            Can an e-journal be used exclusively in {stateName}?
           </h2>
           <p className={`text-lg ${color}`}>
             <Icon className="inline-block mr-1 h-5 w-5" />
