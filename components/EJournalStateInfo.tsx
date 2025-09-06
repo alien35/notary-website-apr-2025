@@ -38,7 +38,9 @@ export default function EJournalStateInfo() {
         </h2>
         <p className={`text-lg ${color}`}>
           <Icon className="inline-block mr-1 h-5 w-5" />
-          {info.value ? "An electronic journal may be used exclusively." : "A paper journal is required."}
+          {info.value
+            ? "An electronic journal may be used exclusively for an in-person notarization."
+            : "An electronic journal may not be used exclusively for an in-person notarization."}
         </p>
         <p className="text-sm">
           <a href={info.link} className="underline" target="_blank" rel="noopener noreferrer">
