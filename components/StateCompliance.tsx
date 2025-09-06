@@ -3,14 +3,7 @@
 import Link from "next/link"
 import { CheckCircle, XCircle } from "lucide-react"
 import { useLocation } from "./LocationProvider"
-
-const NON_COMPLIANT_STATES = [
-  "Washington",
-  "Nevada",
-  "Arizona",
-  "Missouri",
-  "Hawaii",
-]
+import { eJournalStateData } from "@/data/e-journal-state-data"
 
 const STATE_MAP: Record<string, string> = {
   AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
@@ -31,10 +24,14 @@ interface Props {
 
 export default function StateCompliance({ stateName }: Props) {
   const { region } = useLocation()
-  const displayName = stateName || STATE_MAP[region] || "your state"
+  const regionCode = stateName
+    ? (Object.entries(STATE_MAP).find(([abbr, name]) => name === stateName)?.[0] || region)
+    : region
+  const displayName = STATE_MAP[regionCode] || "your state"
 
-  const nonCompliant = NON_COMPLIANT_STATES.includes(displayName)
-  const compliant = !nonCompliant
+  const info = eJournalStateData[regionCode as keyof typeof eJournalStateData]
+  const compliant = info ? info.value : true
+  const nonCompliant = !compliant
 
   const AnswerIcon = compliant ? CheckCircle : XCircle
   const answerText = compliant ? "Yes" : "No"

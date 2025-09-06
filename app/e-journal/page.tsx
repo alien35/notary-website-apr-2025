@@ -3,8 +3,7 @@ import path from "path"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import type { Metadata } from "next"
-import CountryAndRegionPicker from "@/components/CountryAndRegionPicker"
-import StateCompliance from "@/components/StateCompliance"
+import EJournalStateInfo from "@/components/EJournalStateInfo"
 
 export const metadata: Metadata = {
   title: "Electronic Journal (e-Journal)",
@@ -40,7 +39,9 @@ export default function EJournalPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>
-        <CountryAndRegionPicker />
+        <div className="mt-12 space-y-12">
+          <EJournalStateInfo />
+        </div>
         <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
           <iframe
             src="https://www.youtube.com/embed/yUQsJw9C_g4"
@@ -53,9 +54,7 @@ export default function EJournalPage() {
         </div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
       </div>
-      <div className="mt-12">
-        <StateCompliance />
-      </div>
+     
     </div>
   )
 }
