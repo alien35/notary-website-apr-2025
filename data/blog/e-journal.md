@@ -27,11 +27,7 @@ You can get an e-Journal right here on NotaryCentral! Our e-Journal provides a s
 | Creates receipts | ✅ | ✅ | 🟡 Some do |
 | Easy to prove authenticity of journal entry | ✅ Tamper-evident hash strategy plus automatic timestamps enables high confidence | 🟡 Depends on the tool | ❌ Entries can be quietly erased, raising suspicion |
 
-## Works On These Devices
-
-- Mobile
-- Tablet
-- Desktop
+<!--WORKS_ON_DEVICES-->
 
 ## Can I capture thumbprints?
 
