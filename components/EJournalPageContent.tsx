@@ -14,6 +14,7 @@ export default function EJournalPageContent({ title, description, stateAbbreviat
   const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
   const markdown = fs.readFileSync(markdownPath, "utf8")
   const [intro, rest] = markdown.split("<!--STATE_PICKER-->")
+  const introWithoutHeading = intro.replace(/^# .+\n/, "")
   const lastUpdatedMatch = markdown.match(/Last updated\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})/)
   const isoDate = lastUpdatedMatch ? new Date(lastUpdatedMatch[1]).toISOString() : undefined
   const jsonLd = {
@@ -33,7 +34,8 @@ export default function EJournalPageContent({ title, description, stateAbbreviat
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>
+        <h1>{title}</h1>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{introWithoutHeading}</ReactMarkdown>
         <div className="mt-12 space-y-12">
           <EJournalStateInfo stateAbbreviation={stateAbbreviation} />
         </div>

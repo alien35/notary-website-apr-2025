@@ -17,7 +17,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const abbr = STATE_ABBR_BY_SLUG[params.state]
   const stateName = STATE_MAP[abbr] ?? params.state
   return {
-    title: `Electronic Journal (e-Journal) - ${stateName}`,
+    title: `Electronic Journal (e-Journal) for ${stateName} notaries`,
     description,
   }
 }
@@ -25,7 +25,7 @@ export function generateMetadata({ params }: Props): Metadata {
 export default function StateEJournalPage({ params }: Props) {
   const abbr = STATE_ABBR_BY_SLUG[params.state]
   const stateName = STATE_MAP[abbr] ?? params.state
-  const title = `Electronic Journal (e-Journal) - ${stateName}`
+  const title = `Electronic Journal (e-Journal) for ${stateName} notaries`
   return (
     <EJournalPageContent
       title={title}

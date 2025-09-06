@@ -15,7 +15,7 @@ import {
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import { useLocation } from "@/components/LocationProvider"
 
 const menuItems = {
   supplies: [
@@ -142,31 +142,8 @@ const useMobileBreakpoint = () => {
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [country, setCountry] = useState("US")
-  const [state, setState] = useState("CA")
+  const { country, region: state, setLocation } = useLocation()
   const isMobile = useMobileBreakpoint()
-  const { toast } = useToast()
-
-  // Load location from localStorage on mount
-  useEffect(() => {
-    const storedCountry = localStorage.getItem("userCountry")
-    const storedLocation = localStorage.getItem("userLocation")
-
-    if (storedCountry) {
-      setCountry(storedCountry)
-    }
-
-    if (storedLocation) {
-      try {
-        const { stateAbbreviation } = JSON.parse(storedLocation)
-        if (stateAbbreviation) {
-          setState(stateAbbreviation)
-        }
-      } catch (e) {
-        console.error("Error parsing stored location:", e)
-      }
-    }
-  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -202,19 +179,12 @@ export default function Header() {
 
   const handleCountryChange = (newCountry: string) => {
     const defaultRegion = newCountry === "US" ? "CA" : "BC"
-    setCountry(newCountry)
-    setState(defaultRegion)
-
-    localStorage.setItem("userCountry", newCountry)
-    localStorage.setItem("userLocation", JSON.stringify({ stateAbbreviation: defaultRegion }))
-
-    // Refresh the page when the country changes
+    setLocation(newCountry, defaultRegion)
     window.location.reload()
   }
 
   const handleStateChange = (newState: string) => {
-    setState(newState)
-    localStorage.setItem("userLocation", JSON.stringify({ stateAbbreviation: newState }))
+    setLocation(country, newState)
     window.location.reload()
   }
 
