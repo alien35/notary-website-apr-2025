@@ -1,6 +1,6 @@
 # Electronic Journal (e-Journal)
 
-_Last updated October 07, 2024_
+_Last updated September 06, 2025_
 
 [▶︎ Download the PDF version](/blog-pdf/ejournal.pdf)
 
