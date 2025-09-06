@@ -36,6 +36,22 @@ async function getStaticPaths() {
     })
 }
 
+// Parse state/province slugs from lib/states.ts to keep in sync with app routes
+function getStateSlugsFromSource() {
+  try {
+    const content = fs.readFileSync(path.join(process.cwd(), 'lib', 'states.ts'), 'utf8')
+    const match = content.match(/STATE_MAP:[\s\S]*?=\s*{([\s\S]*?)}\s*/)
+    if (!match) return []
+    const body = match[1]
+    const entries = Array.from(body.matchAll(/([A-Z]{2}):\s*"([^"]+)"/g))
+    const names = entries.map(([, _abbr, name]) => name)
+    return Array.from(new Set(names.map((n) => n.toLowerCase().replace(/\s+/g, '-'))))
+  } catch (e) {
+    console.warn('next-sitemap: failed to parse state slugs from lib/states.ts', e)
+    return []
+  }
+}
+
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
@@ -56,6 +72,13 @@ module.exports = {
 
     const staticPaths = await getStaticPaths()
 
-    return [...staticPaths, ...sanityPaths]
+    // Dynamic state/province e-journal routes: /{state-slug}/e-journal
+    const stateSlugs = getStateSlugsFromSource()
+    const stateEjournalPaths = stateSlugs.map((slug) => ({
+      loc: `/${slug}/e-journal`,
+      lastmod: new Date().toISOString(),
+    }))
+
+    return [...staticPaths, ...sanityPaths, ...stateEjournalPaths]
   },
 }
