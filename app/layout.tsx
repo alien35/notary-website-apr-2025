@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next/types"
+import Script from "next/script"
 import { Inter, EB_Garamond } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -30,6 +31,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} ${ebGaramond.variable}`}>
+        <Script id="crisp-widget" strategy="afterInteractive">
+          {`
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "2dfd4bb0-33ea-47f6-bec1-36b4dd4a83d6";
+            (function() {
+              var d = document;
+              var s = d.createElement("script");
+              s.src = "https://client.crisp.chat/l.js";
+              s.async = 1;
+              d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+          `}
+        </Script>
         <PostHogProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
             <LocationProvider>
@@ -43,6 +57,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
