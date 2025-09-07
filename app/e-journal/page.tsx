@@ -21,21 +21,31 @@ export const metadata: Metadata = {
 export default function EJournalPage() {
   // Load & slice the markdown into sections using markers
   let intro = ""
-  let beforeDevices = ""
+  let beforePricing = ""
+  let afterPricing = ""
   let afterDevices = ""
   let isoDate: string | undefined
 
   try {
     const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
     const markdown = fs.readFileSync(markdownPath, "utf8")
+    const pricingMarker = "<!--PRICING-->"
+    const markdownWithPricing = markdown.replace(
+      "[See pricing.](https://www.notarycentral.org/pricing)",
+      pricingMarker,
+    )
 
-    const [introPart, rest = ""] = markdown.split("<!--STATE_PICKER-->")
+    const [introPart, rest = ""] = markdownWithPricing.split("<!--STATE_PICKER-->")
     intro = introPart || ""
 
     const [beforeDevicesPart, afterDevicesPart = ""] = rest.split(
       "<!--WORKS_ON_DEVICES-->"
     )
-    beforeDevices = beforeDevicesPart || ""
+    const [beforePricingPart, afterPricingPart = ""] = beforeDevicesPart.split(
+      pricingMarker
+    )
+    beforePricing = beforePricingPart || ""
+    afterPricing = afterPricingPart || ""
     afterDevices = afterDevicesPart || ""
 
     const lastUpdatedMatch = markdown.match(
@@ -84,8 +94,12 @@ export default function EJournalPage() {
             />
           </div>
 
-          {beforeDevices && (
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforeDevices}</ReactMarkdown>
+          {beforePricing && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforePricing}</ReactMarkdown>
+          )}
+          <PricingView showJournalOnly />
+          {afterPricing && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterPricing}</ReactMarkdown>
           )}
 
           <WorksOnDevices />
@@ -95,7 +109,6 @@ export default function EJournalPage() {
           )}
         </div>
       </div>
-      <PricingView />
     </>
   )
 }

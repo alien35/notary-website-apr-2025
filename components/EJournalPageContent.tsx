@@ -15,11 +15,17 @@ export default function EJournalPageContent({ title, description, stateAbbreviat
   const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
   const markdownFile = fs.readFileSync(markdownPath, "utf8")
   const pdfSuffix = stateAbbreviation ? `${stateAbbreviation.toLowerCase()}` : ""
-  const markdown = markdownFile.replace(
+  const pricingMarker = "<!--PRICING-->"
+  const markdownWithPricing = markdownFile.replace(
+    "[See pricing.](https://www.notarycentral.org/pricing)",
+    pricingMarker,
+  )
+  const markdown = markdownWithPricing.replace(
     /\/blog-pdf\/ejournal\.pdf/g,
     `/blog-pdf/ejournal/${pdfSuffix}.pdf`,
   )
-  const [intro, rest] = markdown.split("<!--STATE_PICKER-->")
+  const [intro, restWithPricing] = markdown.split("<!--STATE_PICKER-->")
+  const [beforePricing, afterPricing] = restWithPricing.split(pricingMarker)
   const introWithoutHeading = intro.replace(/^# .+\n/, "")
   const lastUpdatedMatch = markdown.match(/Last updated\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})/)
   const isoDate = lastUpdatedMatch ? new Date(lastUpdatedMatch[1]).toISOString() : undefined
@@ -56,11 +62,12 @@ export default function EJournalPageContent({ title, description, stateAbbreviat
               className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
             />
           </div>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforePricing}</ReactMarkdown>
+          <PricingView showJournalOnly />
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterPricing}</ReactMarkdown>
         </div>
 
       </div>
-      <PricingView />
     </>
   )
 }

@@ -7,7 +7,15 @@ import { Check } from "lucide-react"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
 
-export default function Pricing() {
+interface Props {
+  /**
+   * When true, only e-Journal plans are shown and the Business Tools
+   * section is hidden.
+   */
+  showJournalOnly?: boolean
+}
+
+export default function Pricing({ showJournalOnly = false }: Props) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -97,71 +105,73 @@ export default function Pricing() {
 
         
         {/* Business Tools Section */}
-        <div>
-          <div className="flex items-center justify-center space-x-4 mb-6">
-            <Label htmlFor="business-toggle" className={businessAnnual ? "text-muted-foreground" : "font-medium"}>
-              Monthly
-            </Label>
-            <Switch id="business-toggle" checked={businessAnnual} onCheckedChange={setBusinessAnnual} />
-            <div className="flex items-center">
-              <Label htmlFor="business-toggle" className={businessAnnual ? "font-medium" : "text-muted-foreground"}>
-                Annual
+        {!showJournalOnly && (
+          <div>
+            <div className="flex items-center justify-center space-x-4 mb-6">
+              <Label htmlFor="business-toggle" className={businessAnnual ? "text-muted-foreground" : "font-medium"}>
+                Monthly
               </Label>
-              <span className="ml-2 text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100 px-2 py-1 rounded-full">
-                Save 20%
-              </span>
+              <Switch id="business-toggle" checked={businessAnnual} onCheckedChange={setBusinessAnnual} />
+              <div className="flex items-center">
+                <Label htmlFor="business-toggle" className={businessAnnual ? "font-medium" : "text-muted-foreground"}>
+                  Annual
+                </Label>
+                <span className="ml-2 text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100 px-2 py-1 rounded-full">
+                  Save 20%
+                </span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-1 max-w-3xl mx-auto">
+              {(() => {
+                const plan = businessAnnual ? businessPlans.yearly : businessPlans.monthly
+                return (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className={`bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden ${
+                      !businessAnnual && businessPlans.monthly.popular ? "ring-2 ring-primary relative" : ""
+                    }`}
+                  >
+                    {!businessAnnual && businessPlans.monthly.popular && (
+                      <div className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 absolute right-0 top-0 rounded-bl-lg">
+                        MOST POPULAR
+                      </div>
+                    )}
+                    <div className="p-8">
+                      <h4 className="text-xl font-bold mb-2">{plan.name}</h4>
+                      <p className="text-muted-foreground mb-2">{plan.description}</p>
+                      <span className="inline-block text-xs font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100 px-2 py-1 rounded-full mb-4">
+                        {plan.badge}
+                      </span>
+                      <div className="mb-6">
+                        <span className="text-3xl font-bold">
+                          {plan.billing === "year" ? `$${(plan.price / 12).toFixed(2)}` : `$${plan.price}`}
+                        </span>
+                        <span className="text-muted-foreground">
+                          /month{plan.billing === "year" && <span className="text-sm"> (billed annually)</span>}
+                        </span>
+                      </div>
+                      <Button onClick={onStart} className="w-full mb-6" variant={businessAnnual ? "outline" : "default"}>
+                        Get Started
+                      </Button>
+                      <ul className="space-y-3">
+                        {plan.features.map((feature, i) => (
+                          <li key={i} className="flex items-start">
+                            <Check className="h-5 w-5 text-green-500 mr-2 shrink-0" />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </motion.div>
+                )
+              })()}
             </div>
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-1 max-w-3xl mx-auto">
-            {(() => {
-              const plan = businessAnnual ? businessPlans.yearly : businessPlans.monthly
-              return (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                  className={`bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden ${
-                    !businessAnnual && businessPlans.monthly.popular ? "ring-2 ring-primary relative" : ""
-                  }`}
-                >
-                  {!businessAnnual && businessPlans.monthly.popular && (
-                    <div className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 absolute right-0 top-0 rounded-bl-lg">
-                      MOST POPULAR
-                    </div>
-                  )}
-                  <div className="p-8">
-                    <h4 className="text-xl font-bold mb-2">{plan.name}</h4>
-                    <p className="text-muted-foreground mb-2">{plan.description}</p>
-                    <span className="inline-block text-xs font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100 px-2 py-1 rounded-full mb-4">
-                      {plan.badge}
-                    </span>
-                    <div className="mb-6">
-                      <span className="text-3xl font-bold">
-                        {plan.billing === "year" ? `$${(plan.price / 12).toFixed(2)}` : `$${plan.price}`}
-                      </span>
-                      <span className="text-muted-foreground">
-                        /month{plan.billing === "year" && <span className="text-sm"> (billed annually)</span>}
-                      </span>
-                    </div>
-                    <Button onClick={onStart} className="w-full mb-6" variant={businessAnnual ? "outline" : "default"}>
-                      Get Started
-                    </Button>
-                    <ul className="space-y-3">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="flex items-start">
-                          <Check className="h-5 w-5 text-green-500 mr-2 shrink-0" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-              )
-            })()}
-          </div>
-        </div>
+        )}
 
         {/* Journal Section */}
         <div className="mb-16">
