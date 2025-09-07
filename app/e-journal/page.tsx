@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm"
 
 import EJournalStateInfo from "@/components/EJournalStateInfo"
 import WorksOnDevices from "@/components/WorksOnDevices"
+import PricingView from "@/components/pricing"
 
 const title = "Electronic Journal (e-Journal)"
 const description =
@@ -20,21 +21,31 @@ export const metadata: Metadata = {
 export default function EJournalPage() {
   // Load & slice the markdown into sections using markers
   let intro = ""
-  let beforeDevices = ""
+  let beforePricing = ""
+  let afterPricing = ""
   let afterDevices = ""
   let isoDate: string | undefined
 
   try {
     const markdownPath = path.join(process.cwd(), "data/blog", "e-journal.md")
     const markdown = fs.readFileSync(markdownPath, "utf8")
+    const pricingMarker = "<!--PRICING-->"
+    const markdownWithPricing = markdown.replace(
+      "[See pricing.](https://www.notarycentral.org/pricing)",
+      pricingMarker,
+    )
 
-    const [introPart, rest = ""] = markdown.split("<!--STATE_PICKER-->")
+    const [introPart, rest = ""] = markdownWithPricing.split("<!--STATE_PICKER-->")
     intro = introPart || ""
 
     const [beforeDevicesPart, afterDevicesPart = ""] = rest.split(
       "<!--WORKS_ON_DEVICES-->"
     )
-    beforeDevices = beforeDevicesPart || ""
+    const [beforePricingPart, afterPricingPart = ""] = beforeDevicesPart.split(
+      pricingMarker
+    )
+    beforePricing = beforePricingPart || ""
+    afterPricing = afterPricingPart || ""
     afterDevices = afterDevicesPart || ""
 
     const lastUpdatedMatch = markdown.match(
@@ -58,40 +69,46 @@ export default function EJournalPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-24 md:py-32">
-      <div className="prose lg:prose-lg dark:prose-invert mx-auto max-w-4xl">
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {intro && <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>}
-
-        <div className="mt-12 space-y-12">
-          <EJournalStateInfo />
-        </div>
-
-        <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
-          <iframe
-            src="https://www.youtube.com/embed/yUQsJw9C_g4"
-            title="Electronic journal overview"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+    <>
+      <div className="container mx-auto px-4 py-24 md:py-32">
+        <div className="prose lg:prose-lg dark:prose-invert mx-auto max-w-4xl">
+          <script
+            type="application/ld+json"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
+          {intro && <ReactMarkdown remarkPlugins={[remarkGfm]}>{intro}</ReactMarkdown>}
+
+          <div className="mt-12 space-y-12">
+            <EJournalStateInfo />
+          </div>
+
+          <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/yUQsJw9C_g4"
+              title="Electronic journal overview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+            />
+          </div>
+
+          {beforePricing && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforePricing}</ReactMarkdown>
+          )}
+          <PricingView showJournalOnly />
+          {afterPricing && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterPricing}</ReactMarkdown>
+          )}
+
+          <WorksOnDevices />
+
+          {afterDevices && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterDevices}</ReactMarkdown>
+          )}
         </div>
-
-        {beforeDevices && (
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{beforeDevices}</ReactMarkdown>
-        )}
-
-        <WorksOnDevices />
-
-        {afterDevices && (
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{afterDevices}</ReactMarkdown>
-        )}
       </div>
-    </div>
+    </>
   )
 }
