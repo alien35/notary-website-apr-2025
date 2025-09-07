@@ -13,9 +13,17 @@ interface Props {
    * section is hidden.
    */
   showJournalOnly?: boolean
+  /**
+   * When true, only Business Tools plans are shown and the e-Journal
+   * section is hidden.
+   */
+  showBusinessOnly?: boolean
 }
 
-export default function Pricing({ showJournalOnly = false }: Props) {
+export default function Pricing({
+  showJournalOnly = false,
+  showBusinessOnly = false,
+}: Props) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -30,7 +38,7 @@ export default function Pricing({ showJournalOnly = false }: Props) {
   const [businessAnnual, setBusinessAnnual] = useState(true)
 
   const freeJournalPlan = {
-    name: "Free",
+    name: "e-Journal Free",
     description: "Start with your first 5 entries free",
     badge: "No credit card required",
     features: ["Digital e-Journal", "Mobile app access", "Email support"],
@@ -38,7 +46,7 @@ export default function Pricing({ showJournalOnly = false }: Props) {
 
   const journalPlans = {
     monthly: {
-      name: "Plus (Monthly)",
+      name: "e-Journal Plus (Monthly)",
       price: 1.95,
       billing: "month",
       description: "Unlimited entries and full access",
@@ -46,7 +54,7 @@ export default function Pricing({ showJournalOnly = false }: Props) {
       features: ["Digital e-Journal", "Mobile app access", "Email support"],
     },
     yearly: {
-      name: "Plus (Yearly)",
+      name: "e-Journal Plus (Yearly)",
       price: 19.95,
       billing: "year",
       description: "Unlimited entries and full access",
@@ -61,9 +69,9 @@ export default function Pricing({ showJournalOnly = false }: Props) {
       price: 11.95,
       billing: "month",
       description: "All-in-one tools for active notary businesses",
-      badge: "15 free appointments included",
+      badge: "Unlimited appointments",
       features: [
-        "Digital e-Journal",
+        "Digital e-Journal integration",
         "Automated accounting",
         "Mileage tracking",
         "Appointment scheduling",
@@ -76,15 +84,28 @@ export default function Pricing({ showJournalOnly = false }: Props) {
       price: 119.95,
       billing: "year",
       description: "Full suite + annual savings",
-      badge: "15 free appointments included",
+      badge: "Unlimited appointments",
       features: [
-        "Digital e-Journal",
+        "Digital e-Journal integration",
         "Automated accounting",
         "Mileage tracking",
         "Appointment scheduling",
         "Priority support",
       ],
     },
+  }
+
+  const freeBusinessPlan = {
+    name: "Business Management Suite Free",
+    description: "15 appointments included",
+    badge: "No credit card required",
+    features: [
+      "Digital e-Journal integration",
+      "Automated accounting",
+      "Mileage tracking",
+      "Appointment scheduling",
+      "Email support",
+    ],
   }
 
   const onStart = () => {
@@ -105,7 +126,7 @@ export default function Pricing({ showJournalOnly = false }: Props) {
 
         
         {/* Business Tools Section */}
-        {!showJournalOnly && (
+        {(showBusinessOnly || !showJournalOnly) && (
           <div>
             <div className="flex items-center justify-center space-x-4 mb-6">
               <Label htmlFor="business-toggle" className={businessAnnual ? "text-muted-foreground" : "font-medium"}>
@@ -122,7 +143,37 @@ export default function Pricing({ showJournalOnly = false }: Props) {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-1 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+              >
+                <div className="p-8">
+                  <h4 className="text-xl font-bold mb-2">{freeBusinessPlan.name}</h4>
+                  <p className="text-muted-foreground mb-2">{freeBusinessPlan.description}</p>
+                  <span className="inline-block text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100 px-2 py-1 rounded-full mb-4">
+                    {freeBusinessPlan.badge}
+                  </span>
+                  <div className="mb-6">
+                    <span className="text-3xl font-bold">Free</span>
+                  </div>
+                  <Button onClick={onStart} className="w-full mb-6" variant="outline">
+                    Start for Free
+                  </Button>
+                  <ul className="space-y-3">
+                    {freeBusinessPlan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+
               {(() => {
                 const plan = businessAnnual ? businessPlans.yearly : businessPlans.monthly
                 return (
@@ -174,6 +225,7 @@ export default function Pricing({ showJournalOnly = false }: Props) {
         )}
 
         {/* Journal Section */}
+        {!showBusinessOnly && (
         <div className="mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">
             <Label htmlFor="journal-toggle" className={journalAnnual ? "text-muted-foreground" : "font-medium"}>
@@ -262,6 +314,7 @@ export default function Pricing({ showJournalOnly = false }: Props) {
             })()}
           </div>
         </div>
+        )}
 
       </motion.div>
     </section>
