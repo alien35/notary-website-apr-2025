@@ -27,7 +27,7 @@ const menuItems = {
     },
     {
       title: "Business Management Suite",
-      description: "Manage scheduling, expenses, and more from one place",
+      description: "The digital notary tracker for managing scheduling, expenses, and clients",
       href: "/business-management-suite",
     },
   ],

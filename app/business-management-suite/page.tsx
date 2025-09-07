@@ -4,13 +4,18 @@ import { useCases, features } from "@/data/business-management-suite"
 
 export const metadata: Metadata = {
   title: "Business Management Suite | NotaryCentral",
-  description: "Explore the use cases and features of the NotaryCentral Business Management Suite.",
+  description:
+    "Explore the use cases and features of the NotaryCentral Business Management Suite, the digital notary tracker built for notaries.",
 }
 
 export default function BusinessManagementSuitePage() {
   return (
     <div className="container mx-auto px-4 py-24 md:py-32">
       <h1 className="mb-8 text-3xl font-bold">Business Management Suite</h1>
+      <p className="mb-12 text-lg text-muted-foreground">
+        Manage appointments, expenses, and client details with NotaryCentral's
+        Business Management Suite, your digital notary tracker.
+      </p>
 
       <section className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold">Use Cases</h2>
