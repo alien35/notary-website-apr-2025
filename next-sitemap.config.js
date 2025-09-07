@@ -55,7 +55,7 @@ function getStateSlugsFromSource() {
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://notarycentral.org',
+  siteUrl: 'https://www.notarycentral.org',
   generateRobotsTxt: true,
   additionalPaths: async (config) => {
     const posts = await client.fetch(`

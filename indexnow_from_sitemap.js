@@ -5,12 +5,12 @@ const path = require("node:path");
 const { DOMParser } = require("xmldom");
 
 // ---------------- CONFIG ----------------
-const HOST = "notarycentral.org";
+const HOST = "www.notarycentral.org";
 const KEY = "ee4a9ffb7f204256ab55cb464723d8fc";
-const KEY_LOCATION = "https://notarycentral.org/ee4a9ffb7f204256ab55cb464723d8fc.txt";
+const KEY_LOCATION = "https://www.notarycentral.org/ee4a9ffb7f204256ab55cb464723d8fc.txt";
 
 // Default sitemap URL (can override with CLI arg or env var)
-const SITEMAP_SOURCE = process.env.SITEMAP_SOURCE || process.argv[2] || "https://notarycentral.org/sitemap.xml";
+const SITEMAP_SOURCE = process.env.SITEMAP_SOURCE || process.argv[2] || "https://www.notarycentral.org/sitemap.xml";
 
 // Endpoint (Bing; IndexNow engines share behind the scenes)
 const INDEXNOW_ENDPOINT = process.env.INDEXNOW_ENDPOINT || "https://www.bing.com/indexnow";

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://notarycentral.org
+Host: https://www.notarycentral.org
 
 # Sitemaps
-Sitemap: https://notarycentral.org/sitemap.xml
+Sitemap: https://www.notarycentral.org/sitemap.xml
