@@ -71,7 +71,7 @@ export default function Pricing({
       description: "All-in-one tools for active notary businesses",
       badge: "Unlimited appointments",
       features: [
-        "Digital e-Journal",
+        "Digital e-Journal integration",
         "Automated accounting",
         "Mileage tracking",
         "Appointment scheduling",
@@ -86,7 +86,7 @@ export default function Pricing({
       description: "Full suite + annual savings",
       badge: "Unlimited appointments",
       features: [
-        "Digital e-Journal",
+        "Digital e-Journal integration",
         "Automated accounting",
         "Mileage tracking",
         "Appointment scheduling",
@@ -100,7 +100,7 @@ export default function Pricing({
     description: "15 appointments included",
     badge: "No credit card required",
     features: [
-      "Digital e-Journal",
+      "Digital e-Journal integration",
       "Automated accounting",
       "Mileage tracking",
       "Appointment scheduling",
