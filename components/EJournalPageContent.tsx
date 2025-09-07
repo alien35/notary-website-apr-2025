@@ -3,6 +3,7 @@ import path from "path"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import EJournalStateInfo from "@/components/EJournalStateInfo"
+import PricingView from "@/components/pricing"
 
 interface Props {
   title: string
@@ -33,30 +34,33 @@ export default function EJournalPageContent({ title, description, stateAbbreviat
   }
 
   return (
-    <div className="container mx-auto px-4 py-24 md:py-32">
-      <div className="prose lg:prose-lg dark:prose-invert mx-auto max-w-4xl">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <h1>{title}</h1>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{introWithoutHeading}</ReactMarkdown>
-        <div className="mt-12 space-y-12">
-          <EJournalStateInfo stateAbbreviation={stateAbbreviation} />
-        </div>
-        <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
-          <iframe
-            src="https://www.youtube.com/embed/yUQsJw9C_g4"
-            title="Electronic journal overview"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
+    <>
+      <div className="container mx-auto px-4 py-24 md:py-32">
+        <div className="prose lg:prose-lg dark:prose-invert mx-auto max-w-4xl">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
+          <h1>{title}</h1>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{introWithoutHeading}</ReactMarkdown>
+          <div className="mt-12 space-y-12">
+            <EJournalStateInfo stateAbbreviation={stateAbbreviation} />
+          </div>
+          <div className="relative w-full max-w-2xl mx-auto my-8 aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/yUQsJw9C_g4"
+              title="Electronic journal overview"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
+            />
+          </div>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
         </div>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{rest}</ReactMarkdown>
-      </div>
 
-    </div>
+      </div>
+      <PricingView />
+    </>
   )
 }
