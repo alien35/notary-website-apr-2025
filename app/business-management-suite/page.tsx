@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import { useCases, features } from "@/data/business-management-suite"
+import PricingView from "@/components/pricing"
 
 export const metadata: Metadata = {
   title: "Business Management Suite | NotaryCentral",
@@ -45,6 +46,8 @@ export default function BusinessManagementSuitePage() {
           ))}
         </ul>
       </section>
+
+      <PricingView showBusinessOnly />
     </div>
   )
 }
