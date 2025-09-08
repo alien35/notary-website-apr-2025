@@ -38,7 +38,7 @@ Many notaries still rely on spreadsheets for leads, but a light CRM streamlines 
 
 - Record outreach to title companies and law firms  
 - Automate reminders for repeat clients  
-- Sync calendar bookings from the [Top Scheduling Apps](/online-scheduler) list
+- Sync calendar bookings from the [Top Scheduling Apps](/scheduling) list
 - Import signing requests directly—see [Data Import Tools & Snapdocs Integration](/import-orders)
 
 ---
@@ -112,7 +112,7 @@ Notaries handling high volumes from platforms like Snapdocs want to avoid manual
 - CSV or API imports from signing platforms  
 - Mapping fields directly into your CRM and calendar  
 
-Cross-link imports to your [Scheduling](/online-scheduler) and [Client Management](/notary-app-comparison) workflows.
+Cross-link imports to your [Scheduling](/scheduling) and [Client Management](/notary-app-comparison) workflows.
 
 
 ---
