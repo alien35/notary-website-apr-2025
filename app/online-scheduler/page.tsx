@@ -4,16 +4,16 @@ import ReactMarkdown from "react-markdown"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Effortless Scheduling for Modern Notaries",
+  title: "Online Scheduling for Notaries",
   description:
-    "Cut missed calls with online scheduling that lets clients book instantly while NotaryCentral syncs calendars, tracks mileage, and keeps appointments organized."
+    "Effortless, contactless booking lets clients request notarizations online while you stay in control of time, services, and fees.",
 }
 
-export default function WhyNotaryCentralFaqPage() {
+export default function OnlineSchedulerPage() {
   const markdownPath = path.join(
     process.cwd(),
     "data/blog",
-    "scheduling.md"
+    "online-scheduler.md"
   )
   const markdown = fs.readFileSync(markdownPath, "utf8")
   const lastUpdatedMatch = markdown.match(

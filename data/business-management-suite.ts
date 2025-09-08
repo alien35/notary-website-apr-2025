@@ -47,6 +47,6 @@ export const features = [
     title: "Scheduling",
     description:
       "Create a shareable calendar link where new appointments automatically sync with your existing calendar events.",
-    href: "/post/online-scheduler",
+    href: "/online-scheduler",
   },
 ]
