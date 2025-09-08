@@ -1,5 +1,5 @@
 # Online Scheduler
-**Last updated May 13, 2025**
+**Last updated September 7, 2025**
 
 ## Effortless, Contactless Booking with NotaryCentral Scheduling
 
