@@ -1,5 +1,7 @@
 # NotaryCentral Electronic Journal (E-Journal) vs Jurat Inc. Electronic Journal (E-Journal) vs Paper Journal: A Practical Comparison
 
+Tags: Rules & Regulations
+
 The notary journal serves as the official record of your notarizations, protecting both you and the public. Traditionally, notaries used hardbound paper journals, but **electronic journal (e-journal)** solutions—like NotaryCentral’s Electronic Journal (E-Journal) and Jurat Inc.’s Electronic Journal (E-Journal)—offer modern advantages in compliance, accuracy, and efficiency.
 
 ---

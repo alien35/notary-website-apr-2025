@@ -2,6 +2,8 @@
 
 [▶︎ Download the PDF version](/blog-pdf/why-notarycentral-is-the-best-app.pdf)
 
+Tags: Rules & Regulations
+
 ## What is NotaryCentral?
 **NotaryCentral is an all-in-one digital workspace created specifically for U.S. notaries**, helping streamline daily operations from any device. Developed with input from active notaries, it lets you schedule appointments, manage journal entries, track income, and stay compliant—without toggling between multiple apps. This centralization minimizes paperwork and simplifies recordkeeping.
 

@@ -4,6 +4,8 @@ _Last updated September 06, 2025_
 
 [▶︎ Download the PDF version](/blog-pdf/ejournal.pdf)
 
+Tags: Rules & Regulations
+
 <!--STATE_PICKER-->
 
 ## Where can I get an e-Journal?
