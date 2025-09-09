@@ -2,8 +2,10 @@
 
 [▶︎ Download the PDF version](/blog-pdf/about.pdf)
 
-**Alexander Leon**  
+**Alexander Leon**
 Last updated August 3, 2025
+
+Tags: Rules & Regulations
 
 ## A Mission Rooted in Innovation
 

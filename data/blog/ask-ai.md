@@ -2,6 +2,8 @@
 
 [▶︎ Download the PDF version](/blog-pdf/ask-ai.pdf)
 
+Tags: Rules & Regulations
+
 Notaries work under regulations that change from state to state. Keeping track of each jurisdiction’s laws and procedures can be daunting—especially when the answer can be buried in pages of statutes or policy manuals. That’s why NotaryCentral built **Ask AI**, a feature that delivers state-specific guidance along with citations to the source material so you always know where the information came from.
 
 ---
