@@ -1,18 +1,19 @@
-# Auto-Importing Orders into NotaryCentral
+# Import Orders from Email
 
 [▶︎ Download the PDF version](/blog-pdf/import-orders.pdf)
 
-Manually entering signing details from emails or portals drains hours from a notary's week. NotaryCentral eliminates that busywork by letting you forward an order email directly into your workspace.
+Notary work often begins with an email from platforms like Snapdocs or SigningOrder. Re-typing all of that information into your app takes time, and when you're juggling calls, scans, and travel it's easy for a request to slip through the cracks.
+
+NotaryCentral handles this busywork for you. Just forward the message to **hi@automation.notarycentral.org**.
 
 ## How it works
-1. Forward the confirmation or order request email to your unique NotaryCentral address.
-2. The system parses the message and creates a pending appointment in your account.
-3. Review the auto-filled details, make any edits, and approve the order with a click.
+1. Forward the order or confirmation email you receive from any platform.
+2. Our AI reads the message, attaches any documents, and creates a pending appointment.
+3. Visit **Appointments > Import** to approve the details or make quick adjustments.
 
 ## Benefits
-- **Faster turnaround:** Skip repetitive typing and import jobs in seconds.
-- **Fewer errors:** Automatic parsing reduces copy-and-paste mistakes.
-- **Centralized workflow:** Imported orders immediately show up alongside your existing schedule and records.
+- **No more copy-paste:** Import orders in seconds instead of typing them out.
+- **Fewer missed requests:** Every forwarded email becomes a tracked appointment.
+- **Centralized records:** Documents and client details live in one place.
 
-By offloading data entry, NotaryCentral lets you focus on confirming signer details and preparing for the appointment, not transcribing orders.
-
+Forwarding your order emails means the important work is captured automatically while you stay focused on signing preparation and customer service.

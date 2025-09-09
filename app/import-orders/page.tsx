@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Import orders",
   description:
-    "Forward order emails into NotaryCentral to create appointments, attach documents, and populate client details, saving time and reducing manual data entry."
+    "Forward emails from Snapdocs, SigningOrder, or any platform to hi@automation.notarycentral.org and let NotaryCentral's AI create appointments so nothing slips through the cracks.",
 }
 
 export default function WhyNotaryCentralFaqPage() {
