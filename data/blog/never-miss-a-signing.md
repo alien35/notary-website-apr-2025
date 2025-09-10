@@ -9,4 +9,4 @@ Busy days make it easy for both notaries and signers to overlook upcoming appoin
 - Choose separate notification channels for yourself and your clients
 
 ## Customize timing
-Set how far in advance reminders are sent. Need a nudge a day before, an hour before, or even 5 minutes before? Configure reminders that fit your workflow so everyone stays on schedule.
+Set how far in advance reminders are sent. Need a nudge a day before, an hour before, or even 5 minutes before (great for Remote online notarization)? Configure reminders that fit your workflow so everyone stays on schedule.
