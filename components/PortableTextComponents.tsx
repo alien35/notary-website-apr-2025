@@ -10,6 +10,7 @@ import ConditionalText from "./ConditionalText"
 import CountryAndRegionPicker from "./CountryAndRegionPicker"
 import StatePicker from "./StatePicker"
 import WorksOnDevices from "./WorksOnDevices"
+import JournalBillingWidget from "./JournalBillingWidget"
 
 // Helper function to check if a URL is external
 const isExternalLink = (url) => {
@@ -147,6 +148,9 @@ const PortableTextComponents = {
     },
     worksOnDevices: () => {
       return <WorksOnDevices />
+    },
+    journalBillingWidget: ({ value }) => {
+      return <JournalBillingWidget value={value} />
     },
     imageBlock: ({ value }) => {
       const imageUrl = value?.image?.asset ? urlFor(value.image).url() : null
